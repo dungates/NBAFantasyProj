@@ -1,19 +1,14 @@
-import os
-from dotenv import load_dotenv, find_dotenv
+from yahoo_fantasy_api import game, league, team
+from yahoo_oauth import OAuth2
 
-load_dotenv(find_dotenv())
-
-YAHOO_FANTASY_URI = "https://fantasysports.yahooapis.com/fantasy/v2/"
-
-APP_ID = os.getenv("APP_ID")
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+oauth = OAuth2(None, None, from_file="yahooAuth.json")
 
 
 def main():
-    print(APP_ID)
-    print(CLIENT_ID)
-    print(CLIENT_SECRET)
+    league_ids = game.Game(oauth, "nba").league_ids()
+    print(league_ids)
+    current_league = league.League(oauth, "402.l.35721")
+    print(current_league.matchups())
     return 0
 
 
