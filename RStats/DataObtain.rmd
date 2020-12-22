@@ -1,0 +1,33 @@
+---
+title: "Data Obtain"
+author: "Duncan Gates"
+date: "12/22/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Libraries
+
+```{r}
+library(nbastatR)
+library(tidyverse) # Always a necessity :)
+library(here) # Making this organized
+library(readr)
+```
+
+## Initial Seasonal Data Read
+
+```{r}
+bref_players_stats(seasons = 2000:2020, tables = c("advanced", "totals"), widen = TRUE, assign_to_environment = TRUE)
+bref_advanced <- dataBREFPlayerAdvanced
+bref_totals <- dataBREFPlayerTotals
+```
+
+```{r}
+write_csv(dataBREFPlayerTotals, here("Data/PlayerStats20Years.csv"))
+write_csv(dataBREFPlayerAdvanced, here("Data/PlayerAdvancedStats20Years.csv"))
+```
+
