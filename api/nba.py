@@ -4,7 +4,7 @@ from pydash.collections import group_by, order_by
 
 
 results = []
-for i in range(1, 11):
+for i in range(1, 21):
     ending = "0" + str(i) if i < 10 else str(i)
     season = str(2000 + i - 1) + "-" + ending
 
