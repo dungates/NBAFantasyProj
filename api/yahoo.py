@@ -28,7 +28,7 @@ def get_matchups(week):
         "matchups"
     ]
     team_key_tuples = []
-    for key, value in matchups_dict.items():
+    for value in matchups_dict.values():
         if not isinstance(value, dict):
             continue
         teams_dict = value["matchup"]["0"]["teams"]
