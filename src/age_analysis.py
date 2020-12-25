@@ -1,38 +1,25 @@
 import json
 from constants import STAT_COEFFS
+from utils import get_averages, inject_fantasy_points
 
 
-def get_averages(totals):
-    averages = {}
-    for key, total in totals.items():
-        averages[key] = total / totals["GP"]
-    return averages
-
-
-def get_totals(players):
+def get_totals(player_seasons):
     totals = {}
     keys = ["GP", "FP"]
     for key in keys + list(STAT_COEFFS.keys()):
         totals[key] = 0
-    for player in players:
-        player["FP"] = get_fantasy_points(player)
+    for player_season in player_seasons:
         for key, total in totals.items():
-            totals[key] = total + player[key]
+            totals[key] = total + player_season[key]
     return totals
-
-
-def get_fantasy_points(player_stats):
-    total = 0
-    for key, coeff in STAT_COEFFS.items():
-        total = total + coeff * player_stats[key]
-    return total
 
 
 def analyze_data(data):
     age_data = {}
     for age in sorted(data.keys()):
-        players = data[age]
-        totals = get_totals(players)
+        player_seasons = data[age]
+        inject_fantasy_points(player_seasons)
+        totals = get_totals(player_seasons)
         averages = get_averages(totals)
         print(
             age
@@ -44,7 +31,7 @@ def analyze_data(data):
             + str(totals["GP"])
         )
         age_data[age] = {"totals": totals, "averages": averages}
-    with open("statsByAge.json", "w") as json_file:
+    with open("Data/statsByAge.json", "w") as json_file:
         json.dump(age_data, json_file)
 
 

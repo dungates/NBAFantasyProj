@@ -8,3 +8,5 @@ STAT_COEFFS = {
     "BLK": 3,
     "TOV": -1,
 }
+
+SEASON_WEIGHTS = [5, 3, 2]
