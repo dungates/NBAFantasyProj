@@ -1,10 +1,10 @@
 STAT_COEFFS = {
-    "free_throws": 0.5,
-    "three_pointers": 1,
-    "points": 1,
-    "rebounds": 1.2,
-    "assists": 1.5,
-    "steals": 3,
-    "blocks": 3,
-    "turnovers": -1,
+    "FTM": 0.5,
+    "FG3M": 1,
+    "PTS": 1,
+    "REB": 1.2,
+    "AST": 1.5,
+    "STL": 3,
+    "BLK": 3,
+    "TOV": -1,
 }
