@@ -1,4 +1,5 @@
 from constants import STAT_COEFFS
+import json
 
 
 def get_averages(totals):
@@ -23,3 +24,8 @@ get_season_qualified = (
 def inject_fantasy_points(player_season_list):
     for player_season in player_season_list:
         player_season["FP"] = get_fantasy_points(player_season)
+
+
+def write_json(data, filename):
+    with open("Data/" + filename + ".json", "w") as json_file:
+        json.dump(data, json_file)

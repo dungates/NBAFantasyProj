@@ -1,7 +1,7 @@
 import json
 from pydash.numerical import mean, std_deviation
 from constants import SEASON_WEIGHTS
-from utils import get_season_qualified, inject_fantasy_points
+from utils import get_season_qualified, inject_fantasy_points, write_json
 
 
 num_past_seasons = len(SEASON_WEIGHTS)
@@ -35,16 +35,19 @@ def analyze_data(data):
             ratios[player_age].append(current_average / past_average)
 
     write_data(ratios)
+    write_json(ratios, "playerAgeAverages")
 
 
 def get_weighted_average(player_seasons):
     total = 0
+    divisor = 0
     for index, weight in enumerate(SEASON_WEIGHTS):
         player_season = player_seasons[index]
         if not get_season_qualified(player_season):
             return None
-        total = total + weight * player_season["FP"] / player_season["GP"]
-    return total / sum(SEASON_WEIGHTS)
+        total = total + weight * player_season["FP"]
+        divisor = divisor + weight * player_season["GP"]
+    return total / divisor
 
 
 def write_data(ratios):
