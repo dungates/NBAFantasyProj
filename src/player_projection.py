@@ -16,6 +16,10 @@ def get_player_stats(name):
     return None
 
 
+def print_season(age, fantasy_ppg, games_played):
+    print(str(age) + "\t" + str(round(fantasy_ppg, 4)) + "\t" + str(games_played))
+
+
 # TODO: REFACTOR THIS FUCKING MESS!!!!
 def main():
     player_name = input("Player Name: ")
@@ -26,31 +30,16 @@ def main():
 
     inject_fantasy_points(player_season_list)
 
-    num_seasons = len(player_season_list)
-    print("Number of seasons: " + str(num_seasons))
-
-    past_seasons = player_season_list[-num_past_seasons:]
-    past_seasons.reverse()
-    print("Number of past seasons: " + str(len(past_seasons)))
-
     print("Age" + "\t" + "FP/G" + "\t" + "GP")
     for player_season in player_season_list:
         fantasy_ppg = player_season["FP"] / player_season["GP"]
-        print(
-            str(player_season["AGE"])
-            + "\t"
-            + str(round(fantasy_ppg, 4))
-            + "\t"
-            + str(player_season["GP"])
-        )
+        print_season(player_season["AGE"], fantasy_ppg, player_season["GP"])
+
+    past_seasons = player_season_list[-num_past_seasons:]
+    past_seasons.reverse()
 
     weighted_average = get_weighted_average(past_seasons)
-    print(
-        "Weighted average FP/G over past "
-        + str(num_past_seasons)
-        + " seasons: "
-        + str(weighted_average)
-    )
+    print("\nProjected FP/G for next season: " + str(weighted_average))
 
 
 if __name__ == "__main__":
