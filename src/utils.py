@@ -1,4 +1,4 @@
-from constants import STAT_COEFFS
+from constants import SEASON_WEIGHTS, STAT_COEFFS
 import json
 
 
@@ -19,6 +19,18 @@ def get_fantasy_points(player_season):
 get_season_qualified = (
     lambda player_season: True if player_season["MIN"] >= 1000 else False
 )
+
+
+def get_weighted_average(player_season_list):
+    total = 0
+    divisor = 0
+    for index, weight in enumerate(SEASON_WEIGHTS):
+        if index == len(player_season_list):
+            break
+        player_season = player_season_list[index]
+        total = total + weight * player_season["FP"]
+        divisor = divisor + weight * player_season["GP"]
+    return total / divisor
 
 
 def inject_fantasy_points(player_season_list):

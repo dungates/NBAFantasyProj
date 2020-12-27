@@ -1,7 +1,12 @@
 import json
 from pydash.numerical import mean, std_deviation
 from constants import SEASON_WEIGHTS
-from utils import get_season_qualified, inject_fantasy_points, write_json
+from utils import (
+    get_season_qualified,
+    get_weighted_average,
+    inject_fantasy_points,
+    write_json,
+)
 
 
 num_past_seasons = len(SEASON_WEIGHTS)
@@ -27,7 +32,7 @@ def analyze_data(data):
             if not past_average:
                 continue
 
-            player_age = player_season["AGE"]
+            player_age = int(player_season["AGE"])
             if player_age not in ratios.keys():
                 ratios[player_age] = []
 
@@ -35,36 +40,18 @@ def analyze_data(data):
             ratios[player_age].append(current_average / past_average)
 
     write_data(ratios)
-    write_json(ratios, "playerAgeAverages")
-
-
-def get_weighted_average(player_seasons):
-    total = 0
-    divisor = 0
-    for index, weight in enumerate(SEASON_WEIGHTS):
-        player_season = player_seasons[index]
-        if not get_season_qualified(player_season):
-            return None
-        total = total + weight * player_season["FP"]
-        divisor = divisor + weight * player_season["GP"]
-    return total / divisor
 
 
 def write_data(ratios):
-    f = open("Data/player_age_averages.txt", "w")
+    data = {}
     for age in sorted(ratios.keys()):
         values = ratios[age]
-        f.write(
-            str(age)
-            + ": "
-            + str(mean(values))
-            + ", "
-            + str(std_deviation(values))
-            + ", "
-            + str(len(values))
-            + "\n"
-        )
-    f.close()
+        data[age] = {
+            "mean": mean(values),
+            "std_deviation": std_deviation(values),
+            "sample_size": len(values),
+        }
+    write_json(data, "playerAgeAverages")
 
 
 if __name__ == "__main__":
