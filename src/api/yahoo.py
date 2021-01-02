@@ -1,38 +1,55 @@
+from pydash.collections import at
+from pydash.objects import get
 from yahoo_fantasy_api import game, league, team
 from yahoo_oauth import OAuth2
 
 oauth = OAuth2(None, None, from_file="yahooAuth.json")
 
 
-def get_league_id():
+def get_current_league():
     current_game = game.Game(oauth, "nba")
     league_ids = current_game.league_ids()
     if not league_ids:
         return None
-    return league_ids[len(league_ids) - 1]
+    league_id = league_ids[len(league_ids) - 1]
+    current_league = league.League(oauth, league_id)
+    return current_league
+
+
+def get_positions():
+    current_league = get_current_league()
+    positions = current_league.positions()
+    return list(positions.keys())
+
+
+def get_free_agents():
+    current_league = get_current_league()
+    players = current_league.free_agents("Util")
+    return players
 
 
 def get_team_key(team):
-    team_data = team["team"][0]
+    team_data = get(team, "team.0")
     for line in team_data:
         if "team_key" in line:
-            return line["team_key"]
+            return get(line, "team_key")
     return None
 
 
 def get_matchups(week):
-    league_id = get_league_id()
-    current_league = league.League(oauth, league_id)
-    matchups = current_league.matchups(week)
-    matchups_dict = matchups["fantasy_content"]["league"][1]["scoreboard"]["0"][
-        "matchups"
-    ]
+    current_league = get_current_league()
+    current_matchups = current_league.matchups(week)
+    matchups = get(current_matchups, "fantasy_content.league.1.scoreboard.0.matchups")
     team_key_tuples = []
-    for value in matchups_dict.values():
-        if not isinstance(value, dict):
+    for matchup in matchups.values():
+        if not isinstance(matchup, dict):
             continue
-        teams_dict = value["matchup"]["0"]["teams"]
-        team_key_tuples.append(
-            (get_team_key(teams_dict["0"]), get_team_key(teams_dict["1"]))
-        )
+        teams = get(matchup, "matchup.0.teams")
+        team_1, team_2 = at(teams, "0", "1")
+        team_key_tuples.append((get_team_key(team_1), get_team_key(team_2)))
     return team_key_tuples
+
+
+if __name__ == "__main__":
+    matchups = get_matchups(2)
+    print(matchups)
