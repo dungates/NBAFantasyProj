@@ -1,4 +1,5 @@
-from pydash.collections import at
+from datetime import datetime
+from pydash.collections import at, order_by
 from pydash.objects import get
 from yahoo_fantasy_api import game, league, team
 from yahoo_oauth import OAuth2
@@ -16,10 +17,21 @@ def get_current_league():
     return current_league
 
 
-def get_positions():
+def get_current_season():
+    today = datetime.today()
+    return today.year - 1 if today.month < 9 else today.year
+
+
+def get_player_stats(id, year):
     current_league = get_current_league()
-    positions = current_league.positions()
-    return list(positions.keys())
+    return current_league.player_stats([id], "season", None, year)
+
+
+def get_stat_categories():
+    current_league = get_current_league()
+    print(current_league)
+    stat_categories = current_league.stat_categories()
+    return stat_categories
 
 
 def get_free_agents():
@@ -51,5 +63,7 @@ def get_matchups(week):
 
 
 if __name__ == "__main__":
-    matchups = get_matchups(2)
-    print(matchups)
+    players = get_free_agents()
+    sorted_players = order_by(players, ["percent_owned"], [False])
+    for player in sorted_players:
+        print(str(player["percent_owned"]) + "\t" + player["name"])
