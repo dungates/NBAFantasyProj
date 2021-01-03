@@ -19,12 +19,7 @@ def get_current_league():
 
 def get_current_season():
     today = datetime.today()
-    return today.year - 1 if today.month < 9 else today.year
-
-
-def get_player_stats(id, year):
-    current_league = get_current_league()
-    return current_league.player_stats([id], "season", None, year)
+    return today.year if today.month < 9 else today.year + 1
 
 
 def get_stat_categories():
