@@ -40,4 +40,4 @@ def inject_fantasy_points(player_season_list):
 
 def write_json(data, filename):
     with open("Data/" + filename + ".json", "w") as json_file:
-        json.dump(data, json_file)
+        json.dump(data, json_file, indent=2)
