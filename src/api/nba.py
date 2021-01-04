@@ -1,4 +1,10 @@
 from nba_api.stats.endpoints import leaguedashplayerstats
+from .yahoo import get_current_season
+
+
+def get_current_season_full():
+    current_season = get_current_season()
+    return str(current_season - 1) + "-" + str(current_season)[-2:]
 
 
 def get_player_season_stats(end_season, num_seasons):

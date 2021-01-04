@@ -35,6 +35,7 @@ def get_weighted_average(player_season_list):
 
 def inject_fantasy_points(player_season_list):
     for player_season in player_season_list:
+        del player_season["NBA_FANTASY_PTS"]
         player_season["FP"] = get_fantasy_points(player_season)
 
 
