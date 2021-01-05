@@ -12,9 +12,6 @@ if __name__ == "__main__":
     # Fetch player season data for last 20 seasons
     results = get_player_season_stats(current_season - 1, 20)
 
-    # Order results by player age
-    order_by(results, "AGE")
-
     # Group data by player
     grouped_data = group_by(results, "PLAYER_ID")
 
