@@ -1,7 +1,11 @@
 import json
 from nba_api.stats.library.parameters import Season, SeasonYear, SeasonID
 from pydash.collections import order_by
-from api.nba import get_current_season, get_player_season_stats
+from api.nba import (
+    get_current_season,
+    get_current_season_stats,
+    get_past_season_stats,
+)
 from constants import SEASON_WEIGHTS
 from utils import get_weighted_average, inject_fantasy_points, write_json
 
@@ -26,7 +30,7 @@ def main():
     current_season = get_current_season()
     print(current_season)
 
-    season_stats = get_player_season_stats(current_season, 1)
+    season_stats = get_past_season_stats(current_season, 1)
 
     inject_fantasy_points(season_stats)
 
@@ -47,4 +51,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    stats = get_current_season_stats("week")
+    write_json(stats, "testlmao")

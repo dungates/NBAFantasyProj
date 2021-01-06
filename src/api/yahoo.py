@@ -53,6 +53,6 @@ def get_matchups(week):
 
 if __name__ == "__main__":
     players = get_free_agents()
-    sorted_players = order_by(players, ["percent_owned"], [False])
+    sorted_players = order_by(players, ["-percent_owned"])
     for player in sorted_players:
         print(str(player["percent_owned"]) + "\t" + player["name"])
