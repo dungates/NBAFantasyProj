@@ -1,7 +1,6 @@
 import json
 from pydash.collections import group_by, order_by
-from api.nba import get_player_season_stats
-from api.yahoo import get_current_season
+from api.nba import get_current_season, get_player_season_stats
 from utils import write_json
 
 

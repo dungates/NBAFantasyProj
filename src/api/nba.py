@@ -1,5 +1,10 @@
+from datetime import datetime
 from nba_api.stats.endpoints import leaguedashplayerstats
-from .yahoo import get_current_season
+
+
+def get_current_season():
+    today = datetime.today()
+    return today.year if today.month < 9 else today.year + 1
 
 
 def get_current_season_full():

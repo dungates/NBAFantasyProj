@@ -1,4 +1,3 @@
-from datetime import datetime
 from pydash.collections import at, order_by
 from pydash.objects import get
 from yahoo_fantasy_api import game, league, team
@@ -15,11 +14,6 @@ def get_current_league():
     league_id = league_ids[len(league_ids) - 1]
     current_league = league.League(oauth, league_id)
     return current_league
-
-
-def get_current_season():
-    today = datetime.today()
-    return today.year if today.month < 9 else today.year + 1
 
 
 def get_stat_categories():

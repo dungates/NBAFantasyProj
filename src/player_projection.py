@@ -1,7 +1,9 @@
 import json
 from nba_api.stats.library.parameters import Season, SeasonYear, SeasonID
+from pydash.collections import order_by
+from api.nba import get_current_season, get_player_season_stats
 from constants import SEASON_WEIGHTS
-from utils import get_weighted_average, inject_fantasy_points
+from utils import get_weighted_average, inject_fantasy_points, write_json
 
 
 num_past_seasons = len(SEASON_WEIGHTS)
@@ -20,26 +22,28 @@ def print_season(age, fantasy_ppg, games_played):
     print(str(age) + "\t" + str(round(fantasy_ppg, 4)) + "\t" + str(games_played))
 
 
-# TODO: REFACTOR THIS FUCKING MESS!!!!
 def main():
-    player_name = input("Player Name: ")
-    player_season_list = get_player_stats(player_name)
-    if not player_season_list:
-        print("Player not found!")
-        return
+    current_season = get_current_season()
+    print(current_season)
 
-    inject_fantasy_points(player_season_list)
+    season_stats = get_player_season_stats(current_season, 1)
 
-    print("Age" + "\t" + "FP/G" + "\t" + "GP")
-    for player_season in player_season_list:
-        fantasy_ppg = player_season["FP"] / player_season["GP"]
-        print_season(player_season["AGE"], fantasy_ppg, player_season["GP"])
+    inject_fantasy_points(season_stats)
 
-    past_seasons = player_season_list[-num_past_seasons:]
-    past_seasons.reverse()
+    order_by(season_stats, ["-FP"])
 
-    weighted_average = get_weighted_average(past_seasons)
-    print("\nProjected FP/G for next season: " + str(weighted_average))
+    write_json(season_stats, "currentSeasonStats")
+
+    # print("Age" + "\t" + "FP/G" + "\t" + "GP")
+    # for player_season in player_season_list:
+    #     fantasy_ppg = player_season["FP"] / player_season["GP"]
+    #     print_season(player_season["AGE"], fantasy_ppg, player_season["GP"])
+
+    # past_seasons = player_season_list[-num_past_seasons:]
+    # past_seasons.reverse()
+
+    # weighted_average = get_weighted_average(past_seasons)
+    # print("\nProjected FP/G for next season: " + str(weighted_average))
 
 
 if __name__ == "__main__":
