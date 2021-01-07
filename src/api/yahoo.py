@@ -16,6 +16,11 @@ def get_current_league():
     return current_league
 
 
+def get_current_week():
+    current_league = get_current_league()
+    return current_league.current_week()
+
+
 def get_stat_categories():
     current_league = get_current_league()
     print(current_league)
@@ -37,7 +42,7 @@ def get_team_key(team):
     return None
 
 
-def get_matchups(week):
+def get_matchups(week=None):
     current_league = get_current_league()
     current_matchups = current_league.matchups(week)
     matchups = get(current_matchups, "fantasy_content.league.1.scoreboard.0.matchups")
@@ -51,8 +56,6 @@ def get_matchups(week):
     return team_key_tuples
 
 
-if __name__ == "__main__":
-    players = get_free_agents()
-    sorted_players = order_by(players, ["-percent_owned"])
-    for player in sorted_players:
-        print(str(player["percent_owned"]) + "\t" + player["name"])
+def get_roster(team_key=None):
+    current_team = team.Team(oauth, team_key)
+    return current_team.roster()

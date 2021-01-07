@@ -6,6 +6,7 @@ from api.nba import (
     get_current_season_stats,
     get_past_season_stats,
 )
+from api.yahoo import get_current_week, get_matchups, get_roster
 from constants import SEASON_WEIGHTS
 from utils import get_weighted_average, inject_fantasy_points, write_json
 
@@ -27,29 +28,18 @@ def print_season(age, fantasy_ppg, games_played):
 
 
 def main():
-    current_season = get_current_season()
-    print(current_season)
+    current_week = get_current_week()
+    print("Week: " + str(current_week))
 
-    season_stats = get_past_season_stats(current_season, 1)
-
+    print("Fetching current season stats...")
+    season_stats = get_current_season_stats("season")
     inject_fantasy_points(season_stats)
 
-    order_by(season_stats, ["-FP"])
-
-    write_json(season_stats, "currentSeasonStats")
-
-    # print("Age" + "\t" + "FP/G" + "\t" + "GP")
-    # for player_season in player_season_list:
-    #     fantasy_ppg = player_season["FP"] / player_season["GP"]
-    #     print_season(player_season["AGE"], fantasy_ppg, player_season["GP"])
-
-    # past_seasons = player_season_list[-num_past_seasons:]
-    # past_seasons.reverse()
-
-    # weighted_average = get_weighted_average(past_seasons)
-    # print("\nProjected FP/G for next season: " + str(weighted_average))
+    current_matchups = get_matchups()
+    for matchup in current_matchups:
+        team1, team2 = matchup
+        print(team1 + " vs " + team2)
 
 
 if __name__ == "__main__":
-    stats = get_current_season_stats("week")
-    write_json(stats, "testlmao")
+    main()
