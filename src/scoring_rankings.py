@@ -72,7 +72,7 @@ def print_stats(player_seasons_by_scoring_rtg):
     # Initialize rank counter
     rank = 1
     print(
-        "Rk. Player Name\t\tTeam\t\tScoring Rating\t\tGP\tMPG\tPPG\tFG%/3P%/FT%\tTSA/G"
+        "Rk. Player Name\t\t\t\tTeam\t\tScoring Rating\t\tGP\tMPG\tPPG\tFG%/3P%/FT%\tTSA/G"
     )
 
     # Iterate over list of player stats
@@ -83,13 +83,12 @@ def print_stats(player_seasons_by_scoring_rtg):
 
         # Print scoring stats
         print(
-            str(rank)
-            + ". "
-            + player_season["PLAYER_NAME"]
+            (str(rank) + ". ").ljust(4)
+            + player_season["PLAYER_NAME"].ljust(24)
             + "\t\t"
             + player_season["TEAM_ABBREVIATION"]
             + "\t\t"
-            + str(round(player_season["SCORING_RATING"], 8))
+            + str(round(player_season["SCORING_RATING"], 8)).ljust(11)
             + "\t\t"
             + str(player_season["GP"])
             + "\t"
