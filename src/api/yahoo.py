@@ -34,12 +34,14 @@ def get_free_agents():
     return players
 
 
-def get_team_key(team):
-    team_data = get(team, "team.0")
-    for line in team_data:
+def get_team_data(team):
+    team_data = {}
+    for line in get(team, "team.0"):
         if "team_key" in line:
-            return get(line, "team_key")
-    return None
+            team_data["team_key"] = get(line, "team_key")
+        elif "name" in line:
+            team_data["name"] = get(line, "name")
+    return team_data
 
 
 def get_matchups(week=None):
@@ -52,7 +54,7 @@ def get_matchups(week=None):
             continue
         teams = get(matchup, "matchup.0.teams")
         team_1, team_2 = at(teams, "0", "1")
-        team_key_tuples.append((get_team_key(team_1), get_team_key(team_2)))
+        team_key_tuples.append((get_team_data(team_1), get_team_data(team_2)))
     return team_key_tuples
 
 

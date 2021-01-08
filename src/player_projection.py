@@ -34,11 +34,13 @@ def main():
     print("Fetching current season stats...")
     season_stats = get_current_season_stats("season")
     inject_fantasy_points(season_stats)
+    print("Done")
 
+    print("Fetching fantasy matchups for current week...")
     current_matchups = get_matchups()
     for matchup in current_matchups:
         team1, team2 = matchup
-        print(team1 + " vs " + team2)
+        print(team1["name"] + " vs " + team2["name"])
 
 
 if __name__ == "__main__":
