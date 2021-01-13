@@ -1,4 +1,4 @@
-from pydash.collections import at, order_by
+from pydash.collections import at
 from pydash.objects import get
 from yahoo_fantasy_api import game, league, team
 from yahoo_oauth import OAuth2

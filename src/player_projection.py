@@ -8,7 +8,7 @@ from api.nba import (
 )
 from api.yahoo import get_current_week, get_matchups, get_roster
 from constants import SEASON_WEIGHTS
-from utils import get_weighted_average, inject_fantasy_points, write_json
+from utils import calc_fantasy_points, write_json
 
 
 num_past_seasons = len(SEASON_WEIGHTS)
@@ -19,6 +19,17 @@ def print_roster(roster, name):
     for player in roster:
         print(player["selected_position"] + "\t" + player["name"])
     print("\n")
+
+
+def calc_player_projection(player_stats_list):
+    total = 0
+    divisor = 0
+    for player_stats in player_stats_list:
+        total_fantasy_points = calc_fantasy_points(player_stats["stats"])
+        average_fantasy_points = total_fantasy_points / player_stats["stats"]["GP"]
+        total += player_stats["weight"] * average_fantasy_points
+        divisor += player_stats["weight"]
+    return total / divisor
 
 
 def get_player_projections():
@@ -35,16 +46,20 @@ def get_player_projections():
     for player_id, player_season_stats in season_stats.items():
         player_name = player_season_stats["PLAYER_NAME"]
 
-        stats = []
-        stats.append({"weight": 1, "stats": player_season_stats})
+        player_stats_list = []
+        player_stats_list.append({"weight": 1, "stats": player_season_stats})
 
         if player_id in month_stats.keys():
-            stats.append({"weight": 1, "stats": month_stats[player_id]})
+            player_stats_list.append({"weight": 1, "stats": month_stats[player_id]})
 
         if player_id in week_stats.keys():
-            stats.append({"weight": 1, "stats": week_stats[player_id]})
+            player_stats_list.append({"weight": 1, "stats": week_stats[player_id]})
 
-        player_projections[player_name] = stats
+        fantasy_points_projection = calc_player_projection(player_stats_list)
+        player_projections[player_name] = {
+            "PLAYER_NAME": player_name,
+            "FANTASY_POINTS_PROJECTION": fantasy_points_projection,
+        }
 
     return player_projections
 
@@ -54,6 +69,10 @@ def main():
     print("Week: " + str(current_week))
 
     player_projections = get_player_projections()
+    write_json(
+        order_by(player_projections.values(), ["-FANTASY_POINTS_PROJECTION"]),
+        "playerProjections",
+    )
 
     print("Fetching fantasy matchups for current week...")
     current_matchups = get_matchups()
