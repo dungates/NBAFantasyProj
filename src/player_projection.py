@@ -59,6 +59,7 @@ def get_player_projections():
         player_projections[player_name] = {
             "PLAYER_NAME": player_name,
             "FANTASY_POINTS_PROJECTION": fantasy_points_projection,
+            "GP": player_season_stats["GP"],
         }
 
     return player_projections
