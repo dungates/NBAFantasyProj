@@ -1,6 +1,6 @@
 from pydash.collections import order_by
 from api.nba import get_current_season_stats
-from api.yahoo import get_matchups, get_roster
+from api.yahoo import get_free_agents, get_matchups, get_roster
 from utils import calc_fantasy_points, write_json
 
 
@@ -70,12 +70,33 @@ def get_player_projections():
     return player_projections
 
 
+def inject_fantasy_points_projections(free_agents, player_projections):
+    for free_agent in free_agents:
+        fantasy_points = 0
+        games_played = 0
+        player_name = free_agent["name"]
+        if player_name in player_projections.keys():
+            fantasy_points = player_projections[player_name][
+                "FANTASY_POINTS_PROJECTION"
+            ]
+            games_played = player_projections[player_name]["GP"]
+        free_agent["projected_fantasy_points"] = fantasy_points
+        free_agent["games_played"] = games_played
+
+
 def main():
     player_projections = get_player_projections()
     write_json(
         order_by(player_projections.values(), ["-FANTASY_POINTS_PROJECTION"]),
         "playerProjections",
     )
+    print("Done\n")
+
+    print("Fetching current free agents...")
+    free_agents = get_free_agents()
+    inject_fantasy_points_projections(free_agents, player_projections)
+    write_json(order_by(free_agents, ["-projected_fantasy_points"]), "freeAgents")
+    print("Done\n")
 
     print("Fetching fantasy matchups for current week...")
     current_matchups = get_matchups()
