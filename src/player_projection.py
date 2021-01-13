@@ -14,19 +14,6 @@ from utils import get_weighted_average, inject_fantasy_points, write_json
 num_past_seasons = len(SEASON_WEIGHTS)
 
 
-def get_player_stats(name):
-    with open("Data/seasonTotalsByPlayer.json") as json_file:
-        data = json.load(json_file)
-        for player_season_list in data.values():
-            if player_season_list[0]["PLAYER_NAME"].lower() == name.lower():
-                return player_season_list
-    return None
-
-
-def print_season(age, fantasy_ppg, games_played):
-    print(str(age) + "\t" + str(round(fantasy_ppg, 4)) + "\t" + str(games_played))
-
-
 def print_roster(roster, name):
     print("\n" + name)
     for player in roster:
@@ -34,14 +21,39 @@ def print_roster(roster, name):
     print("\n")
 
 
+def get_player_projections():
+    print("Fetching current season stats...")
+    season_stats = get_current_season_stats("season")
+
+    print("Fetching past month stats...")
+    month_stats = get_current_season_stats("month")
+
+    print("Fetching past week stats...")
+    week_stats = get_current_season_stats("week")
+
+    player_projections = {}
+    for player_id, player_season_stats in season_stats.items():
+        player_name = player_season_stats["PLAYER_NAME"]
+
+        stats = []
+        stats.append({"weight": 1, "stats": player_season_stats})
+
+        if player_id in month_stats.keys():
+            stats.append({"weight": 1, "stats": month_stats[player_id]})
+
+        if player_id in week_stats.keys():
+            stats.append({"weight": 1, "stats": week_stats[player_id]})
+
+        player_projections[player_name] = stats
+
+    return player_projections
+
+
 def main():
     current_week = get_current_week()
     print("Week: " + str(current_week))
 
-    print("Fetching current season stats...")
-    season_stats = get_current_season_stats("season")
-    inject_fantasy_points(season_stats)
-    print("Done")
+    player_projections = get_player_projections()
 
     print("Fetching fantasy matchups for current week...")
     current_matchups = get_matchups()
