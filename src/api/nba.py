@@ -1,5 +1,4 @@
 from datetime import datetime, timedelta
-from pydash.collections import group_by
 from nba_api.stats.endpoints import leaguedashplayerstats
 
 
@@ -18,16 +17,16 @@ def get_current_season_full():
 
 
 def parse_player_stats(player_stats):
-    normalized_player_stats = group_by(
-        player_stats.get_normalized_dict()["LeagueDashPlayerStats"], "PLAYER_ID"
-    )
+    normalized_player_stats = player_stats.get_normalized_dict()[
+        "LeagueDashPlayerStats"
+    ]
     results = {}
-    for player_id, player_season in normalized_player_stats.items():
+    for player_season in normalized_player_stats:
         new_player_season = {}
-        for key, value in player_season[0].items():
+        for key, value in player_season.items():
             if "_RANK" not in key:
                 new_player_season[key] = value
-        results[player_id] = new_player_season
+        results[player_season["PLAYER_ID"]] = new_player_season
     return results
 
 

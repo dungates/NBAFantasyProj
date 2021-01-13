@@ -1,5 +1,5 @@
-from constants import SEASON_WEIGHTS, STAT_COEFFS
 import json
+from constants import STAT_COEFFS
 
 
 def calc_fantasy_points(player_season):

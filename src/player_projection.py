@@ -1,17 +1,7 @@
-import json
-from nba_api.stats.library.parameters import Season, SeasonYear, SeasonID
 from pydash.collections import order_by
-from api.nba import (
-    get_current_season,
-    get_current_season_stats,
-    get_past_season_stats,
-)
-from api.yahoo import get_current_week, get_matchups, get_roster
-from constants import SEASON_WEIGHTS
+from api.nba import get_current_season_stats
+from api.yahoo import get_matchups, get_roster
 from utils import calc_fantasy_points, write_json
-
-
-num_past_seasons = len(SEASON_WEIGHTS)
 
 
 def print_roster(roster, name, player_projections):
