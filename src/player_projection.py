@@ -14,10 +14,25 @@ from utils import calc_fantasy_points, write_json
 num_past_seasons = len(SEASON_WEIGHTS)
 
 
-def print_roster(roster, name):
+def print_roster(roster, name, player_projections):
     print("\n" + name)
     for player in roster:
-        print(player["selected_position"] + "\t" + player["name"])
+        fantasy_points_projection = "N/A"
+        games_played = 0
+        if player["name"] in player_projections.keys():
+            fantasy_points_projection = str(
+                player_projections[player["name"]]["FANTASY_POINTS_PROJECTION"]
+            )
+            games_played = player_projections[player["name"]]["GP"]
+        print(
+            player["selected_position"]
+            + "\t"
+            + player["name"].ljust(24)
+            + "\t"
+            + str(games_played)
+            + "\t"
+            + fantasy_points_projection
+        )
     print("\n")
 
 
@@ -66,9 +81,6 @@ def get_player_projections():
 
 
 def main():
-    current_week = get_current_week()
-    print("Week: " + str(current_week))
-
     player_projections = get_player_projections()
     write_json(
         order_by(player_projections.values(), ["-FANTASY_POINTS_PROJECTION"]),
@@ -86,8 +98,8 @@ def main():
         print("Fetching roster for " + team2["name"] + "...")
         roster2 = get_roster(team2["team_key"])
 
-        print_roster(roster1, team1["name"])
-        print_roster(roster2, team2["name"])
+        print_roster(roster1, team1["name"], player_projections)
+        print_roster(roster2, team2["name"], player_projections)
 
 
 if __name__ == "__main__":
