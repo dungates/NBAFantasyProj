@@ -117,7 +117,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 64,
+    "percent_owned": 63,
     "projected_fantasy_points": 26.844444444444445,
     "games_played": 12
   },
@@ -315,6 +315,7 @@
   {
     "player_id": 4682,
     "name": "Garrett Temple",
+    "status": "GTD",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -323,7 +324,6 @@
       "Util"
     ],
     "percent_owned": 5,
-    "status": "",
     "projected_fantasy_points": 23.405555555555555,
     "games_played": 12
   },
@@ -510,6 +510,22 @@
     "games_played": 6
   },
   {
+    "player_id": 6056,
+    "name": "Hamidou Diallo",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 24,
+    "status": "",
+    "projected_fantasy_points": 22.255555555555556,
+    "games_played": 12
+  },
+  {
     "player_id": 5843,
     "name": "Josh Hart",
     "position_type": "P",
@@ -617,6 +633,7 @@
   {
     "player_id": 6396,
     "name": "Patrick Williams",
+    "status": "GTD",
     "position_type": "P",
     "eligible_positions": [
       "SF",
@@ -624,7 +641,6 @@
       "Util"
     ],
     "percent_owned": 22,
-    "status": "",
     "projected_fantasy_points": 21.573076923076922,
     "games_played": 13
   },
@@ -943,22 +959,6 @@
     "status": "",
     "projected_fantasy_points": 19.94920634920635,
     "games_played": 7
-  },
-  {
-    "player_id": 6048,
-    "name": "Gary Trent Jr.",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 22,
-    "status": "",
-    "projected_fantasy_points": 19.856060606060606,
-    "games_played": 11
   },
   {
     "player_id": 4610,
