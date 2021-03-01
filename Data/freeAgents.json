@@ -1,20 +1,5 @@
 [
   {
-    "player_id": 5482,
-    "name": "Bobby Portis",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 58,
-    "status": "",
-    "projected_fantasy_points": 28.375816993464053,
-    "games_played": 34
-  },
-  {
     "player_id": 5855,
     "name": "Thomas Bryant",
     "status": "INJ",
@@ -47,22 +32,6 @@
     "games_played": 8
   },
   {
-    "player_id": 5194,
-    "name": "Tim Hardaway Jr.",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 64,
-    "status": "",
-    "projected_fantasy_points": 27.688172043010752,
-    "games_played": 31
-  },
-  {
     "player_id": 5142,
     "name": "Justin Holiday",
     "position_type": "P",
@@ -73,7 +42,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 53,
+    "percent_owned": 54,
     "status": "",
     "projected_fantasy_points": 27.443700396825395,
     "games_played": 32
@@ -88,7 +57,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 45,
+    "percent_owned": 46,
     "status": "",
     "projected_fantasy_points": 27.337254901960787,
     "games_played": 34
@@ -152,7 +121,7 @@
       "IL",
       "IL+"
     ],
-    "percent_owned": 35,
+    "percent_owned": 34,
     "projected_fantasy_points": 26.285897435897436,
     "games_played": 32
   },
@@ -167,10 +136,25 @@
       "F",
       "Util"
     ],
-    "percent_owned": 70,
+    "percent_owned": 69,
     "status": "",
     "projected_fantasy_points": 25.584681372549017,
     "games_played": 34
+  },
+  {
+    "player_id": 6209,
+    "name": "Brandon Clarke",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 71,
+    "status": "",
+    "projected_fantasy_points": 25.242,
+    "games_played": 25
   },
   {
     "player_id": 6053,
@@ -181,7 +165,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 17,
+    "percent_owned": 18,
     "status": "",
     "projected_fantasy_points": 25.21046594982079,
     "games_played": 31
@@ -196,7 +180,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 52,
+    "percent_owned": 53,
     "status": "",
     "projected_fantasy_points": 25.173636363636366,
     "games_played": 33
@@ -241,7 +225,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 33,
+    "percent_owned": 34,
     "status": "",
     "projected_fantasy_points": 24.674754901960785,
     "games_played": 34
@@ -255,7 +239,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 19,
+    "percent_owned": 20,
     "status": "",
     "projected_fantasy_points": 24.433717948717952,
     "games_played": 13
@@ -285,7 +269,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 26,
+    "percent_owned": 25,
     "status": "",
     "projected_fantasy_points": 24.35328282828283,
     "games_played": 33
@@ -306,6 +290,21 @@
     "games_played": 31
   },
   {
+    "player_id": 6171,
+    "name": "Rui Hachimura",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 62,
+    "status": "",
+    "projected_fantasy_points": 24.269037037037037,
+    "games_played": 25
+  },
+  {
     "player_id": 4651,
     "name": "Danny Green",
     "position_type": "P",
@@ -316,7 +315,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 25,
+    "percent_owned": 26,
     "status": "",
     "projected_fantasy_points": 24.117450980392153,
     "games_played": 34
@@ -331,7 +330,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 15,
+    "percent_owned": 16,
     "status": "",
     "projected_fantasy_points": 24.068204365079367,
     "games_played": 32
@@ -374,7 +373,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 60,
+    "percent_owned": 58,
     "status": "",
     "projected_fantasy_points": 23.75378787878788,
     "games_played": 22
@@ -419,7 +418,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 38,
+    "percent_owned": 37,
     "status": "",
     "projected_fantasy_points": 23.486987522281638,
     "games_played": 33
@@ -449,7 +448,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 14,
+    "percent_owned": 15,
     "status": "",
     "projected_fantasy_points": 23.329487179487185,
     "games_played": 26
@@ -482,7 +481,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 30,
+    "percent_owned": 29,
     "status": "",
     "projected_fantasy_points": 23.059659090909093,
     "games_played": 33
@@ -498,7 +497,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 24,
+    "percent_owned": 23,
     "status": "",
     "projected_fantasy_points": 23.03269927536232,
     "games_played": 23
@@ -512,7 +511,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 27,
+    "percent_owned": 26,
     "status": "",
     "projected_fantasy_points": 22.935349462365593,
     "games_played": 31
@@ -543,7 +542,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 39,
+    "percent_owned": 40,
     "status": "",
     "projected_fantasy_points": 22.897222222222226,
     "games_played": 30
@@ -558,7 +557,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 9,
+    "percent_owned": 8,
     "status": "",
     "projected_fantasy_points": 22.88611111111111,
     "games_played": 15
@@ -590,7 +589,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 58,
+    "percent_owned": 59,
     "status": "",
     "projected_fantasy_points": 22.76610644257703,
     "games_played": 28
@@ -606,7 +605,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 10,
+    "percent_owned": 9,
     "status": "",
     "projected_fantasy_points": 22.748015873015873,
     "games_played": 28
@@ -640,7 +639,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 12,
+    "percent_owned": 11,
     "status": "",
     "projected_fantasy_points": 22.385555555555555,
     "games_played": 15
@@ -671,7 +670,7 @@
       "Util",
       "IL+"
     ],
-    "percent_owned": 14,
+    "percent_owned": 13,
     "projected_fantasy_points": 22.295858585858582,
     "games_played": 33
   },
@@ -685,7 +684,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 29,
+    "percent_owned": 28,
     "status": "",
     "projected_fantasy_points": 22.29381313131313,
     "games_played": 33
@@ -701,7 +700,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 10,
+    "percent_owned": 15,
     "status": "",
     "projected_fantasy_points": 22.27013888888889,
     "games_played": 29
@@ -715,7 +714,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 21,
+    "percent_owned": 22,
     "status": "",
     "projected_fantasy_points": 22.258725182863117,
     "games_played": 29
@@ -748,7 +747,7 @@
       "Util",
       "IL+"
     ],
-    "percent_owned": 31,
+    "percent_owned": 29,
     "projected_fantasy_points": 21.983834586466163,
     "games_played": 19
   },
@@ -762,7 +761,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 31,
+    "percent_owned": 29,
     "status": "",
     "projected_fantasy_points": 21.890268700072625,
     "games_played": 27
@@ -777,7 +776,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 12,
+    "percent_owned": 13,
     "status": "",
     "projected_fantasy_points": 21.797101449275363,
     "games_played": 23
@@ -790,7 +789,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 41,
+    "percent_owned": 39,
     "status": "",
     "projected_fantasy_points": 21.45277777777778,
     "games_played": 36
@@ -805,7 +804,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 37,
+    "percent_owned": 36,
     "status": "",
     "projected_fantasy_points": 20.989401709401708,
     "games_played": 30
@@ -823,7 +822,7 @@
       "Util",
       "IL+"
     ],
-    "percent_owned": 17,
+    "percent_owned": 16,
     "projected_fantasy_points": 20.930555555555554,
     "games_played": 32
   },
@@ -836,7 +835,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 10,
+    "percent_owned": 13,
     "status": "",
     "projected_fantasy_points": 20.816666666666666,
     "games_played": 4
@@ -883,7 +882,7 @@
       "Util",
       "IL+"
     ],
-    "percent_owned": 16,
+    "percent_owned": 15,
     "projected_fantasy_points": 20.365268065268065,
     "games_played": 33
   },
@@ -1037,7 +1036,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 8,
+    "percent_owned": 11,
     "status": "",
     "projected_fantasy_points": 19.520987654320987,
     "games_played": 27
@@ -1102,7 +1101,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 13,
+    "percent_owned": 12,
     "status": "",
     "projected_fantasy_points": 19.110769230769233,
     "games_played": 26
@@ -1148,7 +1147,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 8,
+    "percent_owned": 7,
     "status": "",
     "projected_fantasy_points": 18.9815770609319,
     "games_played": 31
@@ -1244,7 +1243,7 @@
       "Util",
       "IL+"
     ],
-    "percent_owned": 5,
+    "percent_owned": 4,
     "projected_fantasy_points": 18.538779095300836,
     "games_played": 23
   },
@@ -1417,7 +1416,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 3,
+    "percent_owned": 2,
     "status": "",
     "projected_fantasy_points": 17.587040133779265,
     "games_played": 23
@@ -1462,7 +1461,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 2,
+    "percent_owned": 1,
     "status": "",
     "projected_fantasy_points": 17.463461538461537,
     "games_played": 26
@@ -1477,7 +1476,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 8,
+    "percent_owned": 6,
     "status": "",
     "projected_fantasy_points": 17.38722222222222,
     "games_played": 20
@@ -1592,7 +1591,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 5,
+    "percent_owned": 4,
     "status": "",
     "projected_fantasy_points": 16.597712418300656,
     "games_played": 34
@@ -1665,7 +1664,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 20,
+    "percent_owned": 19,
     "status": "",
     "projected_fantasy_points": 16.094483294483297,
     "games_played": 26
@@ -1706,7 +1705,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 2,
     "status": "",
     "projected_fantasy_points": 15.600000000000001,
     "games_played": 4
@@ -1768,7 +1767,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 2,
+    "percent_owned": 1,
     "status": "",
     "projected_fantasy_points": 15.261071428571427,
     "games_played": 35
@@ -1799,7 +1798,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 2,
+    "percent_owned": 1,
     "status": "",
     "projected_fantasy_points": 15.211904761904762,
     "games_played": 21
@@ -1829,7 +1828,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 2,
     "status": "",
     "projected_fantasy_points": 15.167261904761906,
     "games_played": 16
@@ -2069,7 +2068,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 2,
+    "percent_owned": 1,
     "status": "",
     "projected_fantasy_points": 14.04788888888889,
     "games_played": 25
@@ -2129,7 +2128,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 2,
+    "percent_owned": 1,
     "status": "",
     "projected_fantasy_points": 13.85676883780332,
     "games_played": 29
@@ -2295,7 +2294,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 7,
+    "percent_owned": 6,
     "status": "",
     "projected_fantasy_points": 12.858473389355742,
     "games_played": 28
@@ -2445,7 +2444,7 @@
       "G",
       "Util"
     ],
-    "percent_owned": 2,
+    "percent_owned": 1,
     "status": "",
     "projected_fantasy_points": 12.288725490196077,
     "games_played": 34
@@ -2943,7 +2942,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 0,
     "status": "",
     "projected_fantasy_points": 9.695333333333332,
     "games_played": 25
@@ -3266,7 +3265,7 @@
       "IL",
       "IL+"
     ],
-    "percent_owned": 1,
+    "percent_owned": 0,
     "projected_fantasy_points": 8.35,
     "games_played": 2
   },
@@ -4928,7 +4927,7 @@
       "C",
       "Util"
     ],
-    "percent_owned": 40,
+    "percent_owned": 42,
     "status": "",
     "projected_fantasy_points": 0,
     "games_played": 0
