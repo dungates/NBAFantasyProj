@@ -12,29 +12,63 @@
       "IL",
       "IL+"
     ],
-    "percent_owned": 37,
-    "projected_fantasy_points": 33.71857142857143,
+    "percent_owned": 35,
+    "projected_fantasy_points": 35.22857142857143,
     "games_played": 28
   },
   {
-    "player_id": 6205,
-    "name": "Nickeil Alexander-Walker",
+    "player_id": 5843,
+    "name": "Josh Hart",
+    "status": "INJ",
     "position_type": "P",
     "eligible_positions": [
       "SG",
       "G",
       "SF",
       "F",
-      "Util"
+      "Util",
+      "IL",
+      "IL+"
     ],
-    "percent_owned": 43,
-    "status": "",
-    "projected_fantasy_points": 31.086538461538463,
-    "games_played": 39
+    "percent_owned": 28,
+    "projected_fantasy_points": 32.47662798194713,
+    "games_played": 47
   },
   {
-    "player_id": 4893,
-    "name": "Alec Burks",
+    "player_id": 5162,
+    "name": "Michael Carter-Williams",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 9,
+    "projected_fantasy_points": 30.57934472934473,
+    "games_played": 26
+  },
+  {
+    "player_id": 4468,
+    "name": "Danilo Gallinari",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 64,
+    "status": "",
+    "projected_fantasy_points": 30.406283206283206,
+    "games_played": 37
+  },
+  {
+    "player_id": 5074,
+    "name": "Will Barton",
     "position_type": "P",
     "eligible_positions": [
       "SG",
@@ -43,10 +77,25 @@
       "F",
       "Util"
     ],
-    "percent_owned": 45,
+    "percent_owned": 52,
     "status": "",
-    "projected_fantasy_points": 28.97229344729345,
-    "games_played": 36
+    "projected_fantasy_points": 30.150204384986992,
+    "games_played": 46
+  },
+  {
+    "player_id": 4621,
+    "name": "James Johnson",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 18,
+    "status": "",
+    "projected_fantasy_points": 29.28569444444444,
+    "games_played": 32
   },
   {
     "player_id": 4136,
@@ -58,26 +107,25 @@
       "F",
       "Util"
     ],
-    "percent_owned": 15,
+    "percent_owned": 20,
     "status": "",
-    "projected_fantasy_points": 28.491666666666664,
-    "games_played": 39
+    "projected_fantasy_points": 28.225595238095238,
+    "games_played": 40
   },
   {
-    "player_id": 6073,
-    "name": "Duncan Robinson",
+    "player_id": 5068,
+    "name": "Jae Crowder",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
-      "G",
       "SF",
+      "PF",
       "F",
       "Util"
     ],
-    "percent_owned": 66,
+    "percent_owned": 40,
     "status": "",
-    "projected_fantasy_points": 28.23626984126984,
-    "games_played": 49
+    "projected_fantasy_points": 28.08074074074074,
+    "games_played": 45
   },
   {
     "player_id": 5855,
@@ -93,6 +141,23 @@
     "percent_owned": 27,
     "projected_fantasy_points": 28.07,
     "games_played": 10
+  },
+  {
+    "player_id": 6205,
+    "name": "Nickeil Alexander-Walker",
+    "status": "GTD",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 37,
+    "projected_fantasy_points": 28.034756097560976,
+    "games_played": 41
   },
   {
     "player_id": 5763,
@@ -112,17 +177,35 @@
     "games_played": 8
   },
   {
-    "player_id": 3818,
-    "name": "Dwight Howard",
+    "player_id": 4651,
+    "name": "Danny Green",
     "position_type": "P",
     "eligible_positions": [
-      "C",
+      "SG",
+      "G",
+      "SF",
+      "F",
       "Util"
     ],
-    "percent_owned": 32,
+    "percent_owned": 49,
     "status": "",
-    "projected_fantasy_points": 27.332158119658118,
-    "games_played": 48
+    "projected_fantasy_points": 27.578904761904763,
+    "games_played": 50
+  },
+  {
+    "player_id": 6044,
+    "name": "Jalen Brunson",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 26,
+    "status": "",
+    "projected_fantasy_points": 27.20573593073593,
+    "games_played": 44
   },
   {
     "player_id": 6211,
@@ -137,24 +220,9 @@
       "IL",
       "IL+"
     ],
-    "percent_owned": 28,
-    "projected_fantasy_points": 27.15972222222222,
+    "percent_owned": 26,
+    "projected_fantasy_points": 27.069444444444443,
     "games_played": 36
-  },
-  {
-    "player_id": 5068,
-    "name": "Jae Crowder",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 38,
-    "status": "",
-    "projected_fantasy_points": 26.950324675324676,
-    "games_played": 44
   },
   {
     "player_id": 4749,
@@ -166,10 +234,25 @@
       "G",
       "Util"
     ],
-    "percent_owned": 68,
+    "percent_owned": 71,
     "status": "",
-    "projected_fantasy_points": 26.833026755852842,
-    "games_played": 46
+    "projected_fantasy_points": 27.006249999999998,
+    "games_played": 48
+  },
+  {
+    "player_id": 5066,
+    "name": "Tomas Satoransky",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 30,
+    "status": "",
+    "projected_fantasy_points": 26.878378378378375,
+    "games_played": 37
   },
   {
     "player_id": 4469,
@@ -185,54 +268,9 @@
       "IL",
       "IL+"
     ],
-    "percent_owned": 28,
+    "percent_owned": 27,
     "projected_fantasy_points": 26.822222222222223,
     "games_played": 27
-  },
-  {
-    "player_id": 4468,
-    "name": "Danilo Gallinari",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 65,
-    "status": "",
-    "projected_fantasy_points": 26.763756613756613,
-    "games_played": 36
-  },
-  {
-    "player_id": 6065,
-    "name": "Shake Milton",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 22,
-    "status": "",
-    "projected_fantasy_points": 26.74715811965812,
-    "games_played": 40
-  },
-  {
-    "player_id": 6233,
-    "name": "Isaiah Roby",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 26,
-    "status": "",
-    "projected_fantasy_points": 26.522243068584533,
-    "games_played": 41
   },
   {
     "player_id": 5480,
@@ -248,12 +286,26 @@
     ],
     "percent_owned": 46,
     "status": "",
-    "projected_fantasy_points": 26.00709401709402,
-    "games_played": 39
+    "projected_fantasy_points": 26.46930894308943,
+    "games_played": 41
   },
   {
-    "player_id": 4561,
-    "name": "Blake Griffin",
+    "player_id": 6409,
+    "name": "Aleksej Pokusevski",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 32,
+    "status": "",
+    "projected_fantasy_points": 26.35258620689655,
+    "games_played": 29
+  },
+  {
+    "player_id": 4895,
+    "name": "Marcus Morris Sr.",
     "position_type": "P",
     "eligible_positions": [
       "PF",
@@ -261,10 +313,74 @@
       "C",
       "Util"
     ],
-    "percent_owned": 50,
+    "percent_owned": 24,
     "status": "",
-    "projected_fantasy_points": 25.78266666666667,
-    "games_played": 25
+    "projected_fantasy_points": 26.15019425019425,
+    "games_played": 39
+  },
+  {
+    "player_id": 6023,
+    "name": "Miles Bridges",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 59,
+    "status": "",
+    "projected_fantasy_points": 26.145578231292518,
+    "games_played": 49
+  },
+  {
+    "player_id": 4893,
+    "name": "Alec Burks",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 39,
+    "status": "",
+    "projected_fantasy_points": 26.137179487179484,
+    "games_played": 38
+  },
+  {
+    "player_id": 6065,
+    "name": "Shake Milton",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 29,
+    "status": "",
+    "projected_fantasy_points": 26.090079365079365,
+    "games_played": 42
+  },
+  {
+    "player_id": 6254,
+    "name": "Luguentz Dort",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 16,
+    "projected_fantasy_points": 26.022764227642277,
+    "games_played": 41
   },
   {
     "player_id": 5959,
@@ -279,13 +395,13 @@
       "IL",
       "IL+"
     ],
-    "percent_owned": 58,
-    "projected_fantasy_points": 25.78081081081081,
+    "percent_owned": 56,
+    "projected_fantasy_points": 25.294144144144145,
     "games_played": 37
   },
   {
-    "player_id": 6044,
-    "name": "Jalen Brunson",
+    "player_id": 6057,
+    "name": "De'Anthony Melton",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -295,24 +411,55 @@
     ],
     "percent_owned": 16,
     "status": "",
-    "projected_fantasy_points": 25.619688644688647,
-    "games_played": 42
+    "projected_fantasy_points": 25.155396825396824,
+    "games_played": 35
   },
   {
-    "player_id": 5162,
-    "name": "Michael Carter-Williams",
-    "status": "GTD",
+    "player_id": 4561,
+    "name": "Blake Griffin",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 51,
+    "status": "",
+    "projected_fantasy_points": 24.815811965811964,
+    "games_played": 26
+  },
+  {
+    "player_id": 5766,
+    "name": "Josh Jackson",
+    "position_type": "P",
+    "eligible_positions": [
       "SG",
       "G",
-      "Util",
-      "IL+"
+      "SF",
+      "F",
+      "Util"
     ],
-    "percent_owned": 12,
-    "projected_fantasy_points": 25.207863247863248,
-    "games_played": 26
+    "percent_owned": 17,
+    "status": "",
+    "projected_fantasy_points": 24.47272727272727,
+    "games_played": 44
+  },
+  {
+    "player_id": 5142,
+    "name": "Justin Holiday",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 46,
+    "status": "",
+    "projected_fantasy_points": 24.21559829059829,
+    "games_played": 48
   },
   {
     "player_id": 5663,
@@ -324,52 +471,8 @@
     ],
     "percent_owned": 51,
     "status": "",
-    "projected_fantasy_points": 24.749619047619046,
-    "games_played": 50
-  },
-  {
-    "player_id": 6409,
-    "name": "Aleksej Pokusevski",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 20,
-    "status": "",
-    "projected_fantasy_points": 24.570617283950615,
-    "games_played": 27
-  },
-  {
-    "player_id": 6023,
-    "name": "Miles Bridges",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 48,
-    "status": "",
-    "projected_fantasy_points": 24.36174304418985,
-    "games_played": 47
-  },
-  {
-    "player_id": 4895,
-    "name": "Marcus Morris Sr.",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 24,
-    "status": "",
-    "projected_fantasy_points": 24.287028176501863,
-    "games_played": 38
+    "projected_fantasy_points": 24.19976118652589,
+    "games_played": 51
   },
   {
     "player_id": 6172,
@@ -391,6 +494,38 @@
     "games_played": 26
   },
   {
+    "player_id": 4247,
+    "name": "Jeff Green",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 14,
+    "status": "",
+    "projected_fantasy_points": 24.076532887402454,
+    "games_played": 46
+  },
+  {
+    "player_id": 6032,
+    "name": "Grayson Allen",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 7,
+    "status": "",
+    "projected_fantasy_points": 24.06574569221628,
+    "games_played": 34
+  },
+  {
     "player_id": 4911,
     "name": "Cory Joseph",
     "position_type": "P",
@@ -399,14 +534,14 @@
       "G",
       "Util"
     ],
-    "percent_owned": 7,
+    "percent_owned": 9,
     "status": "",
-    "projected_fantasy_points": 24.007120181405895,
-    "games_played": 49
+    "projected_fantasy_points": 24.063476190476194,
+    "games_played": 50
   },
   {
-    "player_id": 5066,
-    "name": "Tomas Satoransky",
+    "player_id": 6114,
+    "name": "Kendrick Nunn",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -414,29 +549,14 @@
       "G",
       "Util"
     ],
-    "percent_owned": 22,
+    "percent_owned": 17,
     "status": "",
-    "projected_fantasy_points": 23.83716727716727,
-    "games_played": 35
+    "projected_fantasy_points": 23.66578947368421,
+    "games_played": 38
   },
   {
-    "player_id": 5728,
-    "name": "Danuel House Jr.",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 10,
-    "status": "",
-    "projected_fantasy_points": 23.719868637110014,
-    "games_played": 29
-  },
-  {
-    "player_id": 4175,
-    "name": "Paul Millsap",
+    "player_id": 5482,
+    "name": "Bobby Portis",
     "position_type": "P",
     "eligible_positions": [
       "PF",
@@ -444,72 +564,56 @@
       "C",
       "Util"
     ],
-    "percent_owned": 34,
+    "percent_owned": 38,
     "status": "",
-    "projected_fantasy_points": 23.56827485380117,
-    "games_played": 38
+    "projected_fantasy_points": 23.645925925925926,
+    "games_played": 45
   },
   {
-    "player_id": 5321,
-    "name": "Elfrid Payton",
+    "player_id": 5220,
+    "name": "James Ennis III",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 6,
+    "status": "",
+    "projected_fantasy_points": 23.589730639730636,
+    "games_played": 33
+  },
+  {
+    "player_id": 5155,
+    "name": "Cody Zeller",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 12,
+    "status": "",
+    "projected_fantasy_points": 23.39,
+    "games_played": 30
+  },
+  {
+    "player_id": 4488,
+    "name": "George Hill",
+    "status": "INJ",
     "position_type": "P",
     "eligible_positions": [
       "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 28,
-    "status": "",
-    "projected_fantasy_points": 23.56202686202686,
-    "games_played": 39
-  },
-  {
-    "player_id": 3706,
-    "name": "Carmelo Anthony",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 51,
-    "status": "",
-    "projected_fantasy_points": 23.4728088336784,
-    "games_played": 46
-  },
-  {
-    "player_id": 5766,
-    "name": "Josh Jackson",
-    "position_type": "P",
-    "eligible_positions": [
       "SG",
       "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 16,
-    "status": "",
-    "projected_fantasy_points": 23.398784355179703,
-    "games_played": 43
-  },
-  {
-    "player_id": 6032,
-    "name": "Grayson Allen",
-    "status": "GTD",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
       "Util",
+      "IL",
       "IL+"
     ],
-    "percent_owned": 4,
-    "projected_fantasy_points": 23.286458333333332,
-    "games_played": 32
+    "percent_owned": 5,
+    "projected_fantasy_points": 23.342857142857145,
+    "games_played": 14
   },
   {
     "player_id": 4487,
@@ -523,8 +627,8 @@
     ],
     "percent_owned": 34,
     "status": "",
-    "projected_fantasy_points": 23.142198581560283,
-    "games_played": 47
+    "projected_fantasy_points": 23.2536858974359,
+    "games_played": 48
   },
   {
     "player_id": 5325,
@@ -539,23 +643,130 @@
       "IL",
       "IL+"
     ],
-    "percent_owned": 42,
+    "percent_owned": 40,
     "projected_fantasy_points": 23.075,
     "games_played": 4
   },
   {
-    "player_id": 6236,
-    "name": "Terance Mann",
+    "player_id": 5321,
+    "name": "Elfrid Payton",
     "position_type": "P",
     "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 29,
+    "status": "",
+    "projected_fantasy_points": 22.9354674796748,
+    "games_played": 41
+  },
+  {
+    "player_id": 5195,
+    "name": "Reggie Bullock",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
       "SF",
       "F",
       "Util"
     ],
-    "percent_owned": 11,
+    "percent_owned": 9,
     "status": "",
-    "projected_fantasy_points": 23.01968085106383,
+    "projected_fantasy_points": 22.782152924594783,
+    "games_played": 43
+  },
+  {
+    "player_id": 6233,
+    "name": "Isaiah Roby",
+    "status": "O",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 16,
+    "projected_fantasy_points": 22.75960047704234,
+    "games_played": 43
+  },
+  {
+    "player_id": 5693,
+    "name": "Dorian Finney-Smith",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 10,
+    "status": "",
+    "projected_fantasy_points": 22.74579579579579,
+    "games_played": 37
+  },
+  {
+    "player_id": 3706,
+    "name": "Carmelo Anthony",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 48,
+    "status": "",
+    "projected_fantasy_points": 22.692261904761907,
+    "games_played": 48
+  },
+  {
+    "player_id": 6396,
+    "name": "Patrick Williams",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 15,
+    "status": "",
+    "projected_fantasy_points": 22.357472137791287,
     "games_played": 47
+  },
+  {
+    "player_id": 4507,
+    "name": "Goran Dragic",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 48,
+    "status": "",
+    "projected_fantasy_points": 22.195818399044203,
+    "games_played": 31
+  },
+  {
+    "player_id": 6076,
+    "name": "Kenrich Williams",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 8,
+    "status": "",
+    "projected_fantasy_points": 22.014050235478805,
+    "games_played": 49
   },
   {
     "player_id": 5322,
@@ -569,180 +780,8 @@
     ],
     "percent_owned": 13,
     "status": "",
-    "projected_fantasy_points": 22.816919191919194,
-    "games_played": 44
-  },
-  {
-    "player_id": 4247,
-    "name": "Jeff Green",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 9,
-    "status": "",
-    "projected_fantasy_points": 22.737222222222226,
-    "games_played": 45
-  },
-  {
-    "player_id": 5853,
-    "name": "Dwayne Bacon",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 11,
-    "status": "",
-    "projected_fantasy_points": 22.725534188034185,
-    "games_played": 48
-  },
-  {
-    "player_id": 4621,
-    "name": "James Johnson",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 22.675555555555558,
-    "games_played": 30
-  },
-  {
-    "player_id": 5822,
-    "name": "Dennis Smith Jr.",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 5,
-    "status": "",
-    "projected_fantasy_points": 22.674122807017547,
-    "games_played": 19
-  },
-  {
-    "player_id": 6254,
-    "name": "Luguentz Dort",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 17,
-    "projected_fantasy_points": 22.62489837398374,
-    "games_played": 41
-  },
-  {
-    "player_id": 5482,
-    "name": "Bobby Portis",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 38,
-    "projected_fantasy_points": 22.606459948320413,
-    "games_played": 43
-  },
-  {
-    "player_id": 4906,
-    "name": "Reggie Jackson",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 15,
-    "status": "",
-    "projected_fantasy_points": 22.54886018237082,
-    "games_played": 47
-  },
-  {
-    "player_id": 4647,
-    "name": "Patrick Beverley",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 9,
-    "projected_fantasy_points": 22.53390804597701,
-    "games_played": 29
-  },
-  {
-    "player_id": 5142,
-    "name": "Justin Holiday",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 46,
-    "status": "",
-    "projected_fantasy_points": 22.515458937198066,
+    "projected_fantasy_points": 21.999154589371983,
     "games_played": 46
-  },
-  {
-    "player_id": 5880,
-    "name": "Daniel Theis",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 41,
-    "status": "",
-    "projected_fantasy_points": 22.3760101010101,
-    "games_played": 44
-  },
-  {
-    "player_id": 6061,
-    "name": "Alize Johnson",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 22.333333333333332,
-    "games_played": 2
   },
   {
     "player_id": 5892,
@@ -754,72 +793,160 @@
       "C",
       "Util"
     ],
-    "percent_owned": 19,
+    "percent_owned": 18,
     "status": "",
-    "projected_fantasy_points": 22.264932126696834,
-    "games_played": 34
+    "projected_fantasy_points": 21.822442002442003,
+    "games_played": 35
   },
   {
-    "player_id": 4139,
-    "name": "JJ Redick",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 7,
-    "projected_fantasy_points": 22.093548387096774,
-    "games_played": 31
-  },
-  {
-    "player_id": 6396,
-    "name": "Patrick Williams",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 14,
-    "status": "",
-    "projected_fantasy_points": 22.030997150997152,
-    "games_played": 45
-  },
-  {
-    "player_id": 5905,
-    "name": "Royce O'Neale",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 27,
-    "status": "",
-    "projected_fantasy_points": 22.001418439716314,
-    "games_played": 47
-  },
-  {
-    "player_id": 6212,
-    "name": "Ty Jerome",
-    "status": "O",
+    "player_id": 4906,
+    "name": "Reggie Jackson",
     "position_type": "P",
     "eligible_positions": [
       "PG",
       "SG",
       "G",
+      "Util"
+    ],
+    "percent_owned": 10,
+    "status": "",
+    "projected_fantasy_points": 21.810149572649575,
+    "games_played": 48
+  },
+  {
+    "player_id": 6166,
+    "name": "De'Andre Hunter",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 41,
+    "projected_fantasy_points": 21.7725,
+    "games_played": 20
+  },
+  {
+    "player_id": 6212,
+    "name": "Ty Jerome",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 4,
+    "status": "",
+    "projected_fantasy_points": 21.704166666666666,
+    "games_played": 16
+  },
+  {
+    "player_id": 6422,
+    "name": "Desmond Bane",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 3,
+    "status": "",
+    "projected_fantasy_points": 21.67585271317829,
+    "games_played": 43
+  },
+  {
+    "player_id": 6236,
+    "name": "Terance Mann",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 13,
+    "status": "",
+    "projected_fantasy_points": 21.523450854700855,
+    "games_played": 48
+  },
+  {
+    "player_id": 5323,
+    "name": "Dario Saric",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 7,
+    "status": "",
+    "projected_fantasy_points": 21.517606837606838,
+    "games_played": 30
+  },
+  {
+    "player_id": 5880,
+    "name": "Daniel Theis",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 40,
+    "status": "",
+    "projected_fantasy_points": 21.457125603864736,
+    "games_played": 46
+  },
+  {
+    "player_id": 5154,
+    "name": "Otto Porter Jr.",
+    "status": "GTD",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
       "Util",
       "IL+"
     ],
-    "percent_owned": 5,
-    "projected_fantasy_points": 21.998809523809523,
-    "games_played": 14
+    "percent_owned": 36,
+    "projected_fantasy_points": 21.38888888888889,
+    "games_played": 28
+  },
+  {
+    "player_id": 4660,
+    "name": "Patty Mills",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 18,
+    "status": "",
+    "projected_fantasy_points": 21.347619047619048,
+    "games_played": 46
+  },
+  {
+    "player_id": 6053,
+    "name": "Bruce Brown",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 6,
+    "status": "",
+    "projected_fantasy_points": 21.32396878483835,
+    "games_played": 46
   },
   {
     "player_id": 4884,
@@ -835,203 +962,37 @@
       "IL+"
     ],
     "percent_owned": 19,
-    "projected_fantasy_points": 21.96111111111111,
+    "projected_fantasy_points": 21.26111111111111,
     "games_played": 36
   },
   {
-    "player_id": 6231,
-    "name": "Jaylen Nowell",
+    "player_id": 5474,
+    "name": "Cameron Payne",
     "position_type": "P",
     "eligible_positions": [
+      "PG",
       "SG",
       "G",
-      "Util"
-    ],
-    "percent_owned": 3,
-    "status": "",
-    "projected_fantasy_points": 21.916365007541476,
-    "games_played": 34
-  },
-  {
-    "player_id": 6058,
-    "name": "Svi Mykhailiuk",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 7,
-    "status": "",
-    "projected_fantasy_points": 21.90173126614987,
-    "games_played": 43
-  },
-  {
-    "player_id": 5859,
-    "name": "Sterling Brown",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 4,
-    "status": "",
-    "projected_fantasy_points": 21.842407407407407,
-    "games_played": 45
-  },
-  {
-    "player_id": 6166,
-    "name": "De'Andre Hunter",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 43,
-    "projected_fantasy_points": 21.7725,
-    "games_played": 20
-  },
-  {
-    "player_id": 5155,
-    "name": "Cody Zeller",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 11,
-    "status": "",
-    "projected_fantasy_points": 21.57095238095238,
-    "games_played": 28
-  },
-  {
-    "player_id": 5693,
-    "name": "Dorian Finney-Smith",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 9,
-    "status": "",
-    "projected_fantasy_points": 21.527619047619044,
-    "games_played": 35
-  },
-  {
-    "player_id": 5158,
-    "name": "Ben McLemore",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
       "Util"
     ],
     "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 21.515591397849462,
-    "games_played": 31
+    "projected_fantasy_points": 21.10903210903211,
+    "games_played": 37
   },
   {
-    "player_id": 4507,
-    "name": "Goran Dragic",
-    "status": "GTD",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util",
-      "IL+"
-    ],
-    "percent_owned": 49,
-    "projected_fantasy_points": 21.515555555555554,
-    "games_played": 30
-  },
-  {
-    "player_id": 6057,
-    "name": "De'Anthony Melton",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 12,
-    "status": "",
-    "projected_fantasy_points": 21.465505050505055,
-    "games_played": 33
-  },
-  {
-    "player_id": 5220,
-    "name": "James Ennis III",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 4,
-    "status": "",
-    "projected_fantasy_points": 21.357488479262674,
-    "games_played": 31
-  },
-  {
-    "player_id": 4660,
-    "name": "Patty Mills",
+    "player_id": 6417,
+    "name": "Immanuel Quickley",
     "position_type": "P",
     "eligible_positions": [
       "PG",
       "G",
       "Util"
-    ],
-    "percent_owned": 19,
-    "status": "",
-    "projected_fantasy_points": 21.235555555555553,
-    "games_played": 45
-  },
-  {
-    "player_id": 6216,
-    "name": "Jordan Poole",
-    "status": "GTD",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util",
-      "IL+"
     ],
     "percent_owned": 21,
-    "projected_fantasy_points": 21.21820987654321,
-    "games_played": 27
-  },
-  {
-    "player_id": 4480,
-    "name": "JaVale McGee",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 4,
     "status": "",
-    "projected_fantasy_points": 20.98961038961039,
-    "games_played": 33
+    "projected_fantasy_points": 20.997407407407408,
+    "games_played": 45
   },
   {
     "player_id": 4764,
@@ -1046,67 +1007,38 @@
       "IL",
       "IL+"
     ],
-    "percent_owned": 49,
+    "percent_owned": 48,
     "projected_fantasy_points": 20.941785714285714,
     "games_played": 28
   },
   {
-    "player_id": 6053,
-    "name": "Bruce Brown",
+    "player_id": 6405,
+    "name": "Kira Lewis Jr.",
+    "status": "GTD",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
+      "PG",
+      "G",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 3,
+    "projected_fantasy_points": 20.73510101010101,
+    "games_played": 33
+  },
+  {
+    "player_id": 6133,
+    "name": "Jordan McLaughlin",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
       "G",
       "Util"
     ],
-    "percent_owned": 5,
+    "percent_owned": 3,
     "status": "",
-    "projected_fantasy_points": 20.87877492877493,
-    "games_played": 45
-  },
-  {
-    "player_id": 6219,
-    "name": "Nicolas Claxton",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 11,
-    "status": "",
-    "projected_fantasy_points": 20.868966817496233,
-    "games_played": 17
-  },
-  {
-    "player_id": 5501,
-    "name": "Pat Connaughton",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 4,
-    "status": "",
-    "projected_fantasy_points": 20.816258741258743,
-    "games_played": 44
-  },
-  {
-    "player_id": 5323,
-    "name": "Dario Saric",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 7,
-    "status": "",
-    "projected_fantasy_points": 20.74458128078818,
-    "games_played": 29
+    "projected_fantasy_points": 20.499444444444446,
+    "games_played": 30
   },
   {
     "player_id": 6029,
@@ -1123,57 +1055,8 @@
       "IL+"
     ],
     "percent_owned": 7,
-    "projected_fantasy_points": 20.638738738738738,
+    "projected_fantasy_points": 20.44111969111969,
     "games_played": 37
-  },
-  {
-    "player_id": 5864,
-    "name": "Monte Morris",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 8,
-    "projected_fantasy_points": 20.59305555555556,
-    "games_played": 36
-  },
-  {
-    "player_id": 6256,
-    "name": "Dean Wade",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 4,
-    "status": "",
-    "projected_fantasy_points": 20.5399358974359,
-    "games_played": 40
-  },
-  {
-    "player_id": 6076,
-    "name": "Kenrich Williams",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 4,
-    "status": "",
-    "projected_fantasy_points": 20.499072558647025,
-    "games_played": 47
   },
   {
     "player_id": 5762,
@@ -1194,81 +1077,32 @@
     "games_played": 30
   },
   {
-    "player_id": 5154,
-    "name": "Otto Porter Jr.",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 41,
-    "status": "",
-    "projected_fantasy_points": 20.394444444444446,
-    "games_played": 28
-  },
-  {
-    "player_id": 4633,
-    "name": "Wayne Ellington",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 3,
-    "status": "",
-    "projected_fantasy_points": 20.34793650793651,
-    "games_played": 35
-  },
-  {
-    "player_id": 3860,
-    "name": "Trevor Ariza",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 5,
-    "status": "",
-    "projected_fantasy_points": 20.333333333333332,
-    "games_played": 8
-  },
-  {
-    "player_id": 4471,
-    "name": "D.J. Augustin",
+    "player_id": 5217,
+    "name": "Raul Neto",
     "position_type": "P",
     "eligible_positions": [
       "PG",
       "G",
       "Util"
     ],
-    "percent_owned": 3,
+    "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 20.31010101010101,
-    "games_played": 44
+    "projected_fantasy_points": 20.38192918192918,
+    "games_played": 42
   },
   {
-    "player_id": 5747,
-    "name": "Derrick Jones Jr.",
+    "player_id": 5853,
+    "name": "Dwayne Bacon",
     "position_type": "P",
     "eligible_positions": [
       "SG",
       "G",
-      "SF",
-      "F",
       "Util"
     ],
-    "percent_owned": 10,
+    "percent_owned": 9,
     "status": "",
-    "projected_fantasy_points": 20.26140642303433,
-    "games_played": 43
+    "projected_fantasy_points": 20.28238095238095,
+    "games_played": 50
   },
   {
     "player_id": 5649,
@@ -1285,8 +1119,24 @@
     "games_played": 2
   },
   {
-    "player_id": 5754,
-    "name": "Alex Caruso",
+    "player_id": 6234,
+    "name": "Talen Horton-Tucker",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 12,
+    "status": "",
+    "projected_fantasy_points": 20.177647714604237,
+    "games_played": 46
+  },
+  {
+    "player_id": 5864,
+    "name": "Monte Morris",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -1294,10 +1144,10 @@
       "G",
       "Util"
     ],
-    "percent_owned": 4,
+    "percent_owned": 7,
     "status": "",
-    "projected_fantasy_points": 19.979707602339182,
-    "games_played": 38
+    "projected_fantasy_points": 20.080180180180182,
+    "games_played": 37
   },
   {
     "player_id": 4631,
@@ -1309,54 +1159,23 @@
       "C",
       "Util"
     ],
-    "percent_owned": 3,
+    "percent_owned": 4,
     "status": "",
-    "projected_fantasy_points": 19.923809523809524,
-    "games_played": 21
+    "projected_fantasy_points": 20.05187747035573,
+    "games_played": 23
   },
   {
-    "player_id": 3971,
-    "name": "Lou Williams",
+    "player_id": 6253,
+    "name": "Naz Reid",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
+      "C",
       "Util"
     ],
-    "percent_owned": 41,
+    "percent_owned": 11,
     "status": "",
-    "projected_fantasy_points": 19.88341085271318,
-    "games_played": 43
-  },
-  {
-    "player_id": 6114,
-    "name": "Kendrick Nunn",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 19,
-    "status": "",
-    "projected_fantasy_points": 19.65219298245614,
-    "games_played": 38
-  },
-  {
-    "player_id": 5856,
-    "name": "Isaiah Hartenstein",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 6,
-    "status": "",
-    "projected_fantasy_points": 19.614583333333332,
-    "games_played": 32
+    "projected_fantasy_points": 19.912896825396825,
+    "games_played": 48
   },
   {
     "player_id": 4477,
@@ -1366,10 +1185,71 @@
       "C",
       "Util"
     ],
+    "percent_owned": 6,
+    "status": "",
+    "projected_fantasy_points": 19.90793650793651,
+    "games_played": 48
+  },
+  {
+    "player_id": 5859,
+    "name": "Sterling Brown",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
     "percent_owned": 4,
     "status": "",
-    "projected_fantasy_points": 19.60691489361702,
+    "projected_fantasy_points": 19.898132387706855,
     "games_played": 47
+  },
+  {
+    "player_id": 6280,
+    "name": "Terence Davis",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 19.750925925925923,
+    "games_played": 39
+  },
+  {
+    "player_id": 5841,
+    "name": "Tony Bradley",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 3,
+    "status": "",
+    "projected_fantasy_points": 19.655555555555555,
+    "games_played": 24
+  },
+  {
+    "player_id": 5825,
+    "name": "Luke Kennard",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 8,
+    "status": "",
+    "projected_fantasy_points": 19.60952861952862,
+    "games_played": 45
   },
   {
     "player_id": 5330,
@@ -1390,21 +1270,19 @@
     "games_played": 19
   },
   {
-    "player_id": 5195,
-    "name": "Reggie Bullock",
-    "status": "GTD",
+    "player_id": 5905,
+    "name": "Royce O'Neale",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
-      "G",
       "SF",
+      "PF",
       "F",
-      "Util",
-      "IL+"
+      "Util"
     ],
-    "percent_owned": 4,
-    "projected_fantasy_points": 19.51589061345159,
-    "games_played": 41
+    "percent_owned": 25,
+    "status": "",
+    "projected_fantasy_points": 19.51623495552067,
+    "games_played": 49
   },
   {
     "player_id": 6408,
@@ -1416,23 +1294,25 @@
       "C",
       "Util"
     ],
-    "percent_owned": 12,
+    "percent_owned": 11,
     "status": "",
-    "projected_fantasy_points": 19.513022774327123,
-    "games_played": 46
+    "projected_fantasy_points": 19.51342062193126,
+    "games_played": 47
   },
   {
-    "player_id": 6017,
-    "name": "Mo Bamba",
+    "player_id": 6216,
+    "name": "Jordan Poole",
     "position_type": "P",
     "eligible_positions": [
-      "C",
+      "PG",
+      "SG",
+      "G",
       "Util"
     ],
-    "percent_owned": 13,
+    "percent_owned": 14,
     "status": "",
-    "projected_fantasy_points": 19.45769230769231,
-    "games_played": 26
+    "projected_fantasy_points": 19.455415561450042,
+    "games_played": 29
   },
   {
     "player_id": 5349,
@@ -1452,18 +1332,117 @@
     "games_played": 3
   },
   {
-    "player_id": 5217,
-    "name": "Raul Neto",
+    "player_id": 5018,
+    "name": "Jeremy Lamb",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 8,
+    "projected_fantasy_points": 19.297619047619047,
+    "games_played": 28
+  },
+  {
+    "player_id": 6256,
+    "name": "Dean Wade",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 6,
+    "status": "",
+    "projected_fantasy_points": 19.25974567437982,
+    "games_played": 41
+  },
+  {
+    "player_id": 6229,
+    "name": "Eric Paschall",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "C",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 3,
+    "projected_fantasy_points": 19.161709401709402,
+    "games_played": 39
+  },
+  {
+    "player_id": 4471,
+    "name": "D.J. Augustin",
     "position_type": "P",
     "eligible_positions": [
       "PG",
       "G",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 2,
     "status": "",
-    "projected_fantasy_points": 19.30079365079365,
-    "games_played": 41
+    "projected_fantasy_points": 19.080676328502417,
+    "games_played": 46
+  },
+  {
+    "player_id": 6231,
+    "name": "Jaylen Nowell",
+    "status": "GTD",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 2,
+    "projected_fantasy_points": 19.0739417989418,
+    "games_played": 36
+  },
+  {
+    "player_id": 5159,
+    "name": "Kentavious Caldwell-Pope",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 9,
+    "status": "",
+    "projected_fantasy_points": 19.054868078781123,
+    "games_played": 46
+  },
+  {
+    "player_id": 5728,
+    "name": "Danuel House Jr.",
+    "status": "GTD",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 9,
+    "projected_fantasy_points": 18.940023894862605,
+    "games_played": 31
   },
   {
     "player_id": 6401,
@@ -1478,71 +1457,115 @@
     ],
     "percent_owned": 6,
     "status": "",
-    "projected_fantasy_points": 18.927596899224806,
-    "games_played": 43
+    "projected_fantasy_points": 18.91504329004329,
+    "games_played": 44
   },
   {
-    "player_id": 6430,
-    "name": "Saben Lee",
+    "player_id": 6219,
+    "name": "Nicolas Claxton",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 9,
+    "status": "",
+    "projected_fantasy_points": 18.835327635327634,
+    "games_played": 18
+  },
+  {
+    "player_id": 5856,
+    "name": "Isaiah Hartenstein",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 3,
+    "status": "",
+    "projected_fantasy_points": 18.75209235209235,
+    "games_played": 33
+  },
+  {
+    "player_id": 5501,
+    "name": "Pat Connaughton",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
       "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 4,
+    "status": "",
+    "projected_fantasy_points": 18.649331103678932,
+    "games_played": 46
+  },
+  {
+    "player_id": 6058,
+    "name": "Svi Mykhailiuk",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
       "Util"
     ],
     "percent_owned": 5,
     "status": "",
-    "projected_fantasy_points": 18.920864197530864,
-    "games_played": 27
+    "projected_fantasy_points": 18.631851851851852,
+    "games_played": 45
   },
   {
-    "player_id": 4800,
-    "name": "Ish Smith",
-    "status": "INJ",
+    "player_id": 4175,
+    "name": "Paul Millsap",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
-      "G",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 1,
-    "projected_fantasy_points": 18.905263157894737,
-    "games_played": 19
-  },
-  {
-    "player_id": 6226,
-    "name": "Daniel Gafford",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
+      "PF",
+      "F",
       "C",
-      "Util",
-      "IL",
-      "IL+"
+      "Util"
     ],
-    "percent_owned": 8,
-    "projected_fantasy_points": 18.76199494949495,
-    "games_played": 33
+    "percent_owned": 32,
+    "status": "",
+    "projected_fantasy_points": 18.573504273504273,
+    "games_played": 39
   },
   {
-    "player_id": 6405,
-    "name": "Kira Lewis Jr.",
+    "player_id": 3860,
+    "name": "Trevor Ariza",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
+      "SG",
       "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 5,
+    "status": "",
+    "projected_fantasy_points": 18.514814814814816,
+    "games_played": 9
+  },
+  {
+    "player_id": 5643,
+    "name": "Taurean Prince",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
       "Util"
     ],
     "percent_owned": 2,
     "status": "",
-    "projected_fantasy_points": 18.660069444444446,
+    "projected_fantasy_points": 18.390625,
     "games_played": 32
   },
   {
-    "player_id": 6422,
-    "name": "Desmond Bane",
+    "player_id": 5754,
+    "name": "Alex Caruso",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -1550,550 +1573,26 @@
       "G",
       "Util"
     ],
-    "percent_owned": 3,
+    "percent_owned": 4,
     "status": "",
-    "projected_fantasy_points": 18.65937669376694,
-    "games_played": 41
-  },
-  {
-    "player_id": 6253,
-    "name": "Naz Reid",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 11,
-    "status": "",
-    "projected_fantasy_points": 18.65766443701226,
-    "games_played": 46
+    "projected_fantasy_points": 18.339873737373736,
+    "games_played": 40
   },
   {
     "player_id": 6037,
     "name": "Landry Shamet",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 18.555833333333336,
-    "games_played": 40
-  },
-  {
-    "player_id": 6208,
-    "name": "Matisse Thybulle",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 10,
-    "status": "",
-    "projected_fantasy_points": 18.46974358974359,
-    "games_played": 45
-  },
-  {
-    "player_id": 5018,
-    "name": "Jeremy Lamb",
     "status": "GTD",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util",
-      "IL+"
-    ],
-    "percent_owned": 9,
-    "projected_fantasy_points": 18.343386243386245,
-    "games_played": 28
-  },
-  {
-    "player_id": 5828,
-    "name": "Justin Jackson",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 18.25940860215054,
-    "games_played": 31
-  },
-  {
-    "player_id": 5214,
-    "name": "Mike Muscala",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 1,
-    "projected_fantasy_points": 17.943809523809524,
-    "games_played": 35
-  },
-  {
-    "player_id": 5474,
-    "name": "Cameron Payne",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 17.859788359788357,
-    "games_played": 36
-  },
-  {
-    "player_id": 5390,
-    "name": "Khem Birch",
-    "status": "GTD",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util",
-      "IL+"
-    ],
-    "percent_owned": 10,
-    "projected_fantasy_points": 17.803532460447354,
-    "games_played": 47
-  },
-  {
-    "player_id": 4718,
-    "name": "Derrick Favors",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 8,
-    "status": "",
-    "projected_fantasy_points": 17.72277777777778,
-    "games_played": 45
-  },
-  {
-    "player_id": 5825,
-    "name": "Luke Kennard",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 10,
-    "status": "",
-    "projected_fantasy_points": 17.707070707070706,
-    "games_played": 44
-  },
-  {
-    "player_id": 5491,
-    "name": "Cedi Osman",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 7,
-    "status": "",
-    "projected_fantasy_points": 17.667373737373737,
-    "games_played": 45
-  },
-  {
-    "player_id": 5841,
-    "name": "Tony Bradley",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 17.624848484848485,
-    "games_played": 22
-  },
-  {
-    "player_id": 5657,
-    "name": "Furkan Korkmaz",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 17.53883113883114,
-    "games_played": 37
-  },
-  {
-    "player_id": 4926,
-    "name": "Davis Bertans",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 41,
-    "projected_fantasy_points": 17.474285714285713,
-    "games_played": 35
-  },
-  {
-    "player_id": 3826,
-    "name": "Andre Iguodala",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 17.466096866096866,
-    "games_played": 45
-  },
-  {
-    "player_id": 5156,
-    "name": "Alex Len",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 4,
-    "status": "",
-    "projected_fantasy_points": 17.417032967032966,
-    "games_played": 39
-  },
-  {
-    "player_id": 5262,
-    "name": "JaMychal Green",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 3,
-    "status": "",
-    "projected_fantasy_points": 17.350757575757576,
-    "games_played": 36
-  },
-  {
-    "player_id": 6418,
-    "name": "Payton Pritchard",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 17.157142857142855,
-    "games_played": 42
-  },
-  {
-    "player_id": 5689,
-    "name": "Abdel Nader",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 0,
-    "projected_fantasy_points": 16.906845238095237,
-    "games_played": 24
-  },
-  {
-    "player_id": 6280,
-    "name": "Terence Davis",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 16.704904904904904,
-    "games_played": 37
-  },
-  {
-    "player_id": 6234,
-    "name": "Talen Horton-Tucker",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 13,
-    "status": "",
-    "projected_fantasy_points": 16.674902874902877,
-    "games_played": 44
-  },
-  {
-    "player_id": 4624,
-    "name": "Jeff Teague",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
       "PG",
       "SG",
       "G",
       "Util",
-      "IL",
       "IL+"
     ],
-    "percent_owned": 18,
-    "projected_fantasy_points": 16.59485294117647,
-    "games_played": 34
-  },
-  {
-    "player_id": 5645,
-    "name": "Denzel Valentine",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
     "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 16.46531165311653,
+    "projected_fantasy_points": 18.209959349593493,
     "games_played": 41
-  },
-  {
-    "player_id": 5080,
-    "name": "Darius Miller",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 16.404444444444444,
-    "games_played": 15
-  },
-  {
-    "player_id": 6133,
-    "name": "Jordan McLaughlin",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 15.902619047619048,
-    "games_played": 28
-  },
-  {
-    "player_id": 5706,
-    "name": "Chasson Randle",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 15.862426900584794,
-    "games_played": 19
-  },
-  {
-    "player_id": 6035,
-    "name": "Anfernee Simons",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 15.735555555555555,
-    "games_played": 40
-  },
-  {
-    "player_id": 5159,
-    "name": "Kentavious Caldwell-Pope",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 9,
-    "status": "",
-    "projected_fantasy_points": 15.51025641025641,
-    "games_played": 44
-  },
-  {
-    "player_id": 5844,
-    "name": "Frank Jackson",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 15.423859649122809,
-    "games_played": 19
-  },
-  {
-    "player_id": 5270,
-    "name": "Rodney McGruder",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 0,
-    "projected_fantasy_points": 15.393055555555554,
-    "games_played": 16
-  },
-  {
-    "player_id": 5362,
-    "name": "Thanasis Antetokounmpo",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 15.352792207792207,
-    "games_played": 35
-  },
-  {
-    "player_id": 6031,
-    "name": "Josh Okogie",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 1,
-    "projected_fantasy_points": 15.28392857142857,
-    "games_played": 36
-  },
-  {
-    "player_id": 4888,
-    "name": "Bismack Biyombo",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 4,
-    "status": "",
-    "projected_fantasy_points": 15.142991452991453,
-    "games_played": 45
-  },
-  {
-    "player_id": 5470,
-    "name": "Justise Winslow",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 4,
-    "projected_fantasy_points": 15.11736111111111,
-    "games_played": 16
-  },
-  {
-    "player_id": 5726,
-    "name": "Bryn Forbes",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 15.08574879227053,
-    "games_played": 46
   },
   {
     "player_id": 4723,
@@ -2105,9 +1604,9 @@
       "F",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 14.983703703703702,
+    "projected_fantasy_points": 18.174999999999997,
     "games_played": 18
   },
   {
@@ -2123,53 +1622,37 @@
     ],
     "percent_owned": 6,
     "status": "",
-    "projected_fantasy_points": 14.957498509242697,
-    "games_played": 43
+    "projected_fantasy_points": 18.086208236208236,
+    "games_played": 44
   },
   {
-    "player_id": 5484,
-    "name": "Tyus Jones",
+    "player_id": 6226,
+    "name": "Daniel Gafford",
+    "status": "INJ",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
+      "C",
+      "Util",
+      "IL",
+      "IL+"
     ],
-    "percent_owned": 3,
-    "status": "",
-    "projected_fantasy_points": 14.946666666666667,
-    "games_played": 45
-  },
-  {
-    "player_id": 6224,
-    "name": "Cody Martin",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 14.866098901098901,
-    "games_played": 35
-  },
-  {
-    "player_id": 5886,
-    "name": "PJ Dozier",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 14.749098124098126,
+    "percent_owned": 8,
+    "projected_fantasy_points": 18.06854256854257,
     "games_played": 33
+  },
+  {
+    "player_id": 5822,
+    "name": "Dennis Smith Jr.",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 4,
+    "status": "",
+    "projected_fantasy_points": 18.01666666666667,
+    "games_played": 20
   },
   {
     "player_id": 6173,
@@ -2181,10 +1664,236 @@
       "F",
       "Util"
     ],
+    "percent_owned": 9,
+    "status": "",
+    "projected_fantasy_points": 17.912103174603175,
+    "games_played": 42
+  },
+  {
+    "player_id": 3826,
+    "name": "Andre Iguodala",
+    "status": "GTD",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 1,
+    "projected_fantasy_points": 17.856228956228957,
+    "games_played": 45
+  },
+  {
+    "player_id": 5657,
+    "name": "Furkan Korkmaz",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 17.77802197802198,
+    "games_played": 39
+  },
+  {
+    "player_id": 6213,
+    "name": "Nassir Little",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 17.69,
+    "games_played": 30
+  },
+  {
+    "player_id": 6170,
+    "name": "Jaxson Hayes",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 4,
+    "status": "",
+    "projected_fantasy_points": 17.585060060060062,
+    "games_played": 37
+  },
+  {
+    "player_id": 5747,
+    "name": "Derrick Jones Jr.",
+    "status": "GTD",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 9,
+    "projected_fantasy_points": 17.5740675990676,
+    "games_played": 44
+  },
+  {
+    "player_id": 5156,
+    "name": "Alex Len",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 3,
+    "status": "",
+    "projected_fantasy_points": 17.498809523809523,
+    "games_played": 40
+  },
+  {
+    "player_id": 5484,
+    "name": "Tyus Jones",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 4,
+    "status": "",
+    "projected_fantasy_points": 17.46527186761229,
+    "games_played": 47
+  },
+  {
+    "player_id": 5470,
+    "name": "Justise Winslow",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 4,
+    "projected_fantasy_points": 17.319375,
+    "games_played": 16
+  },
+  {
+    "player_id": 6017,
+    "name": "Mo Bamba",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
     "percent_owned": 10,
     "status": "",
-    "projected_fantasy_points": 14.674085365853658,
-    "games_played": 41
+    "projected_fantasy_points": 17.283982683982686,
+    "games_played": 28
+  },
+  {
+    "player_id": 5645,
+    "name": "Denzel Valentine",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 17.27869210892467,
+    "games_played": 43
+  },
+  {
+    "player_id": 4718,
+    "name": "Derrick Favors",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 8,
+    "status": "",
+    "projected_fantasy_points": 17.18205128205128,
+    "games_played": 47
+  },
+  {
+    "player_id": 6416,
+    "name": "R.J. Hampton",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 6,
+    "status": "",
+    "projected_fantasy_points": 17.115555555555556,
+    "games_played": 30
+  },
+  {
+    "player_id": 6430,
+    "name": "Saben Lee",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 3,
+    "status": "",
+    "projected_fantasy_points": 17.0010989010989,
+    "games_played": 28
+  },
+  {
+    "player_id": 4926,
+    "name": "Davis Bertans",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 43,
+    "status": "",
+    "projected_fantasy_points": 16.85462962962963,
+    "games_played": 36
+  },
+  {
+    "player_id": 5214,
+    "name": "Mike Muscala",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 1,
+    "projected_fantasy_points": 16.727142857142855,
+    "games_played": 35
   },
   {
     "player_id": 5652,
@@ -2198,12 +1907,12 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 14.618526785714286,
-    "games_played": 32
+    "projected_fantasy_points": 16.293434343434342,
+    "games_played": 33
   },
   {
-    "player_id": 6033,
-    "name": "Chandler Hutchison",
+    "player_id": 5828,
+    "name": "Justin Jackson",
     "position_type": "P",
     "eligible_positions": [
       "SF",
@@ -2213,12 +1922,177 @@
     ],
     "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 14.543333333333331,
-    "games_played": 10
+    "projected_fantasy_points": 16.254419191919194,
+    "games_played": 33
   },
   {
-    "player_id": 6109,
-    "name": "Drew Eubanks",
+    "player_id": 5491,
+    "name": "Cedi Osman",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 6,
+    "status": "",
+    "projected_fantasy_points": 16.142028985507245,
+    "games_played": 46
+  },
+  {
+    "player_id": 4480,
+    "name": "JaVale McGee",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 4,
+    "status": "",
+    "projected_fantasy_points": 16.01596638655462,
+    "games_played": 34
+  },
+  {
+    "player_id": 4750,
+    "name": "Avery Bradley",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 15.916666666666666,
+    "games_played": 14
+  },
+  {
+    "player_id": 6208,
+    "name": "Matisse Thybulle",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 10,
+    "status": "",
+    "projected_fantasy_points": 15.873834853090173,
+    "games_played": 47
+  },
+  {
+    "player_id": 4633,
+    "name": "Wayne Ellington",
+    "status": "O",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 3,
+    "projected_fantasy_points": 15.633796296296296,
+    "games_played": 36
+  },
+  {
+    "player_id": 4888,
+    "name": "Bismack Biyombo",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 3,
+    "status": "",
+    "projected_fantasy_points": 15.567325227963527,
+    "games_played": 47
+  },
+  {
+    "player_id": 5524,
+    "name": "Boban Marjanovic",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 15.490579710144928,
+    "games_played": 23
+  },
+  {
+    "player_id": 5689,
+    "name": "Abdel Nader",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 15.455416666666665,
+    "games_played": 24
+  },
+  {
+    "player_id": 4139,
+    "name": "JJ Redick",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 6,
+    "projected_fantasy_points": 15.287096774193548,
+    "games_played": 31
+  },
+  {
+    "player_id": 6035,
+    "name": "Anfernee Simons",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 15.284603174603175,
+    "games_played": 42
+  },
+  {
+    "player_id": 6499,
+    "name": "Naji Marshall",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 15.046296296296296,
+    "games_played": 9
+  },
+  {
+    "player_id": 5262,
+    "name": "JaMychal Green",
     "position_type": "P",
     "eligible_positions": [
       "PF",
@@ -2226,10 +2100,41 @@
       "C",
       "Util"
     ],
+    "percent_owned": 3,
+    "status": "",
+    "projected_fantasy_points": 14.951051051051053,
+    "games_played": 37
+  },
+  {
+    "player_id": 5726,
+    "name": "Bryn Forbes",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 2,
+    "status": "",
+    "projected_fantasy_points": 14.901388888888889,
+    "games_played": 48
+  },
+  {
+    "player_id": 5893,
+    "name": "Torrey Craig",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 14.485991379310343,
-    "games_played": 29
+    "projected_fantasy_points": 14.863390313390314,
+    "games_played": 26
   },
   {
     "player_id": 6206,
@@ -2241,8 +2146,98 @@
     ],
     "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 14.318518518518518,
-    "games_played": 27
+    "projected_fantasy_points": 14.780459770114943,
+    "games_played": 29
+  },
+  {
+    "player_id": 6034,
+    "name": "Aaron Holiday",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 14.578359683794467,
+    "games_played": 46
+  },
+  {
+    "player_id": 4647,
+    "name": "Patrick Beverley",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 8,
+    "projected_fantasy_points": 14.567241379310344,
+    "games_played": 29
+  },
+  {
+    "player_id": 6024,
+    "name": "Jerome Robinson",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 14.460130718954247,
+    "games_played": 17
+  },
+  {
+    "player_id": 6061,
+    "name": "Alize Johnson",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 2,
+    "status": "",
+    "projected_fantasy_points": 14.444444444444445,
+    "games_played": 3
+  },
+  {
+    "player_id": 6418,
+    "name": "Payton Pritchard",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 2,
+    "status": "",
+    "projected_fantasy_points": 14.371320346320346,
+    "games_played": 44
+  },
+  {
+    "player_id": 6427,
+    "name": "Xavier Tillman",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 14.334504504504503,
+    "games_played": 37
   },
   {
     "player_id": 5466,
@@ -2262,8 +2257,8 @@
     "games_played": 35
   },
   {
-    "player_id": 5490,
-    "name": "Kevon Looney",
+    "player_id": 6109,
+    "name": "Drew Eubanks",
     "status": "GTD",
     "position_type": "P",
     "eligible_positions": [
@@ -2273,13 +2268,43 @@
       "Util",
       "IL+"
     ],
-    "percent_owned": 1,
-    "projected_fantasy_points": 14.249924924924926,
-    "games_played": 37
+    "percent_owned": 0,
+    "projected_fantasy_points": 14.121209633278598,
+    "games_played": 29
   },
   {
-    "player_id": 6468,
-    "name": "Facundo Campazzo",
+    "player_id": 4969,
+    "name": "Brad Wanamaker",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 3,
+    "status": "",
+    "projected_fantasy_points": 14.053100775193798,
+    "games_played": 43
+  },
+  {
+    "player_id": 4624,
+    "name": "Jeff Teague",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 17,
+    "status": "",
+    "projected_fantasy_points": 14.027314814814815,
+    "games_played": 36
+  },
+  {
+    "player_id": 5844,
+    "name": "Frank Jackson",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -2288,116 +2313,37 @@
     ],
     "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 14.190873015873017,
-    "games_played": 42
+    "projected_fantasy_points": 14.01,
+    "games_played": 20
   },
   {
-    "player_id": 5893,
-    "name": "Torrey Craig",
-    "status": "GTD",
+    "player_id": 5865,
+    "name": "Edmond Sumner",
     "position_type": "P",
     "eligible_positions": [
+      "PG",
       "SG",
       "G",
-      "SF",
-      "F",
-      "Util",
-      "IL+"
-    ],
-    "percent_owned": 0,
-    "projected_fantasy_points": 14.181814814814814,
-    "games_played": 25
-  },
-  {
-    "player_id": 4694,
-    "name": "Wesley Matthews",
-    "status": "GTD",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util",
-      "IL+"
-    ],
-    "percent_owned": 1,
-    "projected_fantasy_points": 14.130560767146134,
-    "games_played": 41
-  },
-  {
-    "player_id": 6170,
-    "name": "Jaxson Hayes",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
       "Util"
     ],
-    "percent_owned": 4,
+    "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 14.097222222222221,
+    "projected_fantasy_points": 13.965018315018318,
     "games_played": 35
   },
   {
-    "player_id": 6210,
-    "name": "Grant Williams",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 14.002884615384616,
-    "games_played": 40
-  },
-  {
-    "player_id": 5469,
-    "name": "Frank Kaminsky",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 1,
-    "projected_fantasy_points": 13.79375,
-    "games_played": 32
-  },
-  {
-    "player_id": 4750,
-    "name": "Avery Bradley",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 13.747222222222222,
-    "games_played": 12
-  },
-  {
-    "player_id": 6024,
-    "name": "Jerome Robinson",
+    "player_id": 5706,
+    "name": "Chasson Randle",
     "position_type": "P",
     "eligible_positions": [
       "PG",
-      "SG",
       "G",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 13.649019607843137,
-    "games_played": 17
+    "projected_fantasy_points": 13.862515262515265,
+    "games_played": 21
   },
   {
     "player_id": 5102,
@@ -2412,82 +2358,118 @@
     ],
     "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 13.617688591601635,
-    "games_played": 46
+    "projected_fantasy_points": 13.842681623931623,
+    "games_played": 48
   },
   {
-    "player_id": 5472,
-    "name": "Trey Lyles",
-    "status": "GTD",
+    "player_id": 5270,
+    "name": "Rodney McGruder",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 13.79375,
+    "games_played": 16
+  },
+  {
+    "player_id": 4800,
+    "name": "Ish Smith",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 13.776666666666666,
+    "games_played": 20
+  },
+  {
+    "player_id": 5190,
+    "name": "Tony Snell",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 13.694787644787645,
+    "games_played": 37
+  },
+  {
+    "player_id": 6468,
+    "name": "Facundo Campazzo",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 13.689087656529518,
+    "games_played": 43
+  },
+  {
+    "player_id": 5080,
+    "name": "Darius Miller",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 13.684444444444443,
+    "games_played": 17
+  },
+  {
+    "player_id": 5356,
+    "name": "Dwight Powell",
     "position_type": "P",
     "eligible_positions": [
       "PF",
       "F",
       "C",
-      "Util",
-      "IL+"
+      "Util"
     ],
-    "percent_owned": 0,
-    "projected_fantasy_points": 13.601811594202898,
-    "games_played": 23
+    "percent_owned": 2,
+    "status": "",
+    "projected_fantasy_points": 13.671330956625075,
+    "games_played": 34
   },
   {
-    "player_id": 4149,
-    "name": "Rajon Rondo",
+    "player_id": 6413,
+    "name": "Tyrese Maxey",
     "status": "INJ",
     "position_type": "P",
     "eligible_positions": [
       "PG",
+      "SG",
       "G",
       "Util",
       "IL",
       "IL+"
     ],
-    "percent_owned": 4,
-    "projected_fantasy_points": 13.481481481481481,
-    "games_played": 27
-  },
-  {
-    "player_id": 5830,
-    "name": "D.J. Wilson",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 13.480116959064327,
-    "games_played": 19
-  },
-  {
-    "player_id": 5524,
-    "name": "Boban Marjanovic",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 13.409848484848487,
-    "games_played": 22
-  },
-  {
-    "player_id": 5643,
-    "name": "Taurean Prince",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 13.404301075268819,
-    "games_played": 31
+    "percent_owned": 3,
+    "projected_fantasy_points": 13.496031746031745,
+    "games_played": 42
   },
   {
     "player_id": 5077,
@@ -2501,51 +2483,23 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 13.295048629531388,
-    "games_played": 29
+    "projected_fantasy_points": 13.406835637480798,
+    "games_played": 31
   },
   {
-    "player_id": 6440,
-    "name": "Nico Mannion",
+    "player_id": 5490,
+    "name": "Kevon Looney",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
-      "G",
+      "PF",
+      "F",
+      "C",
       "Util"
     ],
-    "percent_owned": 0,
+    "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 13.257407407407408,
-    "games_played": 18
-  },
-  {
-    "player_id": 5376,
-    "name": "Tyler Johnson",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 13.148760683760685,
-    "games_played": 30
-  },
-  {
-    "player_id": 5857,
-    "name": "Damyean Dotson",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 13.107936507936508,
-    "games_played": 35
+    "projected_fantasy_points": 13.382692307692308,
+    "games_played": 39
   },
   {
     "player_id": 5733,
@@ -2560,38 +2514,53 @@
     ],
     "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 13.050709219858156,
-    "games_played": 47
+    "projected_fantasy_points": 13.177154195011338,
+    "games_played": 49
   },
   {
-    "player_id": 6229,
-    "name": "Eric Paschall",
+    "player_id": 5150,
+    "name": "Aron Baynes",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 5,
+    "status": "",
+    "projected_fantasy_points": 13.157153474544778,
+    "games_played": 46
+  },
+  {
+    "player_id": 5390,
+    "name": "Khem Birch",
     "status": "GTD",
     "position_type": "P",
     "eligible_positions": [
-      "SF",
       "PF",
       "F",
       "C",
       "Util",
       "IL+"
     ],
-    "percent_owned": 3,
-    "projected_fantasy_points": 12.96783625730994,
-    "games_played": 38
+    "percent_owned": 5,
+    "projected_fantasy_points": 13.053959810874707,
+    "games_played": 47
   },
   {
-    "player_id": 5829,
-    "name": "Justin Patton",
+    "player_id": 6224,
+    "name": "Cody Martin",
     "position_type": "P",
     "eligible_positions": [
-      "C",
+      "SG",
+      "G",
+      "SF",
+      "F",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 12.936858974358975,
-    "games_played": 13
+    "projected_fantasy_points": 12.941344916344915,
+    "games_played": 37
   },
   {
     "player_id": 4728,
@@ -2609,108 +2578,19 @@
     "games_played": 19
   },
   {
-    "player_id": 6453,
-    "name": "Mason Jones",
+    "player_id": 6398,
+    "name": "Onyeka Okongwu",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 12.90923076923077,
-    "games_played": 26
-  },
-  {
-    "player_id": 5150,
-    "name": "Aron Baynes",
-    "position_type": "P",
-    "eligible_positions": [
+      "PF",
+      "F",
       "C",
       "Util"
     ],
-    "percent_owned": 5,
-    "status": "",
-    "projected_fantasy_points": 12.771322751322751,
-    "games_played": 45
-  },
-  {
-    "player_id": 5190,
-    "name": "Tony Snell",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
     "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 12.759523809523808,
-    "games_played": 35
-  },
-  {
-    "player_id": 4682,
-    "name": "Garrett Temple",
-    "status": "O",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util",
-      "IL+"
-    ],
-    "percent_owned": 1,
-    "projected_fantasy_points": 12.641261261261263,
-    "games_played": 37
-  },
-  {
-    "player_id": 6449,
-    "name": "Reggie Perry",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 12.585416666666665,
-    "games_played": 16
-  },
-  {
-    "player_id": 6416,
-    "name": "R.J. Hampton",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 12.313888888888888,
+    "projected_fantasy_points": 12.806746031746032,
     "games_played": 28
-  },
-  {
-    "player_id": 5468,
-    "name": "Stanley Johnson",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 12.29761904761905,
-    "games_played": 42
   },
   {
     "player_id": 5193,
@@ -2725,200 +2605,100 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 12.118057828696125,
-    "games_played": 47
+    "projected_fantasy_points": 12.806331763474622,
+    "games_played": 49
   },
   {
-    "player_id": 6413,
-    "name": "Tyrese Maxey",
+    "player_id": 4694,
+    "name": "Wesley Matthews",
+    "status": "GTD",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
       "SG",
       "G",
-      "Util"
+      "SF",
+      "F",
+      "Util",
+      "IL+"
     ],
-    "percent_owned": 3,
-    "status": "",
-    "projected_fantasy_points": 12.090476190476188,
+    "percent_owned": 1,
+    "projected_fantasy_points": 12.753968253968253,
     "games_played": 42
   },
   {
-    "player_id": 6354,
-    "name": "Jontay Porter",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 12.066666666666668,
-    "games_played": 2
-  },
-  {
-    "player_id": 4163,
-    "name": "P.J. Tucker",
+    "player_id": 5469,
+    "name": "Frank Kaminsky",
     "status": "INJ",
     "position_type": "P",
     "eligible_positions": [
-      "PF",
-      "F",
       "C",
       "Util",
       "IL",
       "IL+"
     ],
-    "percent_owned": 10,
-    "projected_fantasy_points": 11.939999999999998,
-    "games_played": 35
+    "percent_owned": 0,
+    "projected_fantasy_points": 12.70875,
+    "games_played": 32
   },
   {
-    "player_id": 6403,
-    "name": "Devin Vassell",
+    "player_id": 5886,
+    "name": "PJ Dozier",
     "position_type": "P",
     "eligible_positions": [
+      "PG",
       "SG",
       "G",
       "Util"
     ],
     "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 11.904487179487182,
-    "games_played": 39
+    "projected_fantasy_points": 12.615032679738562,
+    "games_played": 34
   },
   {
-    "player_id": 6483,
-    "name": "Brodric Thomas",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 11.8255698005698,
-    "games_played": 13
-  },
-  {
-    "player_id": 6036,
-    "name": "Moritz Wagner",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 11.821743295019159,
-    "games_played": 29
-  },
-  {
-    "player_id": 6052,
-    "name": "Jarred Vanderbilt",
+    "player_id": 6033,
+    "name": "Chandler Hutchison",
     "position_type": "P",
     "eligible_positions": [
       "SF",
       "PF",
       "F",
-      "C",
       "Util"
     ],
-    "percent_owned": 3,
+    "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 11.717424242424242,
-    "games_played": 44
+    "projected_fantasy_points": 12.589393939393938,
+    "games_played": 11
   },
   {
-    "player_id": 5865,
-    "name": "Edmond Sumner",
+    "player_id": 6031,
+    "name": "Josh Okogie",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 12.393664717348928,
+    "games_played": 38
+  },
+  {
+    "player_id": 6421,
+    "name": "Malachi Flynn",
     "position_type": "P",
     "eligible_positions": [
       "PG",
-      "SG",
       "G",
       "Util"
     ],
-    "percent_owned": 0,
+    "percent_owned": 9,
     "status": "",
-    "projected_fantasy_points": 11.703885003885004,
-    "games_played": 33
-  },
-  {
-    "player_id": 4729,
-    "name": "Patrick Patterson",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 11.574098124098123,
-    "games_played": 21
-  },
-  {
-    "player_id": 6060,
-    "name": "Chimezie Metu",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 11.5075,
-    "games_played": 16
-  },
-  {
-    "player_id": 6459,
-    "name": "Lamar Stevens",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 11.421464646464647,
-    "games_played": 33
-  },
-  {
-    "player_id": 6498,
-    "name": "Josh Hall",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 11.333333333333334,
-    "games_played": 10
-  },
-  {
-    "player_id": 5356,
-    "name": "Dwight Powell",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 11.313263888888889,
-    "games_played": 32
+    "projected_fantasy_points": 12.362499999999999,
+    "games_played": 24
   },
   {
     "player_id": 6026,
@@ -2933,26 +2713,68 @@
     ],
     "percent_owned": 2,
     "status": "",
-    "projected_fantasy_points": 11.283333333333333,
-    "games_played": 24
+    "projected_fantasy_points": 12.344333333333333,
+    "games_played": 25
   },
   {
-    "player_id": 5160,
-    "name": "Trey Burke",
+    "player_id": 6060,
+    "name": "Chimezie Metu",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 12.3265873015873,
+    "games_played": 18
+  },
+  {
+    "player_id": 6440,
+    "name": "Nico Mannion",
     "position_type": "P",
     "eligible_positions": [
       "PG",
       "G",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 11.181096866096865,
-    "games_played": 45
+    "projected_fantasy_points": 12.258187134502924,
+    "games_played": 19
   },
   {
-    "player_id": 6427,
-    "name": "Xavier Tillman",
+    "player_id": 5857,
+    "name": "Damyean Dotson",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 12.212380952380954,
+    "games_played": 35
+  },
+  {
+    "player_id": 6403,
+    "name": "Devin Vassell",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 12.192380952380953,
+    "games_played": 40
+  },
+  {
+    "player_id": 4729,
+    "name": "Patrick Patterson",
     "position_type": "P",
     "eligible_positions": [
       "PF",
@@ -2960,10 +2782,66 @@
       "C",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 11.145873015873015,
-    "games_played": 35
+    "projected_fantasy_points": 12.161111111111111,
+    "games_played": 22
+  },
+  {
+    "player_id": 4149,
+    "name": "Rajon Rondo",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 4,
+    "status": "",
+    "projected_fantasy_points": 12.061904761904762,
+    "games_played": 28
+  },
+  {
+    "player_id": 6453,
+    "name": "Mason Jones",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 11.883456790123459,
+    "games_played": 27
+  },
+  {
+    "player_id": 4766,
+    "name": "Nemanja Bjelica",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 3,
+    "status": "",
+    "projected_fantasy_points": 11.865858585858584,
+    "games_played": 30
+  },
+  {
+    "player_id": 6176,
+    "name": "Romeo Langford",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 11.699999999999998,
+    "games_played": 1
   },
   {
     "player_id": 5681,
@@ -2977,80 +2855,66 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 11.08516548463357,
-    "games_played": 47
+    "projected_fantasy_points": 11.554840397697541,
+    "games_played": 49
   },
   {
-    "player_id": 6121,
-    "name": "Gary Clark",
+    "player_id": 5376,
+    "name": "Tyler Johnson",
+    "status": "GTD",
     "position_type": "P",
     "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 10.92595238095238,
-    "games_played": 35
-  },
-  {
-    "player_id": 5903,
-    "name": "Luke Kornet",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 10.839583333333332,
-    "games_played": 16
-  },
-  {
-    "player_id": 6437,
-    "name": "Jordan Nwora",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 10.825694444444444,
-    "games_played": 16
-  },
-  {
-    "player_id": 6220,
-    "name": "KZ Okpala",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
+      "PG",
+      "SG",
+      "G",
       "Util",
-      "IL",
       "IL+"
     ],
     "percent_owned": 0,
-    "projected_fantasy_points": 10.795714285714286,
-    "games_played": 25
+    "projected_fantasy_points": 11.389247311827958,
+    "games_played": 31
   },
   {
-    "player_id": 6329,
-    "name": "Juan Toscano-Anderson",
+    "player_id": 5249,
+    "name": "Matthew Dellavedova",
     "position_type": "P",
     "eligible_positions": [
-      "SF",
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 11.300000000000002,
+    "games_played": 2
+  },
+  {
+    "player_id": 5830,
+    "name": "D.J. Wilson",
+    "position_type": "P",
+    "eligible_positions": [
       "PF",
       "F",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 10.746969696969698,
+    "projected_fantasy_points": 11.075396825396824,
+    "games_played": 21
+  },
+  {
+    "player_id": 6459,
+    "name": "Lamar Stevens",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 11.013131313131312,
     "games_played": 33
   },
   {
@@ -3067,128 +2931,57 @@
       "IL+"
     ],
     "percent_owned": 0,
-    "projected_fantasy_points": 10.655000000000001,
+    "projected_fantasy_points": 10.9675,
     "games_played": 40
   },
   {
-    "player_id": 6412,
-    "name": "Precious Achiuwa",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 10.477387588257153,
-    "games_played": 46
-  },
-  {
-    "player_id": 4766,
-    "name": "Nemanja Bjelica",
+    "player_id": 4163,
+    "name": "P.J. Tucker",
+    "status": "INJ",
     "position_type": "P",
     "eligible_positions": [
       "PF",
       "F",
-      "Util"
-    ],
-    "percent_owned": 3,
-    "status": "",
-    "projected_fantasy_points": 10.34080459770115,
-    "games_played": 29
-  },
-  {
-    "player_id": 6353,
-    "name": "Gabe Vincent",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 10.340784313725491,
-    "games_played": 34
-  },
-  {
-    "player_id": 6259,
-    "name": "Garrison Mathews",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 10.31089430894309,
-    "games_played": 41
-  },
-  {
-    "player_id": 5588,
-    "name": "Quinn Cook",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 10.271635610766046,
-    "games_played": 23
-  },
-  {
-    "player_id": 5334,
-    "name": "Rodney Hood",
-    "status": "O",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
+      "C",
       "Util",
+      "IL",
       "IL+"
     ],
-    "percent_owned": 1,
-    "projected_fantasy_points": 9.994047619047619,
-    "games_played": 42
+    "percent_owned": 10,
+    "projected_fantasy_points": 10.956666666666665,
+    "games_played": 35
   },
   {
-    "player_id": 5249,
-    "name": "Matthew Dellavedova",
+    "player_id": 6121,
+    "name": "Gary Clark",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
+      "SF",
+      "PF",
+      "F",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 9.9,
-    "games_played": 1
+    "projected_fantasy_points": 10.924285714285713,
+    "games_played": 35
   },
   {
-    "player_id": 5821,
-    "name": "Frank Ntilikina",
+    "player_id": 5468,
+    "name": "Stanley Johnson",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
       "SG",
       "G",
+      "SF",
+      "PF",
+      "F",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 9.83735294117647,
-    "games_played": 17
+    "projected_fantasy_points": 10.814987080103359,
+    "games_played": 43
   },
   {
     "player_id": 6270,
@@ -3202,70 +2995,87 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 9.636111111111111,
-    "games_played": 24
+    "projected_fantasy_points": 10.683048433048434,
+    "games_played": 26
   },
   {
-    "player_id": 6168,
-    "name": "Jarrett Culver",
+    "player_id": 6210,
+    "name": "Grant Williams",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
+      "SF",
+      "PF",
+      "F",
       "Util"
     ],
-    "percent_owned": 2,
+    "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 9.61568253968254,
+    "projected_fantasy_points": 10.64484126984127,
+    "games_played": 42
+  },
+  {
+    "player_id": 6214,
+    "name": "Dylan Windler",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 10.477598566308243,
+    "games_played": 31
+  },
+  {
+    "player_id": 6220,
+    "name": "KZ Okpala",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 10.476666666666667,
     "games_played": 25
   },
   {
-    "player_id": 6255,
-    "name": "John Konchar",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 9.60050505050505,
-    "games_played": 22
-  },
-  {
-    "player_id": 4969,
-    "name": "Brad Wanamaker",
+    "player_id": 6102,
+    "name": "Brandon Goodwin",
     "position_type": "P",
     "eligible_positions": [
       "PG",
-      "SG",
       "G",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 9.292547425474256,
-    "games_played": 41
+    "projected_fantasy_points": 10.113541666666668,
+    "games_played": 32
   },
   {
-    "player_id": 6267,
-    "name": "Max Strus",
+    "player_id": 6450,
+    "name": "Paul Reed",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
-      "G",
+      "SF",
+      "F",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 9.270833333333334,
-    "games_played": 24
+    "projected_fantasy_points": 10.087698412698414,
+    "games_played": 12
   },
   {
-    "player_id": 6275,
-    "name": "Caleb Martin",
+    "player_id": 5846,
+    "name": "Wes Iwundu",
     "position_type": "P",
     "eligible_positions": [
       "SG",
@@ -3276,7 +3086,35 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 9.229797979797981,
+    "projected_fantasy_points": 10.010714285714286,
+    "games_played": 27
+  },
+  {
+    "player_id": 6100,
+    "name": "Norvel Pelle",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.979999999999999,
+    "games_played": 5
+  },
+  {
+    "player_id": 6020,
+    "name": "Kevin Knox II",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 9.975901875901876,
     "games_played": 33
   },
   {
@@ -3295,55 +3133,70 @@
       "IL+"
     ],
     "percent_owned": 0,
-    "projected_fantasy_points": 9.15375,
+    "projected_fantasy_points": 9.95,
     "games_played": 24
   },
   {
-    "player_id": 6456,
-    "name": "Mamadi Diakite",
+    "player_id": 5903,
+    "name": "Luke Kornet",
     "position_type": "P",
     "eligible_positions": [
-      "SF",
-      "F",
+      "C",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 9.088888888888889,
-    "games_played": 6
+    "projected_fantasy_points": 9.91712962962963,
+    "games_played": 18
   },
   {
-    "player_id": 6020,
-    "name": "Kevin Knox II",
+    "player_id": 6036,
+    "name": "Moritz Wagner",
     "position_type": "P",
     "eligible_positions": [
-      "SF",
       "PF",
       "F",
+      "C",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 2,
     "status": "",
-    "projected_fantasy_points": 8.96547619047619,
-    "games_played": 32
+    "projected_fantasy_points": 9.866606929510157,
+    "games_played": 31
   },
   {
-    "player_id": 6034,
-    "name": "Aaron Holiday",
+    "player_id": 6168,
+    "name": "Jarrett Culver",
     "position_type": "P",
     "eligible_positions": [
       "PG",
+      "SG",
       "G",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 2,
     "status": "",
-    "projected_fantasy_points": 8.89722222222222,
-    "games_played": 44
+    "projected_fantasy_points": 9.85570987654321,
+    "games_played": 27
   },
   {
-    "player_id": 6398,
-    "name": "Onyeka Okongwu",
+    "player_id": 6399,
+    "name": "Killian Hayes",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 17,
+    "status": "",
+    "projected_fantasy_points": 9.795833333333333,
+    "games_played": 8
+  },
+  {
+    "player_id": 5833,
+    "name": "Harry Giles III",
     "position_type": "P",
     "eligible_positions": [
       "PF",
@@ -3353,8 +3206,125 @@
     ],
     "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 8.887179487179488,
+    "projected_fantasy_points": 9.767307692307691,
     "games_played": 26
+  },
+  {
+    "player_id": 6412,
+    "name": "Precious Achiuwa",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 2,
+    "status": "",
+    "projected_fantasy_points": 9.747163120567375,
+    "games_played": 47
+  },
+  {
+    "player_id": 6052,
+    "name": "Jarred Vanderbilt",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 2,
+    "status": "",
+    "projected_fantasy_points": 9.684541062801934,
+    "games_played": 46
+  },
+  {
+    "player_id": 5588,
+    "name": "Quinn Cook",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.55745341614907,
+    "games_played": 23
+  },
+  {
+    "player_id": 6449,
+    "name": "Reggie Perry",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.480065359477123,
+    "games_played": 17
+  },
+  {
+    "player_id": 5362,
+    "name": "Thanasis Antetokounmpo",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.450000000000001,
+    "games_played": 37
+  },
+  {
+    "player_id": 6353,
+    "name": "Gabe Vincent",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.293571428571427,
+    "games_played": 35
+  },
+  {
+    "player_id": 6259,
+    "name": "Garrison Mathews",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.260714285714286,
+    "games_played": 42
+  },
+  {
+    "player_id": 6483,
+    "name": "Brodric Thomas",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.217236467236468,
+    "games_played": 13
   },
   {
     "player_id": 6119,
@@ -3367,52 +3337,223 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 8.764052287581698,
-    "games_played": 17
+    "projected_fantasy_points": 9.183333333333335,
+    "games_played": 18
   },
   {
-    "player_id": 6246,
-    "name": "Miye Oni",
+    "player_id": 6264,
+    "name": "Matt Thomas",
     "position_type": "P",
     "eligible_positions": [
+      "PG",
       "SG",
       "G",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 8.742712842712843,
-    "games_played": 33
+    "projected_fantasy_points": 9.167528735632184,
+    "games_played": 29
   },
   {
-    "player_id": 6213,
-    "name": "Nassir Little",
-    "status": "INJ",
+    "player_id": 6498,
+    "name": "Josh Hall",
+    "status": "O",
     "position_type": "P",
     "eligible_positions": [
       "SF",
       "F",
       "Util",
-      "IL",
       "IL+"
     ],
     "percent_owned": 0,
-    "projected_fantasy_points": 8.711180773249739,
-    "games_played": 29
+    "projected_fantasy_points": 9.133888888888889,
+    "games_played": 12
   },
   {
-    "player_id": 6452,
-    "name": "Sam Merrill",
+    "player_id": 6400,
+    "name": "Obi Toppin",
     "position_type": "P",
     "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 14,
+    "status": "",
+    "projected_fantasy_points": 9.11423076923077,
+    "games_played": 40
+  },
+  {
+    "player_id": 6132,
+    "name": "Yuta Watanabe",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.099166666666667,
+    "games_played": 30
+  },
+  {
+    "player_id": 6043,
+    "name": "Jevon Carter",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.075793650793651,
+    "games_played": 36
+  },
+  {
+    "player_id": 6275,
+    "name": "Caleb Martin",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 9.032275132275133,
+    "games_played": 35
+  },
+  {
+    "player_id": 5334,
+    "name": "Rodney Hood",
+    "status": "O",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 1,
+    "projected_fantasy_points": 8.853174603174603,
+    "games_played": 42
+  },
+  {
+    "player_id": 6442,
+    "name": "Skylar Mays",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
       "SG",
       "G",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 8.701984126984128,
-    "games_played": 21
+    "projected_fantasy_points": 8.82020202020202,
+    "games_played": 22
+  },
+  {
+    "player_id": 6329,
+    "name": "Juan Toscano-Anderson",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 8.732222222222221,
+    "games_played": 35
+  },
+  {
+    "player_id": 5472,
+    "name": "Trey Lyles",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 8.718478260869563,
+    "games_played": 23
+  },
+  {
+    "player_id": 4682,
+    "name": "Garrett Temple",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 1,
+    "projected_fantasy_points": 8.669594594594594,
+    "games_played": 37
+  },
+  {
+    "player_id": 4937,
+    "name": "E'Twaun Moore",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 8.66875,
+    "games_played": 24
+  },
+  {
+    "player_id": 5160,
+    "name": "Trey Burke",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 8.4757852077001,
+    "games_played": 47
+  },
+  {
+    "player_id": 5821,
+    "name": "Frank Ntilikina",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 8.438888888888888,
+    "games_played": 18
   },
   {
     "player_id": 5678,
@@ -3426,42 +3567,54 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 8.352673796791445,
-    "games_played": 34
+    "projected_fantasy_points": 8.43611111111111,
+    "games_played": 36
   },
   {
-    "player_id": 6214,
-    "name": "Dylan Windler",
-    "status": "INJ",
+    "player_id": 6437,
+    "name": "Jordan Nwora",
     "position_type": "P",
     "eligible_positions": [
       "SF",
       "F",
-      "Util",
-      "IL",
-      "IL+"
+      "Util"
     ],
     "percent_owned": 0,
-    "projected_fantasy_points": 8.279139784946237,
-    "games_played": 31
+    "status": "",
+    "projected_fantasy_points": 8.307407407407409,
+    "games_played": 18
   },
   {
-    "player_id": 5695,
-    "name": "Ryan Arcidiacono",
+    "player_id": 6464,
+    "name": "Trent Forrest",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
+      "SG",
       "G",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 8.266187739463602,
-    "games_played": 29
+    "projected_fantasy_points": 8.285042735042735,
+    "games_played": 13
   },
   {
-    "player_id": 5846,
-    "name": "Wes Iwundu",
+    "player_id": 6414,
+    "name": "Zeke Nnaji",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 8.162298387096774,
+    "games_played": 31
+  },
+  {
+    "player_id": 6410,
+    "name": "Josh Green",
     "position_type": "P",
     "eligible_positions": [
       "SG",
@@ -3472,36 +3625,8 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 8.180666666666667,
+    "projected_fantasy_points": 8.104722222222222,
     "games_played": 25
-  },
-  {
-    "player_id": 6269,
-    "name": "Javonte Green",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 8.093703703703703,
-    "games_played": 27
-  },
-  {
-    "player_id": 6221,
-    "name": "Carsen Edwards",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 8.071296296296296,
-    "games_played": 18
   },
   {
     "player_id": 5434,
@@ -3519,99 +3644,8 @@
     "games_played": 12
   },
   {
-    "player_id": 6232,
-    "name": "Bol Bol",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 2,
-    "status": "",
-    "projected_fantasy_points": 7.986666666666667,
-    "games_played": 20
-  },
-  {
-    "player_id": 4937,
-    "name": "E'Twaun Moore",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 7.86875,
-    "games_played": 24
-  },
-  {
-    "player_id": 6414,
-    "name": "Zeke Nnaji",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 7.8223655913978485,
-    "games_played": 31
-  },
-  {
-    "player_id": 6462,
-    "name": "Nathan Knight",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 7.812670565302144,
-    "games_played": 19
-  },
-  {
-    "player_id": 6400,
-    "name": "Obi Toppin",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 14,
-    "status": "",
-    "projected_fantasy_points": 7.746558704453442,
-    "games_played": 38
-  },
-  {
-    "player_id": 5191,
-    "name": "Gorgui Dieng",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 3,
-    "projected_fantasy_points": 7.501449275362319,
-    "games_played": 23
-  },
-  {
-    "player_id": 6421,
-    "name": "Malachi Flynn",
+    "player_id": 5695,
+    "name": "Ryan Arcidiacono",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -3620,12 +3654,12 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 7.501268115942029,
-    "games_played": 23
+    "projected_fantasy_points": 7.988333333333333,
+    "games_played": 30
   },
   {
-    "player_id": 6132,
-    "name": "Yuta Watanabe",
+    "player_id": 3962,
+    "name": "Ersan Ilyasova",
     "position_type": "P",
     "eligible_positions": [
       "SF",
@@ -3635,8 +3669,21 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 7.488218390804597,
-    "games_played": 29
+    "projected_fantasy_points": 7.886666666666667,
+    "games_played": 5
+  },
+  {
+    "player_id": 6268,
+    "name": "Tacko Fall",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 1,
+    "status": "",
+    "projected_fantasy_points": 7.781746031746032,
+    "games_played": 14
   },
   {
     "player_id": 6406,
@@ -3651,27 +3698,43 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 7.413141025641026,
-    "games_played": 26
+    "projected_fantasy_points": 7.561428571428571,
+    "games_played": 28
   },
   {
-    "player_id": 6442,
-    "name": "Skylar Mays",
+    "player_id": 5191,
+    "name": "Gorgui Dieng",
+    "status": "INJ",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
+      "PF",
+      "F",
+      "C",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 2,
+    "projected_fantasy_points": 7.501449275362319,
+    "games_played": 23
+  },
+  {
+    "player_id": 6246,
+    "name": "Miye Oni",
+    "position_type": "P",
+    "eligible_positions": [
       "SG",
       "G",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 7.405714285714285,
-    "games_played": 21
+    "projected_fantasy_points": 7.466216931216931,
+    "games_played": 35
   },
   {
-    "player_id": 6102,
-    "name": "Brandon Goodwin",
+    "player_id": 6269,
+    "name": "Javonte Green",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -3680,23 +3743,80 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 7.367204301075269,
-    "games_played": 31
+    "projected_fantasy_points": 7.443703703703704,
+    "games_played": 27
   },
   {
-    "player_id": 5388,
-    "name": "Langston Galloway",
+    "player_id": 6050,
+    "name": "Isaac Bonga",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
+      "SF",
+      "PF",
+      "F",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 7.346949891067538,
-    "games_played": 34
+    "projected_fantasy_points": 7.386666666666668,
+    "games_played": 30
+  },
+  {
+    "player_id": 6227,
+    "name": "Alen Smailagic",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 7.38,
+    "games_played": 5
+  },
+  {
+    "player_id": 6462,
+    "name": "Nathan Knight",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 7.153333333333333,
+    "games_played": 20
+  },
+  {
+    "player_id": 6456,
+    "name": "Mamadi Diakite",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 7.122222222222223,
+    "games_played": 6
+  },
+  {
+    "player_id": 6238,
+    "name": "Jarrell Brantley",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 7.022222222222222,
+    "games_played": 16
   },
   {
     "player_id": 6282,
@@ -3710,70 +3830,12 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 7.202592592592592,
-    "games_played": 12
+    "projected_fantasy_points": 7.015242165242166,
+    "games_played": 13
   },
   {
-    "player_id": 6460,
-    "name": "Killian Tillie",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 7.188888888888889,
-    "games_played": 6
-  },
-  {
-    "player_id": 6268,
-    "name": "Tacko Fall",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 7.183333333333333,
-    "games_played": 12
-  },
-  {
-    "player_id": 6059,
-    "name": "Keita Bates-Diop",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 0,
-    "projected_fantasy_points": 6.98125,
-    "games_played": 16
-  },
-  {
-    "player_id": 5833,
-    "name": "Harry Giles III",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 1,
-    "status": "",
-    "projected_fantasy_points": 6.797222222222223,
-    "games_played": 24
-  },
-  {
-    "player_id": 6264,
-    "name": "Matt Thomas",
+    "player_id": 5388,
+    "name": "Langston Galloway",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -3783,40 +3845,56 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 6.697619047619047,
-    "games_played": 28
+    "projected_fantasy_points": 6.924727668845315,
+    "games_played": 34
   },
   {
-    "player_id": 6472,
-    "name": "Nate Hinton",
+    "player_id": 6239,
+    "name": "Tremont Waters",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
+      "PG",
       "G",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 6.461666666666666,
-    "games_played": 10
+    "projected_fantasy_points": 6.89047619047619,
+    "games_played": 14
   },
   {
-    "player_id": 6207,
-    "name": "Luka Samanic",
+    "player_id": 6232,
+    "name": "Bol Bol",
     "position_type": "P",
     "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 2,
+    "status": "",
+    "projected_fantasy_points": 6.58,
+    "games_played": 20
+  },
+  {
+    "player_id": 6281,
+    "name": "Kelan Martin",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
       "PF",
       "F",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 6.266666666666666,
-    "games_played": 18
+    "projected_fantasy_points": 6.510416666666667,
+    "games_played": 16
   },
   {
-    "player_id": 6450,
-    "name": "Paul Reed",
+    "player_id": 6438,
+    "name": "CJ Elleby",
     "position_type": "P",
     "eligible_positions": [
       "SF",
@@ -3825,8 +3903,22 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 6.256565656565656,
-    "games_played": 11
+    "projected_fantasy_points": 6.50343137254902,
+    "games_played": 17
+  },
+  {
+    "player_id": 6267,
+    "name": "Max Strus",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 6.4799999999999995,
+    "games_played": 25
   },
   {
     "player_id": 6240,
@@ -3840,36 +3932,8 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 6.057070707070707,
-    "games_played": 22
-  },
-  {
-    "player_id": 6043,
-    "name": "Jevon Carter",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 6.039999999999999,
-    "games_played": 35
-  },
-  {
-    "player_id": 6315,
-    "name": "Amir Coffey",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 6.004166666666666,
-    "games_played": 32
+    "projected_fantasy_points": 6.4390873015873025,
+    "games_played": 24
   },
   {
     "player_id": 5669,
@@ -3890,8 +3954,8 @@
     "games_played": 5
   },
   {
-    "player_id": 6050,
-    "name": "Isaac Bonga",
+    "player_id": 6203,
+    "name": "Sekou Doumbouya",
     "position_type": "P",
     "eligible_positions": [
       "SF",
@@ -3899,72 +3963,10 @@
       "F",
       "Util"
     ],
-    "percent_owned": 0,
+    "percent_owned": 1,
     "status": "",
-    "projected_fantasy_points": 5.744074074074074,
-    "games_played": 30
-  },
-  {
-    "player_id": 6410,
-    "name": "Josh Green",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 5.732142857142858,
-    "games_played": 24
-  },
-  {
-    "player_id": 6461,
-    "name": "Sean McDermott",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 5.677777777777777,
-    "games_played": 11
-  },
-  {
-    "player_id": 4300,
-    "name": "Jared Dudley",
-    "status": "INJ",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util",
-      "IL",
-      "IL+"
-    ],
-    "percent_owned": 0,
-    "projected_fantasy_points": 5.672727272727273,
-    "games_played": 11
-  },
-  {
-    "player_id": 5862,
-    "name": "Vlatko Cancar",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 5.643999999999999,
-    "games_played": 25
+    "projected_fantasy_points": 5.77625,
+    "games_played": 40
   },
   {
     "player_id": 6496,
@@ -3977,8 +3979,8 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 5.575,
-    "games_played": 8
+    "projected_fantasy_points": 5.759259259259259,
+    "games_played": 9
   },
   {
     "player_id": 6445,
@@ -3991,42 +3993,40 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 5.48888888888889,
+    "projected_fantasy_points": 5.633455433455434,
+    "games_played": 13
+  },
+  {
+    "player_id": 6292,
+    "name": "Devontae Cacok",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 5.533333333333334,
     "games_played": 12
   },
   {
-    "player_id": 6497,
-    "name": "Karim Mane",
-    "status": "GTD",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util",
-      "IL+"
-    ],
-    "percent_owned": 0,
-    "projected_fantasy_points": 5.372222222222223,
-    "games_played": 9
-  },
-  {
-    "player_id": 6203,
-    "name": "Sekou Doumbouya",
+    "player_id": 6315,
+    "name": "Amir Coffey",
     "position_type": "P",
     "eligible_positions": [
       "SF",
-      "PF",
       "F",
       "Util"
     ],
-    "percent_owned": 1,
+    "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 5.3308333333333335,
-    "games_played": 40
+    "projected_fantasy_points": 5.520959595959596,
+    "games_played": 33
   },
   {
-    "player_id": 6238,
-    "name": "Jarrell Brantley",
+    "player_id": 6207,
+    "name": "Luka Samanic",
     "position_type": "P",
     "eligible_positions": [
       "PF",
@@ -4035,12 +4035,40 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 5.227777777777778,
-    "games_played": 15
+    "projected_fantasy_points": 5.268245614035087,
+    "games_played": 19
   },
   {
-    "player_id": 6243,
-    "name": "Kyle Guy",
+    "player_id": 6255,
+    "name": "John Konchar",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 5.243055555555556,
+    "games_played": 24
+  },
+  {
+    "player_id": 6441,
+    "name": "Isaiah Joe",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 5.151282051282052,
+    "games_played": 26
+  },
+  {
+    "player_id": 6221,
+    "name": "Carsen Edwards",
     "position_type": "P",
     "eligible_positions": [
       "PG",
@@ -4049,8 +4077,22 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 5.194999999999999,
+    "projected_fantasy_points": 4.98,
     "games_played": 20
+  },
+  {
+    "player_id": 6472,
+    "name": "Nate Hinton",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 4.8975757575757575,
+    "games_played": 11
   },
   {
     "player_id": 5904,
@@ -4064,8 +4106,36 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 5.023789173789173,
-    "games_played": 26
+    "projected_fantasy_points": 4.85515873015873,
+    "games_played": 28
+  },
+  {
+    "player_id": 6243,
+    "name": "Kyle Guy",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 4.755555555555556,
+    "games_played": 21
+  },
+  {
+    "player_id": 6452,
+    "name": "Sam Merrill",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 4.753373015873016,
+    "games_played": 21
   },
   {
     "player_id": 6451,
@@ -4084,6 +4154,35 @@
     "games_played": 4
   },
   {
+    "player_id": 6497,
+    "name": "Karim Mane",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 4.4833333333333325,
+    "games_played": 9
+  },
+  {
+    "player_id": 6460,
+    "name": "Killian Tillie",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 4.4625,
+    "games_played": 8
+  },
+  {
     "player_id": 6326,
     "name": "Marques Bolden",
     "position_type": "P",
@@ -4097,6 +4196,20 @@
     "games_played": 6
   },
   {
+    "player_id": 6092,
+    "name": "Wenyen Gabriel",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 4.231746031746032,
+    "games_played": 7
+  },
+  {
     "player_id": 6307,
     "name": "Mychal Mulder",
     "position_type": "P",
@@ -4107,22 +4220,8 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 4.441111111111112,
-    "games_played": 40
-  },
-  {
-    "player_id": 6276,
-    "name": "DaQuan Jeffries",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 4.205602240896359,
-    "games_played": 17
+    "projected_fantasy_points": 4.164808362369338,
+    "games_played": 41
   },
   {
     "player_id": 6051,
@@ -4140,48 +4239,50 @@
     "games_played": 16
   },
   {
-    "player_id": 5528,
-    "name": "Axel Toupane",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 3.9066666666666667,
-    "games_played": 5
-  },
-  {
-    "player_id": 6337,
-    "name": "Rayjon Tucker",
+    "player_id": 5862,
+    "name": "Vlatko Cancar",
     "position_type": "P",
     "eligible_positions": [
       "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 3.8611111111111107,
-    "games_played": 4
-  },
-  {
-    "player_id": 6292,
-    "name": "Devontae Cacok",
-    "position_type": "P",
-    "eligible_positions": [
       "PF",
       "F",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 3.8333333333333335,
-    "games_played": 10
+    "projected_fantasy_points": 4.106,
+    "games_played": 25
+  },
+  {
+    "player_id": 6455,
+    "name": "Ty-Shon Alexander",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 3.9766666666666666,
+    "games_played": 5
+  },
+  {
+    "player_id": 4300,
+    "name": "Jared Dudley",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 3.8454545454545452,
+    "games_played": 11
   },
   {
     "player_id": 6258,
@@ -4197,6 +4298,34 @@
     "status": "",
     "projected_fantasy_points": 3.8326007326007328,
     "games_played": 13
+  },
+  {
+    "player_id": 6461,
+    "name": "Sean McDermott",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 3.801709401709402,
+    "games_played": 13
+  },
+  {
+    "player_id": 6337,
+    "name": "Rayjon Tucker",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 3.7066666666666666,
+    "games_played": 5
   },
   {
     "player_id": 6423,
@@ -4215,33 +4344,6 @@
     "games_played": 11
   },
   {
-    "player_id": 6239,
-    "name": "Tremont Waters",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 3.6277777777777778,
-    "games_played": 12
-  },
-  {
-    "player_id": 6222,
-    "name": "Bruno Fernando",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 3.5516908212560385,
-    "games_played": 23
-  },
-  {
     "player_id": 5861,
     "name": "Sindarius Thornwell",
     "position_type": "P",
@@ -4256,6 +4358,20 @@
     "status": "",
     "projected_fantasy_points": 3.5428571428571427,
     "games_played": 14
+  },
+  {
+    "player_id": 6432,
+    "name": "Robert Woodard II",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 3.5349494949494953,
+    "games_played": 11
   },
   {
     "player_id": 6419,
@@ -4273,6 +4389,38 @@
     "games_played": 12
   },
   {
+    "player_id": 6431,
+    "name": "Elijah Hughes",
+    "status": "GTD",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 3.331666666666667,
+    "games_played": 10
+  },
+  {
+    "player_id": 6059,
+    "name": "Keita Bates-Diop",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 3.23125,
+    "games_played": 16
+  },
+  {
     "player_id": 6228,
     "name": "Justin James",
     "position_type": "P",
@@ -4285,121 +4433,52 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 3.3368686868686868,
-    "games_played": 24
-  },
-  {
-    "player_id": 6441,
-    "name": "Isaiah Joe",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 3.296,
+    "projected_fantasy_points": 3.2110000000000003,
     "games_played": 25
   },
   {
-    "player_id": 6464,
-    "name": "Trent Forrest",
+    "player_id": 6354,
+    "name": "Jontay Porter",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 3.2311111111111113,
-    "games_played": 12
-  },
-  {
-    "player_id": 6432,
-    "name": "Robert Woodard II",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 3.1483333333333334,
-    "games_played": 10
-  },
-  {
-    "player_id": 6471,
-    "name": "Anthony Gill",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 3.001923076923077,
-    "games_played": 13
-  },
-  {
-    "player_id": 6428,
-    "name": "Tyler Bey",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 2.9866666666666664,
-    "games_played": 9
-  },
-  {
-    "player_id": 6431,
-    "name": "Elijah Hughes",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 2.831666666666667,
-    "games_played": 10
-  },
-  {
-    "player_id": 6438,
-    "name": "CJ Elleby",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 2.771111111111111,
-    "games_played": 15
-  },
-  {
-    "player_id": 6281,
-    "name": "Kelan Martin",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
       "PF",
       "F",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 2.7285714285714286,
-    "games_played": 14
+    "projected_fantasy_points": 3.0500000000000003,
+    "games_played": 4
+  },
+  {
+    "player_id": 5528,
+    "name": "Axel Toupane",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 2.973333333333333,
+    "games_played": 5
+  },
+  {
+    "player_id": 6225,
+    "name": "Deividas Sirvydis",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 2.7939393939393944,
+    "games_played": 11
   },
   {
     "player_id": 6433,
@@ -4412,8 +4491,22 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 2.6510101010101015,
+    "projected_fantasy_points": 2.7045454545454546,
     "games_played": 22
+  },
+  {
+    "player_id": 6474,
+    "name": "Nate Darling",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 2.65,
+    "games_played": 4
   },
   {
     "player_id": 6435,
@@ -4430,6 +4523,36 @@
     "games_played": 5
   },
   {
+    "player_id": 6466,
+    "name": "Markus Howard",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 2.474090909090909,
+    "games_played": 22
+  },
+  {
+    "player_id": 6284,
+    "name": "Juwan Morgan",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 0,
+    "projected_fantasy_points": 2.417105263157895,
+    "games_played": 19
+  },
+  {
     "player_id": 6402,
     "name": "Jalen Smith",
     "position_type": "P",
@@ -4440,91 +4563,8 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 2.466666666666667,
-    "games_played": 15
-  },
-  {
-    "player_id": 6425,
-    "name": "Daniel Oturu",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 2.4629318394024278,
-    "games_played": 17
-  },
-  {
-    "player_id": 6454,
-    "name": "Devon Dotson",
-    "position_type": "P",
-    "eligible_positions": [
-      "PG",
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 2.4444444444444446,
-    "games_played": 3
-  },
-  {
-    "player_id": 6071,
-    "name": "Kostas Antetokounmpo",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 2.4416666666666664,
-    "games_played": 7
-  },
-  {
-    "player_id": 6424,
-    "name": "Vernon Carey Jr.",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 2.439285714285714,
-    "games_played": 7
-  },
-  {
-    "player_id": 6225,
-    "name": "Deividas Sirvydis",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 2.3033333333333332,
-    "games_played": 10
-  },
-  {
-    "player_id": 5522,
-    "name": "Cristiano Felicio",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 2.272222222222222,
-    "games_played": 9
+    "projected_fantasy_points": 2.29375,
+    "games_played": 16
   },
   {
     "player_id": 6252,
@@ -4541,75 +4581,30 @@
     "games_played": 9
   },
   {
-    "player_id": 6284,
-    "name": "Juwan Morgan",
-    "status": "O",
+    "player_id": 6425,
+    "name": "Daniel Oturu",
     "position_type": "P",
     "eligible_positions": [
-      "PF",
-      "F",
-      "Util",
-      "IL+"
-    ],
-    "percent_owned": 0,
-    "projected_fantasy_points": 2.01140350877193,
-    "games_played": 19
-  },
-  {
-    "player_id": 6466,
-    "name": "Markus Howard",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
+      "C",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 1.8160606060606062,
-    "games_played": 22
+    "projected_fantasy_points": 2.2546296296296293,
+    "games_played": 18
   },
   {
-    "player_id": 6330,
-    "name": "Keljin Blevins",
+    "player_id": 5522,
+    "name": "Cristiano Felicio",
     "position_type": "P",
     "eligible_positions": [
-      "PG",
-      "G",
+      "C",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 1.711111111111111,
+    "projected_fantasy_points": 2.2222222222222223,
     "games_played": 9
-  },
-  {
-    "player_id": 6446,
-    "name": "Cassius Stanley",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 1.6833333333333336,
-    "games_played": 12
-  },
-  {
-    "player_id": 6227,
-    "name": "Alen Smailagic",
-    "position_type": "P",
-    "eligible_positions": [
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 1.5,
-    "games_played": 4
   },
   {
     "player_id": 6235,
@@ -4622,22 +4617,119 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 1.475,
-    "games_played": 4
+    "projected_fantasy_points": 2.1533333333333338,
+    "games_played": 5
   },
   {
-    "player_id": 6092,
-    "name": "Wenyen Gabriel",
+    "player_id": 6428,
+    "name": "Tyler Bey",
     "position_type": "P",
     "eligible_positions": [
-      "PF",
+      "SF",
       "F",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 1.4250000000000003,
-    "games_played": 6
+    "projected_fantasy_points": 2.124444444444445,
+    "games_played": 10
+  },
+  {
+    "player_id": 6446,
+    "name": "Cassius Stanley",
+    "position_type": "P",
+    "eligible_positions": [
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 1.9620512820512819,
+    "games_played": 13
+  },
+  {
+    "player_id": 6454,
+    "name": "Devon Dotson",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "SG",
+      "G",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 1.7444444444444445,
+    "games_played": 3
+  },
+  {
+    "player_id": 6071,
+    "name": "Kostas Antetokounmpo",
+    "position_type": "P",
+    "eligible_positions": [
+      "PF",
+      "F",
+      "C",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 1.724074074074074,
+    "games_played": 9
+  },
+  {
+    "player_id": 6424,
+    "name": "Vernon Carey Jr.",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 1.7074074074074073,
+    "games_played": 9
+  },
+  {
+    "player_id": 6434,
+    "name": "Nick Richards",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 1.702820512820513,
+    "games_played": 13
+  },
+  {
+    "player_id": 6471,
+    "name": "Anthony Gill",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 1.6499999999999997,
+    "games_played": 14
+  },
+  {
+    "player_id": 6222,
+    "name": "Bruno Fernando",
+    "position_type": "P",
+    "eligible_positions": [
+      "C",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 1.6180555555555556,
+    "games_played": 24
   },
   {
     "player_id": 6237,
@@ -4650,78 +4742,8 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 1.2444444444444442,
+    "projected_fantasy_points": 1.3555555555555554,
     "games_played": 12
-  },
-  {
-    "player_id": 6474,
-    "name": "Nate Darling",
-    "position_type": "P",
-    "eligible_positions": [
-      "SG",
-      "G",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 1.222222222222222,
-    "games_played": 3
-  },
-  {
-    "player_id": 3962,
-    "name": "Ersan Ilyasova",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "PF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 1.1500000000000001,
-    "games_played": 4
-  },
-  {
-    "player_id": 6434,
-    "name": "Nick Richards",
-    "position_type": "P",
-    "eligible_positions": [
-      "C",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 1.1472222222222224,
-    "games_played": 12
-  },
-  {
-    "player_id": 6499,
-    "name": "Naji Marshall",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 0.9773809523809524,
-    "games_played": 7
-  },
-  {
-    "player_id": 6148,
-    "name": "Cameron Reynolds",
-    "position_type": "P",
-    "eligible_positions": [
-      "SF",
-      "F",
-      "Util"
-    ],
-    "percent_owned": 0,
-    "status": "",
-    "projected_fantasy_points": 0.6666666666666666,
-    "games_played": 3
   },
   {
     "player_id": 6294,
@@ -4734,22 +4756,36 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 0.5222222222222223,
+    "projected_fantasy_points": 0.7833333333333333,
     "games_played": 3
   },
   {
-    "player_id": 6455,
-    "name": "Ty-Shon Alexander",
+    "player_id": 6330,
+    "name": "Keljin Blevins",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
+      "PG",
       "G",
       "Util"
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 0.3375,
-    "games_played": 4
+    "projected_fantasy_points": 0.5133333333333333,
+    "games_played": 10
+  },
+  {
+    "player_id": 6148,
+    "name": "Cameron Reynolds",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 0.4444444444444444,
+    "games_played": 3
   },
   {
     "player_id": 6083,
@@ -4762,8 +4798,8 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 0.2217948717948718,
-    "games_played": 13
+    "projected_fantasy_points": 0.1388888888888889,
+    "games_played": 14
   },
   {
     "player_id": 6322,
@@ -4776,8 +4812,8 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 0.16666666666666666,
-    "games_played": 3
+    "projected_fantasy_points": 0.08333333333333333,
+    "games_played": 4
   },
   {
     "player_id": 3765,
@@ -4808,6 +4844,22 @@
       "IL+"
     ],
     "percent_owned": 5,
+    "projected_fantasy_points": 0,
+    "games_played": 0
+  },
+  {
+    "player_id": 4942,
+    "name": "Isaiah Thomas",
+    "status": "INJ",
+    "position_type": "P",
+    "eligible_positions": [
+      "PG",
+      "G",
+      "Util",
+      "IL",
+      "IL+"
+    ],
+    "percent_owned": 3,
     "projected_fantasy_points": 0,
     "games_played": 0
   },
@@ -4969,18 +5021,31 @@
     "games_played": 0
   },
   {
-    "player_id": 6176,
-    "name": "Romeo Langford",
-    "status": "INJ",
+    "player_id": 6285,
+    "name": "Armoni Brooks",
     "position_type": "P",
     "eligible_positions": [
-      "SG",
+      "PG",
       "G",
-      "Util",
-      "IL",
-      "IL+"
+      "Util"
     ],
     "percent_owned": 0,
+    "status": "",
+    "projected_fantasy_points": 0,
+    "games_played": 0
+  },
+  {
+    "player_id": 6290,
+    "name": "Oshae Brissett",
+    "position_type": "P",
+    "eligible_positions": [
+      "SF",
+      "PF",
+      "F",
+      "Util"
+    ],
+    "percent_owned": 0,
+    "status": "",
     "projected_fantasy_points": 0,
     "games_played": 0
   },
@@ -4993,7 +5058,7 @@
       "F",
       "Util"
     ],
-    "percent_owned": 5,
+    "percent_owned": 4,
     "status": "",
     "projected_fantasy_points": 0,
     "games_played": 0
@@ -5025,8 +5090,8 @@
     ],
     "percent_owned": 0,
     "status": "",
-    "projected_fantasy_points": 0,
-    "games_played": 0
+    "projected_fantasy_points": 0.0,
+    "games_played": 1
   },
   {
     "player_id": 6465,
