@@ -63,6 +63,7 @@ def get_player_projections():
         fantasy_points_projection = calc_player_projection(player_stats_list)
         player_projections[player_name] = {
             "PLAYER_NAME": player_name,
+            "AGE": player_season_stats["AGE"],
             "FANTASY_POINTS_PROJECTION": fantasy_points_projection,
             "GP": player_season_stats["GP"],
         }
