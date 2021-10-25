@@ -3,6 +3,7 @@ charset-normalizer==2.0.7
 docopt==0.6.2
 idna==3.3
 nba-api==1.1.9
+numpy==1.22.0.dev0+1435.gf4ef0fd5d
 objectpath==0.6.1
 pyaml==21.10.1
 pydash==5.1.0
@@ -10,6 +11,8 @@ pytz==2021.3
 PyYAML==6.0
 rauth==0.7.3
 requests==2.26.0
+scipy==1.8.0.dev0+1869.838cfbe
 urllib3==1.26.7
+xgboost==1.5.0
 yahoo-fantasy-api==2.4.1
 yahoo-oauth==1.1
