@@ -1,28 +1,17 @@
-import os
-from constants import LEAGUE_TYPES
-from utils import option_selector
+from utils import get_config_files, option_selector
 
 
 def main():
-    options = []
-    for key, info in LEAGUE_TYPES.items():
-        with os.scandir("config/" + key) as entries:
-            for entry in entries:
-                if ".json" in entry.name:
-                    options.append(
-                        {
-                            "label": "["
-                            + info["name"]
-                            + "] "
-                            + entry.name.replace(".json", ""),
-                            "data": {
-                                "type": key,
-                                "config_path": entry.path,
-                            },
-                        }
-                    )
-    league_info = option_selector("Please select a league...", options)
-    print(league_info)
+    config_files = get_config_files()
+    if len(config_files):
+        league_info = option_selector(
+            "Please select a league...",
+            config_files,
+            lambda file_data: "[" + file_data[0]["name"] + "] " + file_data[1].name,
+        )
+        print(league_info)
+    else:
+        print("No config files found!")
 
 
 if __name__ == "__main__":

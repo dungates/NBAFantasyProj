@@ -1,5 +1,6 @@
 import json
-from constants import STAT_COEFFS
+import os
+from constants import LEAGUE_TYPES, STAT_COEFFS
 
 
 def calc_fantasy_points(player_season):
@@ -9,16 +10,30 @@ def calc_fantasy_points(player_season):
     return total
 
 
-def option_selector(prompt, options):
+def get_config_files():
+    files = []
+    for type_info in LEAGUE_TYPES.values():
+        path = "config/" + type_info["key"]
+        if not os.path.exists(path):
+            continue
+        with os.scandir(path) as entries:
+            for file in entries:
+                if file.is_file() and file.name.endswith(".json"):
+                    files.append((type_info, file))
+    return files
+
+
+def option_selector(prompt, data, get_label):
     print(prompt)
-    for index, option in enumerate(options):
-        print(str(index + 1) + ". " + option["label"])
+    for index, item in enumerate(data):
+        label = get_label(item)
+        print(str(index + 1) + ". " + label)
     index = int(input("Enter a number: "))
-    if index > 0 and index <= len(options):
-        return options[index - 1]["data"]
+    if index > 0 and index <= len(data):
+        return data[index - 1]
     else:
         print("Invalid number\n")
-        return option_selector(prompt, options)
+        return option_selector(prompt, data, get_label)
 
 
 def write_json(data, filename):
