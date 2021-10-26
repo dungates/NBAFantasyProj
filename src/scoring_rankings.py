@@ -71,25 +71,23 @@ def print_stats(player_seasons_by_scoring_rtg):
 
     # Initialize rank counter
     rank = 1
-    header = "Rk. Player Name\t\t\t\t\t\t\t\tTeam\t\tScoring Rating\t\tGP\tMPG\tPPG\tFG%/3P%/FT%\tTSA/G"
 
-    print(
-        "{:<8} {:<20} {:<10} {:<10}".format(
-            "Rk.",
-            "Player Name",
-            "Team",
-            "Scoring Rtg",
-            "GP",
-            "MPG",
-            "PPG",
-            "FG%",
-            "3P%",
-            "FT%",
-            "TSA/G",
-        )
+    # Define row format and print header
+    row_format = "{:<5} {:<25} {:<10} {:<15} {:<5} {:<5} {:<5} {:<20} {:<5}"
+    header = row_format.format(
+        "Rk.",
+        "Player Name",
+        "Team",
+        "Scoring Rtg",
+        "GP",
+        "MPG",
+        "PPG",
+        "FG%/3P%/FT%",
+        "TSA/G",
     )
 
-    # Initialize lines array
+    # Print header and initialize lines array
+    print(header)
     lines = [header]
 
     # Iterate over list of player stats
@@ -98,35 +96,37 @@ def print_stats(player_seasons_by_scoring_rtg):
         if player_season["TSA"] < tsa_requirement:
             continue
 
-        # Print scoring stats
-        lines.append(
-            (str(rank) + ". ").ljust(4)
-            + player_season["PLAYER_NAME"].ljust(24)
-            + "\t\t"
-            + player_season["TEAM_ABBREVIATION"]
-            + "\t\t"
-            + str(round(player_season["SCORING_RATING"], 8)).ljust(11)
-            + "\t\t"
-            + str(player_season["GP"])
-            + "\t"
-            + str(round(player_season["MIN"] / player_season["GP"], 1))
-            + "\t"
-            + str(round(player_season["PTS"] / player_season["GP"], 1))
-            + "\t"
-            + str(round(100 * player_season["FG_PCT"], 1))
-            + "/"
-            + str(round(100 * player_season["FG3_PCT"], 1))
-            + "/"
-            + str(round(100 * player_season["FT_PCT"], 1))
-            + "\t\t"
-            + str(round(player_season["TSA"] / player_season["GP"], 1))
+        # Format shooting splits string
+        shooting_splits = "/".join(
+            [
+                str(round(100 * player_season["FG_PCT"], 1)),
+                str(round(100 * player_season["FG3_PCT"], 1)),
+                str(round(100 * player_season["FT_PCT"], 1)),
+            ]
         )
+
+        # Format data row
+        row = row_format.format(
+            rank,
+            player_season["PLAYER_NAME"],
+            player_season["TEAM_ABBREVIATION"],
+            round(player_season["SCORING_RATING"], 8),
+            player_season["GP"],
+            round(player_season["MIN"] / player_season["GP"], 1),
+            round(player_season["PTS"] / player_season["GP"], 1),
+            shooting_splits,
+            round(player_season["TSA"] / player_season["GP"], 1),
+        )
+
+        # Print row and add to lines array
+        print(row)
+        lines.append(row)
 
         # Increment rank
         rank = rank + 1
 
-    file_contents = "\n"
-    write_txt(file_contents.join(lines), "scoring_stats")
+    # Write lines to file
+    write_txt("\n".join(lines), "scoring_stats")
 
 
 def main():
