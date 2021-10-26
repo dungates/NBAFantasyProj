@@ -23,14 +23,14 @@ def get_config_files():
     return files
 
 
-def option_selector(prompt, data, get_label):
+def option_selector(prompt, data, get_label=None):
     print(prompt)
     for index, item in enumerate(data):
-        label = get_label(item)
+        label = str(item) if get_label == None else get_label(item)
         print(str(index + 1) + ". " + label)
-    index = int(input("Enter a number: "))
-    if index > 0 and index <= len(data):
-        return data[index - 1]
+    index = int(input("Enter a number: ")) - 1
+    if index >= 0 and index < len(data):
+        return (index, data[index])
     else:
         print("Invalid number\n")
         return option_selector(prompt, data, get_label)
