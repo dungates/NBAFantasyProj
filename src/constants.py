@@ -1,3 +1,12 @@
+LEAGUE_TYPES = {
+    "yahoo": {
+        "name": "Yahoo"
+    },
+    "espn": {
+        "name": "ESPN"
+    }
+}
+
 STAT_COEFFS = {
     "FG3M": 1,
     "PTS": 1,

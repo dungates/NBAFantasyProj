@@ -1,12 +1,9 @@
 from pydash.collections import at
 from pydash.objects import get
 from yahoo_fantasy_api import game, league, team
-from yahoo_oauth import OAuth2
-
-oauth = OAuth2(None, None, from_file="yahooAuth.json")
 
 
-def get_current_league():
+def get_current_league(oauth):
     current_game = game.Game(oauth, "nba")
     league_ids = current_game.league_ids()
     if not league_ids:
@@ -16,20 +13,19 @@ def get_current_league():
     return current_league
 
 
-def get_current_week():
-    current_league = get_current_league()
+def get_current_week(oauth):
+    current_league = get_current_league(oauth)
     return current_league.current_week()
 
 
-def get_stat_categories():
-    current_league = get_current_league()
-    print(current_league)
+def get_stat_categories(oauth):
+    current_league = get_current_league(oauth)
     stat_categories = current_league.stat_categories()
     return stat_categories
 
 
-def get_free_agents():
-    current_league = get_current_league()
+def get_free_agents(oauth):
+    current_league = get_current_league(oauth)
     players = current_league.free_agents("Util")
     return players
 
@@ -44,8 +40,8 @@ def get_team_data(team):
     return team_data
 
 
-def get_matchups(week=None):
-    current_league = get_current_league()
+def get_matchups(oauth, week=None):
+    current_league = get_current_league(oauth)
     current_matchups = current_league.matchups(week)
     matchups = get(current_matchups, "fantasy_content.league.1.scoreboard.0.matchups")
     team_key_tuples = []
@@ -58,6 +54,6 @@ def get_matchups(week=None):
     return team_key_tuples
 
 
-def get_roster(team_key=None):
+def get_roster(oauth, team_key=None):
     current_team = team.Team(oauth, team_key)
     return current_team.roster()

@@ -1,7 +1,9 @@
+import os
 from pydash.collections import order_by
 from api.nba import get_current_season_stats
 from api.yahoo import get_free_agents, get_matchups, get_roster
-from utils import calc_fantasy_points, write_json
+from constants import LEAGUE_TYPES
+from utils import calc_fantasy_points, option_selector, write_json
 
 
 def print_roster(roster, name, player_projections):
@@ -115,4 +117,16 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    options = []
+    for key, info in LEAGUE_TYPES.items():
+        with os.scandir('config/' + key) as entries:
+            for entry in entries:
+                if ".json" in entry.name:
+                    options.append({
+                        "type": key,
+                        "config_path": entry.path,
+                        "label": "[" + info["name"] + "] " + entry.name.replace(".json", "")
+                    })
+    league_info = option_selector("Please select a league...", options)
+    print(league_info)
+    
