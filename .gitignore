@@ -3,5 +3,4 @@ env/
 .Rproj.user
 .DS_Store
 __pycache__/
-config/espn
-config/yahoo
+config/**/*.json
