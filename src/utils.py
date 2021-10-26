@@ -15,7 +15,7 @@ def option_selector(prompt, options):
         print(str(index + 1) + ". " + option["label"])
     index = int(input("Enter a number: "))
     if index > 0 and index <= len(options):
-        return options[index - 1]
+        return options[index - 1]["data"]
     else:
         print("Invalid number\n")
         return option_selector(prompt, options)
