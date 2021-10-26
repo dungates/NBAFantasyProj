@@ -24,3 +24,8 @@ def option_selector(prompt, options):
 def write_json(data, filename):
     with open("Data/" + filename + ".json", "w") as json_file:
         json.dump(data, json_file, indent=2)
+
+
+def write_txt(data, filename):
+    with open("Data/" + filename + ".txt", "w") as txt_file:
+        txt_file.write(data)

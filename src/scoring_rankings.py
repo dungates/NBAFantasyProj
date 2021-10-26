@@ -6,6 +6,7 @@ from constants import (
     CURRENT_SEASON_NUM_TEAMS,
     TSA_REQUIREMENT_NORMAL_SEASON,
 )
+from utils import write_txt
 
 
 def get_tsa_requirement():
@@ -64,16 +65,32 @@ def inject_scoring_rating(player_season_totals, player_season_per_100):
     player_season_totals["SCORING_RATING"] = scoring_rating
 
 
-# TODO: Print stats in more readable format
 def print_stats(player_seasons_by_scoring_rtg):
     # Get TSA qualifier
     tsa_requirement = get_tsa_requirement()
 
     # Initialize rank counter
     rank = 1
+    header = "Rk. Player Name\t\t\t\t\t\t\t\tTeam\t\tScoring Rating\t\tGP\tMPG\tPPG\tFG%/3P%/FT%\tTSA/G"
+
     print(
-        "Rk. Player Name\t\t\t\tTeam\t\tScoring Rating\t\tGP\tMPG\tPPG\tFG%/3P%/FT%\tTSA/G"
+        "{:<8} {:<20} {:<10} {:<10}".format(
+            "Rk.",
+            "Player Name",
+            "Team",
+            "Scoring Rtg",
+            "GP",
+            "MPG",
+            "PPG",
+            "FG%",
+            "3P%",
+            "FT%",
+            "TSA/G",
+        )
     )
+
+    # Initialize lines array
+    lines = [header]
 
     # Iterate over list of player stats
     for player_season in player_seasons_by_scoring_rtg:
@@ -82,7 +99,7 @@ def print_stats(player_seasons_by_scoring_rtg):
             continue
 
         # Print scoring stats
-        print(
+        lines.append(
             (str(rank) + ". ").ljust(4)
             + player_season["PLAYER_NAME"].ljust(24)
             + "\t\t"
@@ -101,12 +118,15 @@ def print_stats(player_seasons_by_scoring_rtg):
             + str(round(100 * player_season["FG3_PCT"], 1))
             + "/"
             + str(round(100 * player_season["FT_PCT"], 1))
-            + "\t"
+            + "\t\t"
             + str(round(player_season["TSA"] / player_season["GP"], 1))
         )
 
         # Increment rank
         rank = rank + 1
+
+    file_contents = "\n"
+    write_txt(file_contents.join(lines), "scoring_stats")
 
 
 def main():
