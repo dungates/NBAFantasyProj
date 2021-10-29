@@ -13,7 +13,7 @@ def calc_fantasy_points(player_season):
 def get_config_files():
     files = []
     for type_info in LEAGUE_TYPES.values():
-        path = "config/{}".format(type_info["key"])
+        path = f"config/{type_info['key']}"
         if not os.path.exists(path):
             continue
         with os.scandir(path) as entries:
@@ -24,10 +24,10 @@ def get_config_files():
 
 
 def option_selector(prompt, data, get_label=None):
-    print("\n{}".format(prompt))
+    print(f"\n{prompt}")
     for index, item in enumerate(data):
         label = str(item) if get_label == None else get_label(item)
-        print("{}. {}".format(str(index + 1), label))
+        print(f"{str(index + 1)}. {label}")
     index = int(input("Enter a number: ")) - 1
     if index >= 0 and index < len(data):
         return (index, data[index])
@@ -37,10 +37,10 @@ def option_selector(prompt, data, get_label=None):
 
 
 def write_json(data, filename):
-    with open("Data/{}.json".format(filename), "w") as json_file:
+    with open(f"Data/{filename}.json", "w") as json_file:
         json.dump(data, json_file, indent=2)
 
 
 def write_txt(data, filename):
-    with open("Data/{}.txt".format(filename), "w") as txt_file:
+    with open(f"Data/{filename}.txt", "w") as txt_file:
         txt_file.write(data)

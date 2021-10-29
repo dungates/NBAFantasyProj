@@ -1,5 +1,6 @@
+import os
 from constants import LEAGUE_TYPES
-from utils import get_config_files, option_selector
+from utils import get_config_files, option_selector, write_json
 
 
 def add_fantasy_account():
@@ -8,7 +9,22 @@ def add_fantasy_account():
         list(LEAGUE_TYPES.values()),
         lambda league_type: league_type["name"],
     )
-    print(selected_option)
+    selected_key = selected_option[1]["key"]
+    config_path = f"config/{selected_key}/"
+    os.makedirs(config_path, exist_ok=True)
+
+    name = input("Enter account name: ")
+    if selected_key == "yahoo":
+        key = input("Enter consumer key: ")
+        secret = input("Enter consumer secret: ")
+        os.system(f"yfa_init_oauth_env -k {key} -s {secret} {config_path}{name}.json")
+    elif selected_key == "espn":
+        espn_s2 = input("Enter espn_s2 variable: ")
+        swid = input("Enter swid variable: ")
+        json_object = {"espn_s2": espn_s2, "swid": swid}
+        write_json(json_object, f"{config_path}{name}.json")
+
+    main()
 
 
 def load_fantasy_account():
@@ -16,7 +32,7 @@ def load_fantasy_account():
     league_info = option_selector(
         "Select existing fantasy sports account...",
         config_files,
-        lambda file_data: "[{}] {}".format(file_data[0]["name"], file_data[1].name),
+        lambda file_data: f"[{file_data[0]['name']}] {file_data[1].name}",
     )
     return league_info[1]
 
