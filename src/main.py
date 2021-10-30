@@ -1,5 +1,6 @@
 import os
 from sys import platform
+from api.yahoo import get_current_league
 from constants import LEAGUE_TYPES
 from utils import get_config_files, option_selector, write_json
 
@@ -52,6 +53,13 @@ def load_fantasy_account():
         config_files,
         lambda file_data: f"[{file_data[0]['name']}] {file_data[1].name}",
     )
+    selected_key = league_info[1][0]["key"]
+
+    if selected_key == "yahoo":
+        current_league = get_current_league(league_info[1][1].path)
+        free_agents = current_league.free_agents("")
+        print(free_agents)
+
     return league_info[1]
 
 
