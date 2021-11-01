@@ -30,17 +30,10 @@ def parse_player_stats(player_stats):
     return results
 
 
-def get_past_season_stats(end_season, num_seasons):
-    results = []
-    for season in range(end_season + 1 - num_seasons, end_season + 1):
-        full_season = format_season(season)
-
-        print("Retrieving player stats for " + full_season + "...")
-        stats = leaguedashplayerstats.LeagueDashPlayerStats(season=full_season)
-        parsed_stats = parse_player_stats(stats)
-
-        results += parsed_stats
-    return results
+def get_season_stats(season):
+    full_season = format_season(season)
+    stats = leaguedashplayerstats.LeagueDashPlayerStats(season=full_season)
+    return parse_player_stats(stats)
 
 
 def get_current_season_stats(last_range):
