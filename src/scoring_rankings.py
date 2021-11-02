@@ -1,11 +1,12 @@
 from nba_api.stats.endpoints import leaguedashplayerstats, leaguegamelog
 from pydash.collections import order_by
 from api.nba import get_current_season_full
-from constants import (
+from utils.constants import (
     CURRENT_SEASON_NUM_GAMES,
     CURRENT_SEASON_NUM_TEAMS,
     TSA_REQUIREMENT_NORMAL_SEASON,
 )
+from utils.helpers import write_txt
 
 
 def get_tsa_requirement():
@@ -64,16 +65,30 @@ def inject_scoring_rating(player_season_totals, player_season_per_100):
     player_season_totals["SCORING_RATING"] = scoring_rating
 
 
-# TODO: Print stats in more readable format
 def print_stats(player_seasons_by_scoring_rtg):
     # Get TSA qualifier
     tsa_requirement = get_tsa_requirement()
 
     # Initialize rank counter
     rank = 1
-    print(
-        "Rk. Player Name\t\t\t\tTeam\t\tScoring Rating\t\tGP\tMPG\tPPG\tFG%/3P%/FT%\tTSA/G"
+
+    # Define row format and print header
+    row_format = "{:<5} {:<25} {:<10} {:<15} {:<5} {:<5} {:<5} {:<20} {:<5}"
+    header = row_format.format(
+        "Rk.",
+        "Player Name",
+        "Team",
+        "Scoring Rtg",
+        "GP",
+        "MPG",
+        "PPG",
+        "FG%/3P%/FT%",
+        "TSA/G",
     )
+
+    # Print header and initialize lines array
+    print(header)
+    lines = [header]
 
     # Iterate over list of player stats
     for player_season in player_seasons_by_scoring_rtg:
@@ -81,32 +96,37 @@ def print_stats(player_seasons_by_scoring_rtg):
         if player_season["TSA"] < tsa_requirement:
             continue
 
-        # Print scoring stats
-        print(
-            (str(rank) + ". ").ljust(4)
-            + player_season["PLAYER_NAME"].ljust(24)
-            + "\t\t"
-            + player_season["TEAM_ABBREVIATION"]
-            + "\t\t"
-            + str(round(player_season["SCORING_RATING"], 8)).ljust(11)
-            + "\t\t"
-            + str(player_season["GP"])
-            + "\t"
-            + str(round(player_season["MIN"] / player_season["GP"], 1))
-            + "\t"
-            + str(round(player_season["PTS"] / player_season["GP"], 1))
-            + "\t"
-            + str(round(100 * player_season["FG_PCT"], 1))
-            + "/"
-            + str(round(100 * player_season["FG3_PCT"], 1))
-            + "/"
-            + str(round(100 * player_season["FT_PCT"], 1))
-            + "\t"
-            + str(round(player_season["TSA"] / player_season["GP"], 1))
+        # Format shooting splits string
+        shooting_splits = "/".join(
+            [
+                str(round(100 * player_season["FG_PCT"], 1)),
+                str(round(100 * player_season["FG3_PCT"], 1)),
+                str(round(100 * player_season["FT_PCT"], 1)),
+            ]
         )
+
+        # Format data row
+        row = row_format.format(
+            rank,
+            player_season["PLAYER_NAME"],
+            player_season["TEAM_ABBREVIATION"],
+            round(player_season["SCORING_RATING"], 8),
+            player_season["GP"],
+            round(player_season["MIN"] / player_season["GP"], 1),
+            round(player_season["PTS"] / player_season["GP"], 1),
+            shooting_splits,
+            round(player_season["TSA"] / player_season["GP"], 1),
+        )
+
+        # Print row and add to lines array
+        print(row)
+        lines.append(row)
 
         # Increment rank
         rank = rank + 1
+
+    # Write lines to file
+    write_txt("\n".join(lines), "scoring_stats")
 
 
 def main():

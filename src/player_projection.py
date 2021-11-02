@@ -1,7 +1,9 @@
+import os
 from pydash.collections import order_by
-from api.nba import get_current_season_stats
+from api.nba import get_current_season, get_current_season_stats, get_season_stats
 from api.yahoo import get_free_agents, get_matchups, get_roster
-from utils import calc_fantasy_points, write_json
+from utils.constants import LEAGUE_TYPES
+from utils.helpers import calc_fantasy_points, write_json
 
 
 def print_roster(roster, name, player_projections):
@@ -38,6 +40,17 @@ def calc_player_projection(player_stats_list):
 
 
 def get_player_projections():
+    current_season = get_current_season()
+
+    print(f"Fetching {current_season - 3} season stats...")
+    season_stats_3 = get_season_stats(current_season - 3)
+
+    print(f"Fetching {current_season - 2} season stats...")
+    season_stats_2 = get_season_stats(current_season - 2)
+
+    print(f"Fetching {current_season - 1} season stats...")
+    season_stats_1 = get_season_stats(current_season - 1)
+
     print("Fetching current season stats...")
     season_stats = get_current_season_stats("season")
 
@@ -52,13 +65,27 @@ def get_player_projections():
         player_name = player_season_stats["PLAYER_NAME"]
 
         player_stats_list = []
-        player_stats_list.append({"weight": 1, "stats": player_season_stats})
+
+        if player_id in season_stats_3.keys():
+            player_stats_list.append({"weight": 1, "stats": season_stats_3[player_id]})
+
+        if player_id in season_stats_2.keys():
+            player_stats_list.append(
+                {"weight": 2.5, "stats": season_stats_2[player_id]}
+            )
+
+        if player_id in season_stats_1.keys():
+            player_stats_list.append(
+                {"weight": 6.5, "stats": season_stats_1[player_id]}
+            )
+
+        player_stats_list.append({"weight": 10, "stats": player_season_stats})
 
         if player_id in month_stats.keys():
-            player_stats_list.append({"weight": 1, "stats": month_stats[player_id]})
+            player_stats_list.append({"weight": 10, "stats": month_stats[player_id]})
 
         if player_id in week_stats.keys():
-            player_stats_list.append({"weight": 1, "stats": week_stats[player_id]})
+            player_stats_list.append({"weight": 10, "stats": week_stats[player_id]})
 
         fantasy_points_projection = calc_player_projection(player_stats_list)
         player_projections[player_name] = {

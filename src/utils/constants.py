@@ -1,3 +1,8 @@
+LEAGUE_TYPES = {
+    "yahoo": {"key": "yahoo", "name": "Yahoo"},
+    "espn": {"key": "espn", "name": "ESPN"},
+}
+
 STAT_COEFFS = {
     "FG3M": 1,
     "PTS": 1,
@@ -7,8 +12,6 @@ STAT_COEFFS = {
     "BLK": 3,
     "TOV": -1,
 }
-
-SEASON_WEIGHTS = [6, 2.5, 1.5]
 
 CURRENT_SEASON_NUM_GAMES = 82
 CURRENT_SEASON_NUM_TEAMS = 30
