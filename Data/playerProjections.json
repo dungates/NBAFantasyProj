@@ -2,31 +2,31 @@
   {
     "PLAYER_NAME": "Giannis Antetokounmpo",
     "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 56.72766263335935,
+    "FANTASY_POINTS_PROJECTION": 56.49224596669269,
     "GP": 7
   },
   {
     "PLAYER_NAME": "Nikola Jokic",
     "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 53.26771285197869,
+    "FANTASY_POINTS_PROJECTION": 53.01176047102631,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Paul George",
+    "AGE": 31.0,
+    "FANTASY_POINTS_PROJECTION": 52.487181074134206,
     "GP": 6
   },
   {
     "PLAYER_NAME": "Stephen Curry",
     "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 51.31759316770187,
+    "FANTASY_POINTS_PROJECTION": 51.81759316770187,
     "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Paul George",
-    "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 49.8921810741342,
-    "GP": 5
   },
   {
     "PLAYER_NAME": "Jimmy Butler",
     "AGE": 32.0,
-    "FANTASY_POINTS_PROJECTION": 49.646432858090186,
+    "FANTASY_POINTS_PROJECTION": 49.511016191423515,
     "GP": 6
   },
   {
@@ -36,10 +36,10 @@
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Karl-Anthony Towns",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 48.716622186147184,
-    "GP": 5
+    "PLAYER_NAME": "James Harden",
+    "AGE": 32.0,
+    "FANTASY_POINTS_PROJECTION": 48.712483160222135,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Anthony Davis",
@@ -48,16 +48,10 @@
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Jayson Tatum",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 48.216420334675874,
+    "PLAYER_NAME": "Karl-Anthony Towns",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 48.53662218614719,
     "GP": 6
-  },
-  {
-    "PLAYER_NAME": "James Harden",
-    "AGE": 32.0,
-    "FANTASY_POINTS_PROJECTION": 48.204149826888795,
-    "GP": 7
   },
   {
     "PLAYER_NAME": "Luka Doncic",
@@ -68,14 +62,8 @@
   {
     "PLAYER_NAME": "Kevin Durant",
     "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 47.56287960927961,
+    "FANTASY_POINTS_PROJECTION": 47.180657387057394,
     "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Dejounte Murray",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 47.03821017291166,
-    "GP": 6
   },
   {
     "PLAYER_NAME": "Russell Westbrook",
@@ -86,31 +74,37 @@
   {
     "PLAYER_NAME": "Ja Morant",
     "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 45.44281613908479,
-    "GP": 6
+    "FANTASY_POINTS_PROJECTION": 45.27553897180763,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Bradley Beal",
     "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 45.08542247004707,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Jonas Valanciunas",
-    "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 44.41083072745227,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Julius Randle",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 44.33310080983905,
+    "FANTASY_POINTS_PROJECTION": 44.98833913671374,
     "GP": 6
   },
   {
     "PLAYER_NAME": "Domantas Sabonis",
     "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 43.95126284406526,
+    "FANTASY_POINTS_PROJECTION": 44.706619986922405,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Jayson Tatum",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 44.544991763247296,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Julius Randle",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 44.54054128602954,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Dejounte Murray",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 44.4631185978201,
     "GP": 7
   },
   {
@@ -120,16 +114,16 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Trae Young",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 43.65851080246913,
-    "GP": 6
+    "PLAYER_NAME": "Jonas Valanciunas",
+    "AGE": 29.0,
+    "FANTASY_POINTS_PROJECTION": 43.64208072745227,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Nikola Vucevic",
     "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 42.96242602726575,
-    "GP": 6
+    "FANTASY_POINTS_PROJECTION": 43.255283170122894,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Rudy Gobert",
@@ -138,22 +132,46 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Al Horford",
-    "AGE": 35.0,
-    "FANTASY_POINTS_PROJECTION": 42.18362128433463,
-    "GP": 4
+    "PLAYER_NAME": "Trae Young",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 42.337379850088176,
+    "GP": 7
   },
   {
-    "PLAYER_NAME": "CJ McCollum",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 41.58289994934144,
-    "GP": 6
+    "PLAYER_NAME": "DeMar DeRozan",
+    "AGE": 32.0,
+    "FANTASY_POINTS_PROJECTION": 42.333299146409686,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "LaMelo Ball",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 41.88267526188557,
+    "GP": 8
   },
   {
     "PLAYER_NAME": "Brandon Ingram",
     "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 41.488812297454885,
+    "FANTASY_POINTS_PROJECTION": 41.70547896412155,
     "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Al Horford",
+    "AGE": 35.0,
+    "FANTASY_POINTS_PROJECTION": 41.686121284334625,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Zach LaVine",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 41.59637759989054,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Bam Adebayo",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 41.46108761009485,
+    "GP": 5
   },
   {
     "PLAYER_NAME": "Devin Booker",
@@ -162,45 +180,45 @@
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Jaylen Brown",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 41.10286194429457,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Zach LaVine",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 41.0428061713191,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Bam Adebayo",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 40.90275427676151,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Malcolm Brogdon",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 40.36219432043651,
-    "GP": 5
+    "PLAYER_NAME": "Damian Lillard",
+    "AGE": 31.0,
+    "FANTASY_POINTS_PROJECTION": 41.15897539292176,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Miles Bridges",
     "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 40.34485850607726,
+    "FANTASY_POINTS_PROJECTION": 40.80378707750583,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Jaylen Brown",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 40.7711952776279,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Fred VanVleet",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 40.43521846064815,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "CJ McCollum",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 40.3510547112462,
     "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Malcolm Brogdon",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 40.13719432043651,
+    "GP": 5
   },
   {
     "PLAYER_NAME": "Donovan Mitchell",
     "AGE": 25.0,
     "FANTASY_POINTS_PROJECTION": 40.106817751226075,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "DeMar DeRozan",
-    "AGE": 32.0,
-    "FANTASY_POINTS_PROJECTION": 39.861870574981104,
     "GP": 6
   },
   {
@@ -210,28 +228,16 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Fred VanVleet",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 39.794147032076715,
+    "PLAYER_NAME": "Cole Anthony",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 39.1014573010784,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Shai Gilgeous-Alexander",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 39.03434320557491,
     "GP": 7
-  },
-  {
-    "PLAYER_NAME": "LaMelo Ball",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 39.27797858869575,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Damian Lillard",
-    "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 39.04855872625509,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Anthony Edwards",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 38.98240106544901,
-    "GP": 5
   },
   {
     "PLAYER_NAME": "Chris Paul",
@@ -246,9 +252,9 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Khris Middleton",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 38.376596684861624,
+    "PLAYER_NAME": "Anthony Edwards",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 38.53673896499239,
     "GP": 6
   },
   {
@@ -258,33 +264,27 @@
     "GP": 6
   },
   {
+    "PLAYER_NAME": "Khris Middleton",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 37.751596684861624,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "OG Anunoby",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 37.58049406028503,
+    "GP": 8
+  },
+  {
     "PLAYER_NAME": "Deandre Ayton",
     "AGE": 23.0,
     "FANTASY_POINTS_PROJECTION": 37.57995329336814,
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Shai Gilgeous-Alexander",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 37.470950348432055,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Montrezl Harrell",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 36.78964020602939,
-    "GP": 6
-  },
-  {
     "PLAYER_NAME": "Draymond Green",
     "AGE": 31.0,
     "FANTASY_POINTS_PROJECTION": 36.52519044263231,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "John Collins",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 36.38800322728052,
     "GP": 6
   },
   {
@@ -294,16 +294,34 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "OG Anunoby",
+    "PLAYER_NAME": "John Collins",
     "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 36.33674406028503,
+    "FANTASY_POINTS_PROJECTION": 35.9814556082329,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Kemba Walker",
-    "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 35.700368048240286,
-    "GP": 6
+    "PLAYER_NAME": "Scottie Barnes",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 35.890476190476186,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Montrezl Harrell",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 35.836664015553204,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Devonte' Graham",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 35.43418873517787,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Jusuf Nurkic",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 35.268659909909914,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Richaun Holmes",
@@ -312,63 +330,33 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Devonte' Graham",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 35.14460540184454,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Cole Anthony",
+    "PLAYER_NAME": "Tyler Herro",
     "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 35.09754340675355,
+    "FANTASY_POINTS_PROJECTION": 34.50319433652767,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Kemba Walker",
+    "AGE": 31.0,
+    "FANTASY_POINTS_PROJECTION": 34.447094238716474,
     "GP": 7
-  },
-  {
-    "PLAYER_NAME": "D'Angelo Russell",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 34.41226631393299,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Robert Williams III",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 34.40682381465517,
-    "GP": 5
   },
   {
     "PLAYER_NAME": "Kyle Kuzma",
     "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 34.25251762467282,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Jusuf Nurkic",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 34.24782657657658,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Tyler Herro",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 34.19122852456186,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Dennis Schroder",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 34.11285269712303,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Scottie Barnes",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 33.982142857142854,
+    "FANTASY_POINTS_PROJECTION": 34.26680333895853,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Lonzo Ball",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 33.81254327469221,
+    "PLAYER_NAME": "Myles Turner",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 34.2047659249847,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Spencer Dinwiddie",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 33.951599264705884,
     "GP": 6
   },
   {
@@ -378,52 +366,64 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Gordon Hayward",
-    "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 33.4683930999556,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Jakob Poeltl",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 33.44305806512328,
-    "GP": 6
-  },
-  {
     "PLAYER_NAME": "Jerami Grant",
     "AGE": 27.0,
     "FANTASY_POINTS_PROJECTION": 33.339989615936354,
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Spencer Dinwiddie",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 33.22493259803922,
-    "GP": 5
-  },
-  {
     "PLAYER_NAME": "RJ Barrett",
     "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 32.3603428978429,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Saddiq Bey",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 32.122628832354856,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Evan Fournier",
-    "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 31.897438572230243,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Myles Turner",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 31.848515924984696,
+    "FANTASY_POINTS_PROJECTION": 33.03067256817256,
     "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Lonzo Ball",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 32.772067084216026,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Josh Giddey",
+    "AGE": 19.0,
+    "FANTASY_POINTS_PROJECTION": 32.767857142857146,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Evan Mobley",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 32.75833333333333,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Dennis Schroder",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 32.71166222093255,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Clint Capela",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 32.46025267435715,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Gordon Hayward",
+    "AGE": 31.0,
+    "FANTASY_POINTS_PROJECTION": 32.35500024281274,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "D'Angelo Russell",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 31.952266313932977,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Terry Rozier",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 31.491335250849556,
+    "GP": 3
   },
   {
     "PLAYER_NAME": "Andrew Wiggins",
@@ -432,15 +432,27 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Kelly Oubre Jr.",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 31.39055924736495,
-    "GP": 7
+    "PLAYER_NAME": "Saddiq Bey",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 31.414866275277234,
+    "GP": 6
   },
   {
-    "PLAYER_NAME": "Evan Mobley",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 31.327380952380953,
+    "PLAYER_NAME": "Andre Drummond",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 31.39972665565951,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Kyle Lowry",
+    "AGE": 35.0,
+    "FANTASY_POINTS_PROJECTION": 31.35691063602814,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Jakob Poeltl",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 31.30079616036138,
     "GP": 7
   },
   {
@@ -450,82 +462,94 @@
     "GP": 6
   },
   {
+    "PLAYER_NAME": "Jarrett Allen",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 31.091930555555553,
+    "GP": 8
+  },
+  {
     "PLAYER_NAME": "Mo Bamba",
     "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 31.125913663210802,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Kyle Lowry",
-    "AGE": 35.0,
-    "FANTASY_POINTS_PROJECTION": 30.95691063602814,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Derrick White",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 30.771957735830647,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Josh Giddey",
-    "AGE": 19.0,
-    "FANTASY_POINTS_PROJECTION": 30.666666666666668,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Kelly Olynyk",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 30.61251727461247,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Clint Capela",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 30.396264579119055,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Desmond Bane",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 30.364558152027936,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Will Barton",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 30.26792852250162,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "De'Anthony Melton",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 30.017420833333336,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Ricky Rubio",
-    "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 29.831711174854558,
-    "GP": 7
+    "FANTASY_POINTS_PROJECTION": 30.99109223463937,
+    "GP": 8
   },
   {
     "PLAYER_NAME": "Wendell Carter Jr.",
     "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 29.54332804792107,
+    "FANTASY_POINTS_PROJECTION": 30.68707804792107,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Derrick White",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 30.521957735830654,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Chris Duarte",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 29.361904761904764,
+    "PLAYER_NAME": "Kelly Olynyk",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 30.2271006079458,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Evan Fournier",
+    "AGE": 29.0,
+    "FANTASY_POINTS_PROJECTION": 30.150117143658814,
     "GP": 7
   },
   {
     "PLAYER_NAME": "Darius Garland",
     "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 29.320453667487566,
-    "GP": 5
+    "FANTASY_POINTS_PROJECTION": 30.12344512047902,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Franz Wagner",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 30.1,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Chris Duarte",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 29.716666666666665,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Gary Trent Jr.",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 29.60427058601847,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Ricky Rubio",
+    "AGE": 31.0,
+    "FANTASY_POINTS_PROJECTION": 29.24599688914027,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Caris LeVert",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 29.084154255319152,
+    "GP": 2
+  },
+  {
+    "PLAYER_NAME": "Lauri Markkanen",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 28.941680429864256,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Will Barton",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 28.82834518916829,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Kelly Oubre Jr.",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 28.78252353307924,
+    "GP": 8
   },
   {
     "PLAYER_NAME": "Carmelo Anthony",
@@ -540,16 +564,28 @@
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Jarrett Allen",
+    "PLAYER_NAME": "De'Anthony Melton",
     "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 28.42407341269841,
+    "FANTASY_POINTS_PROJECTION": 28.551944642857144,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Nickeil Alexander-Walker",
+    "PLAYER_NAME": "Desmond Bane",
     "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 28.183193895219794,
+    "FANTASY_POINTS_PROJECTION": 28.544923448831586,
     "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Robert Williams III",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 28.457657147988506,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Marcus Smart",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 28.361265624999998,
+    "GP": 6
   },
   {
     "PLAYER_NAME": "Mike Conley",
@@ -558,16 +594,16 @@
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Jaren Jackson Jr.",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 28.013768630039046,
-    "GP": 6
+    "PLAYER_NAME": "Aaron Gordon",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 27.97761824116743,
+    "GP": 7
   },
   {
-    "PLAYER_NAME": "Marcus Smart",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 27.948765625,
-    "GP": 5
+    "PLAYER_NAME": "Michael Porter Jr.",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 27.939044834946472,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Brook Lopez",
@@ -576,10 +612,10 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Michael Porter Jr.",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 27.688129084030724,
-    "GP": 6
+    "PLAYER_NAME": "Jaren Jackson Jr.",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 27.680435296705713,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Kristaps Porzingis",
@@ -588,27 +624,21 @@
     "GP": 3
   },
   {
-    "PLAYER_NAME": "Gary Trent Jr.",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 27.601592014589897,
+    "PLAYER_NAME": "Nickeil Alexander-Walker",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 27.627638339664237,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Caris LeVert",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 27.321654255319153,
-    "GP": 1
+    "PLAYER_NAME": "Collin Sexton",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 27.530195278298937,
+    "GP": 8
   },
   {
-    "PLAYER_NAME": "Aaron Gordon",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 27.254999193548382,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Lauri Markkanen",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 27.200609001292822,
+    "PLAYER_NAME": "Bogdan Bogdanovic",
+    "AGE": 29.0,
+    "FANTASY_POINTS_PROJECTION": 27.32248588194592,
     "GP": 7
   },
   {
@@ -624,21 +654,9 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Reggie Jackson",
-    "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 26.900270710765607,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Franz Wagner",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 26.625,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Keldon Johnson",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 26.464854525979845,
+    "PLAYER_NAME": "P.J. Washington",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 26.6626743018715,
     "GP": 6
   },
   {
@@ -648,76 +666,34 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Collin Sexton",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 26.290016706870368,
-    "GP": 7
-  },
-  {
     "PLAYER_NAME": "Mikal Bridges",
     "AGE": 25.0,
     "FANTASY_POINTS_PROJECTION": 26.28257538422987,
     "GP": 5
   },
   {
+    "PLAYER_NAME": "Keldon Johnson",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 25.73866404978937,
+    "GP": 7
+  },
+  {
     "PLAYER_NAME": "Darius Bazley",
     "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 26.22282446151299,
-    "GP": 6
+    "FANTASY_POINTS_PROJECTION": 25.597671836360366,
+    "GP": 7
   },
   {
-    "PLAYER_NAME": "Mason Plumlee",
+    "PLAYER_NAME": "Reggie Jackson",
     "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 26.192696064431367,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Jalen Suggs",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 26.05238095238095,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Norman Powell",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 25.687709657190634,
-    "GP": 4
-  },
-  {
-    "PLAYER_NAME": "Terry Rozier",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 25.653835250849557,
-    "GP": 2
-  },
-  {
-    "PLAYER_NAME": "P.J. Washington",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 25.52335806255526,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Andre Drummond",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 25.453893322326174,
-    "GP": 5
+    "FANTASY_POINTS_PROJECTION": 25.46193737743227,
+    "GP": 6
   },
   {
     "PLAYER_NAME": "Steven Adams",
     "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 25.436754926108375,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Bogdan Bogdanovic",
-    "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 25.42040254861259,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Patrick Beverley",
-    "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 25.40182427336839,
-    "GP": 4
+    "FANTASY_POINTS_PROJECTION": 25.447171592775042,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Eric Gordon",
@@ -726,10 +702,16 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Kevin Love",
+    "PLAYER_NAME": "Patrick Beverley",
     "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 25.22218798701299,
-    "GP": 7
+    "FANTASY_POINTS_PROJECTION": 25.27682427336839,
+    "GP": 4
+  },
+  {
+    "PLAYER_NAME": "Jalen Suggs",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 25.25,
+    "GP": 8
   },
   {
     "PLAYER_NAME": "Tim Hardaway Jr.",
@@ -738,22 +720,40 @@
     "GP": 6
   },
   {
+    "PLAYER_NAME": "Norman Powell",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 25.134376323857303,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Nicolas Batum",
+    "AGE": 32.0,
+    "FANTASY_POINTS_PROJECTION": 25.080449231117143,
+    "GP": 5
+  },
+  {
     "PLAYER_NAME": "Jalen Green",
     "AGE": 19.0,
     "FANTASY_POINTS_PROJECTION": 24.98888888888889,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Grayson Allen",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 24.830992481203005,
+    "PLAYER_NAME": "Mason Plumlee",
+    "AGE": 31.0,
+    "FANTASY_POINTS_PROJECTION": 24.856088921574226,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Kevin Love",
+    "AGE": 33.0,
+    "FANTASY_POINTS_PROJECTION": 24.76177132034632,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Luke Kennard",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 24.494270833333335,
-    "GP": 5
+    "PLAYER_NAME": "Kyle Anderson",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 24.656511688092827,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "LaMarcus Aldridge",
@@ -762,22 +762,22 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Tyrese Maxey",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 24.316356014671758,
-    "GP": 6
-  },
-  {
     "PLAYER_NAME": "Cam Reddish",
     "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 24.305378720895963,
-    "GP": 6
+    "FANTASY_POINTS_PROJECTION": 24.40458507010231,
+    "GP": 7
   },
   {
-    "PLAYER_NAME": "Eric Bledsoe",
+    "PLAYER_NAME": "Grayson Allen",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 24.385159147869672,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Seth Curry",
     "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 24.202761679365814,
-    "GP": 5
+    "FANTASY_POINTS_PROJECTION": 24.16749158315976,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Jalen Brunson",
@@ -792,9 +792,9 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Kyle Anderson",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 23.980023592854735,
+    "PLAYER_NAME": "Malik Beasley",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 23.910560522643852,
     "GP": 6
   },
   {
@@ -804,10 +804,22 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Josh Jackson",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 23.55851681886237,
-    "GP": 6
+    "PLAYER_NAME": "Mitchell Robinson",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 23.764249126072237,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Devin Vassell",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 23.74243418976075,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Tyrese Maxey",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 23.65327708446954,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Jae Crowder",
@@ -816,46 +828,40 @@
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Terance Mann",
+    "PLAYER_NAME": "Luke Kennard",
     "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 23.491273308255472,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Derrick Rose",
-    "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 23.376345588235296,
+    "FANTASY_POINTS_PROJECTION": 23.4309375,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Shake Milton",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 23.264756944444446,
-    "GP": 2
-  },
-  {
-    "PLAYER_NAME": "Mitchell Robinson",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 22.98210626892938,
+    "PLAYER_NAME": "Josh Jackson",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 23.181433485529038,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Devin Vassell",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 22.87061422889969,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Lonnie Walker IV",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 22.793808562359374,
-    "GP": 6
+    "PLAYER_NAME": "Alex Caruso",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 22.8617279454023,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Luguentz Dort",
     "AGE": 22.0,
     "FANTASY_POINTS_PROJECTION": 22.70715811965812,
     "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Eric Bledsoe",
+    "AGE": 31.0,
+    "FANTASY_POINTS_PROJECTION": 22.654428346032482,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "T.J. McConnell",
+    "AGE": 29.0,
+    "FANTASY_POINTS_PROJECTION": 22.654144911421234,
+    "GP": 8
   },
   {
     "PLAYER_NAME": "Josh Hart",
@@ -870,21 +876,21 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Malik Beasley",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 22.352227189310522,
-    "GP": 5
+    "PLAYER_NAME": "Anfernee Simons",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 22.379977120535717,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Cody Martin",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 22.25932158119658,
+    "GP": 8
   },
   {
     "PLAYER_NAME": "Duncan Robinson",
     "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 22.116199438736682,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Alex Caruso",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 22.053394612068963,
+    "FANTASY_POINTS_PROJECTION": 22.13911610540335,
     "GP": 6
   },
   {
@@ -894,16 +900,22 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Isaiah Stewart",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 21.790887724952995,
-    "GP": 6
+    "PLAYER_NAME": "Monte Morris",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 22.017095324754724,
+    "GP": 7
   },
   {
-    "PLAYER_NAME": "Ivica Zubac",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 21.67227695386064,
-    "GP": 5
+    "PLAYER_NAME": "Lonnie Walker IV",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 21.872677609978417,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Derrick Rose",
+    "AGE": 33.0,
+    "FANTASY_POINTS_PROJECTION": 21.662655112044817,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Damion Lee",
@@ -918,22 +930,10 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Seth Curry",
-    "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 21.554693964112136,
+    "PLAYER_NAME": "Terance Mann",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 21.571615188597352,
     "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Pat Connaughton",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 21.483716808230508,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Nicolas Batum",
-    "AGE": 32.0,
-    "FANTASY_POINTS_PROJECTION": 21.46544923111714,
-    "GP": 4
   },
   {
     "PLAYER_NAME": "Royce O'Neale",
@@ -942,28 +942,16 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Joe Harris",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 21.417804633867277,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Matisse Thybulle",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 21.34965154503616,
-    "GP": 6
-  },
-  {
     "PLAYER_NAME": "George Hill",
     "AGE": 35.0,
-    "FANTASY_POINTS_PROJECTION": 21.287749798224375,
+    "FANTASY_POINTS_PROJECTION": 21.404416464891042,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Robert Covington",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 21.2703869047619,
-    "GP": 6
+    "PLAYER_NAME": "Kentavious Caldwell-Pope",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 21.397212193086983,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Hassan Whiteside",
@@ -972,33 +960,51 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Cody Martin",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 21.05144612332112,
+    "PLAYER_NAME": "Joe Harris",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 21.042804633867277,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Monte Morris",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 20.955190562849957,
-    "GP": 6
+    "PLAYER_NAME": "Justin Holiday",
+    "AGE": 32.0,
+    "FANTASY_POINTS_PROJECTION": 20.824807125190258,
+    "GP": 8
   },
   {
-    "PLAYER_NAME": "Anfernee Simons",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 20.875810453869047,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Patty Mills",
-    "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 20.79360539836777,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Kentavious Caldwell-Pope",
+    "PLAYER_NAME": "Pat Connaughton",
     "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 20.792450288325075,
+    "FANTASY_POINTS_PROJECTION": 20.77955014156384,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Danny Green",
+    "AGE": 34.0,
+    "FANTASY_POINTS_PROJECTION": 20.717324716843258,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Shake Milton",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 20.627256944444447,
+    "GP": 3
+  },
+  {
+    "PLAYER_NAME": "Terrence Ross",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 20.494359903381643,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Bruce Brown",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 20.41221823547686,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Isaiah Stewart",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 20.242942519473544,
     "GP": 6
   },
   {
@@ -1014,52 +1020,40 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Bruce Brown",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 20.06430156881019,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Danny Green",
-    "AGE": 34.0,
-    "FANTASY_POINTS_PROJECTION": 19.96762233589088,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Chris Boucher",
+    "PLAYER_NAME": "Larry Nance Jr.",
     "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 19.83349779185868,
+    "FANTASY_POINTS_PROJECTION": 19.989110807569297,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Justin Holiday",
-    "AGE": 32.0,
-    "FANTASY_POINTS_PROJECTION": 19.807842839475974,
+    "PLAYER_NAME": "Matisse Thybulle",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 19.94733164271626,
     "GP": 7
   },
   {
     "PLAYER_NAME": "Jeremy Lamb",
     "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 19.748789172039206,
+    "FANTASY_POINTS_PROJECTION": 19.93212250537254,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Precious Achiuwa",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 19.527256103429472,
+    "PLAYER_NAME": "Robert Covington",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 19.619196428571428,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "T.J. McConnell",
-    "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 19.49610919713552,
+    "PLAYER_NAME": "Patty Mills",
+    "AGE": 33.0,
+    "FANTASY_POINTS_PROJECTION": 19.585272065034438,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Larry Nance Jr.",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 19.476015569474058,
-    "GP": 6
+    "PLAYER_NAME": "Tyus Jones",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 19.554150775694897,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Kent Bazemore",
@@ -1068,22 +1062,16 @@
     "GP": 7
   },
   {
+    "PLAYER_NAME": "Furkan Korkmaz",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 19.462651830808078,
+    "GP": 7
+  },
+  {
     "PLAYER_NAME": "Marcus Morris Sr.",
     "AGE": 32.0,
     "FANTASY_POINTS_PROJECTION": 19.41113140916808,
     "GP": 2
-  },
-  {
-    "PLAYER_NAME": "Terrence Ross",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 19.293467046238785,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Alec Burks",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 19.150592870670998,
-    "GP": 6
   },
   {
     "PLAYER_NAME": "Bobby Portis",
@@ -1098,28 +1086,22 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Cody Zeller",
-    "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 18.823800030788178,
+    "PLAYER_NAME": "Ivica Zubac",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 18.83727695386064,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Nassir Little",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 18.637366452991454,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Daniel Gafford",
+    "PLAYER_NAME": "De'Andre Hunter",
     "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 18.6088931955211,
-    "GP": 4
+    "FANTASY_POINTS_PROJECTION": 18.80794447098795,
+    "GP": 6
   },
   {
-    "PLAYER_NAME": "Killian Hayes",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 18.596803652968035,
-    "GP": 6
+    "PLAYER_NAME": "Chris Boucher",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 18.788854934715822,
+    "GP": 8
   },
   {
     "PLAYER_NAME": "Dwight Powell",
@@ -1128,40 +1110,64 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Nic Claxton",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 18.319497863247864,
-    "GP": 4
-  },
-  {
     "PLAYER_NAME": "Goran Dragic",
     "AGE": 35.0,
-    "FANTASY_POINTS_PROJECTION": 18.26596652542373,
+    "FANTASY_POINTS_PROJECTION": 18.487955367231635,
     "GP": 4
   },
   {
-    "PLAYER_NAME": "Ish Smith",
+    "PLAYER_NAME": "Khem Birch",
+    "AGE": 29.0,
+    "FANTASY_POINTS_PROJECTION": 18.481335665422886,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Danilo Gallinari",
     "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 18.24097235485103,
+    "FANTASY_POINTS_PROJECTION": 18.366662318153068,
+    "GP": 4
+  },
+  {
+    "PLAYER_NAME": "Georges Niang",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 18.344385191961994,
     "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Dewayne Dedmon",
-    "AGE": 32.0,
-    "FANTASY_POINTS_PROJECTION": 18.240253314393936,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "De'Andre Hunter",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 18.216064129107608,
-    "GP": 5
   },
   {
     "PLAYER_NAME": "Naz Reid",
     "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 18.20214285714286,
+    "FANTASY_POINTS_PROJECTION": 18.28761294261294,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Raul Neto",
+    "AGE": 29.0,
+    "FANTASY_POINTS_PROJECTION": 18.285683495995997,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Alec Burks",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 18.28362858495671,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Precious Achiuwa",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 18.277745340220076,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Daniel Gafford",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 18.206329092957,
     "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Killian Hayes",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 18.185844748858447,
+    "GP": 6
   },
   {
     "PLAYER_NAME": "Tristan Thompson",
@@ -1170,33 +1176,27 @@
     "GP": 4
   },
   {
-    "PLAYER_NAME": "Isaac Okoro",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 18.095399713759967,
-    "GP": 4
+    "PLAYER_NAME": "Dewayne Dedmon",
+    "AGE": 32.0,
+    "FANTASY_POINTS_PROJECTION": 18.125669981060604,
+    "GP": 6
   },
   {
-    "PLAYER_NAME": "Raul Neto",
-    "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 18.027350162662664,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Andre Iguodala",
-    "AGE": 37.0,
-    "FANTASY_POINTS_PROJECTION": 17.869077964519143,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Taj Gibson",
-    "AGE": 36.0,
-    "FANTASY_POINTS_PROJECTION": 17.85851113671275,
-    "GP": 4
-  },
-  {
-    "PLAYER_NAME": "Furkan Korkmaz",
+    "PLAYER_NAME": "Svi Mykhailiuk",
     "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 17.810568497474748,
+    "FANTASY_POINTS_PROJECTION": 18.024756493506494,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Cedi Osman",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 17.83394783201485,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Cory Joseph",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 17.826560624758034,
     "GP": 6
   },
   {
@@ -1212,6 +1212,30 @@
     "GP": 6
   },
   {
+    "PLAYER_NAME": "Andre Iguodala",
+    "AGE": 37.0,
+    "FANTASY_POINTS_PROJECTION": 17.649077964519144,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Isaiah Hartenstein",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 17.5962215320911,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Mike Muscala",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 17.58181091691996,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Jarred Vanderbilt",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 17.34995098039216,
+    "GP": 6
+  },
+  {
     "PLAYER_NAME": "Rajon Rondo",
     "AGE": 35.0,
     "FANTASY_POINTS_PROJECTION": 17.328398248792272,
@@ -1220,7 +1244,25 @@
   {
     "PLAYER_NAME": "Blake Griffin",
     "AGE": 32.0,
-    "FANTASY_POINTS_PROJECTION": 17.182047705314012,
+    "FANTASY_POINTS_PROJECTION": 17.26538103864734,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Cody Zeller",
+    "AGE": 29.0,
+    "FANTASY_POINTS_PROJECTION": 17.228561935550083,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Isaac Okoro",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 17.22573922838637,
+    "GP": 4
+  },
+  {
+    "PLAYER_NAME": "Nemanja Bjelica",
+    "AGE": 33.0,
+    "FANTASY_POINTS_PROJECTION": 17.20677587286962,
     "GP": 6
   },
   {
@@ -1230,10 +1272,34 @@
     "GP": 5
   },
   {
+    "PLAYER_NAME": "Derrick Jones Jr.",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 17.109824176894602,
+    "GP": 3
+  },
+  {
     "PLAYER_NAME": "Trey Lyles",
     "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 17.04937481129227,
+    "FANTASY_POINTS_PROJECTION": 17.047291477958936,
     "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Josh Richardson",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 17.02319380536266,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Nassir Little",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 17.02259233821734,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Bones Hyland",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 16.955555555555556,
+    "GP": 4
   },
   {
     "PLAYER_NAME": "Cameron Payne",
@@ -1242,40 +1308,40 @@
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Khem Birch",
-    "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 16.90544280828003,
-    "GP": 7
-  },
-  {
     "PLAYER_NAME": "Davion Mitchell",
     "AGE": 23.0,
     "FANTASY_POINTS_PROJECTION": 16.833333333333332,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Cory Joseph",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 16.776560624758034,
-    "GP": 6
+    "PLAYER_NAME": "Herbert Jones",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 16.82857142857143,
+    "GP": 7
   },
   {
-    "PLAYER_NAME": "Jaden McDaniels",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 16.758490976299196,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Nemanja Bjelica",
+    "PLAYER_NAME": "Thaddeus Young",
     "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 16.70677587286962,
-    "GP": 6
+    "FANTASY_POINTS_PROJECTION": 16.739981461624,
+    "GP": 4
   },
   {
-    "PLAYER_NAME": "Josh Richardson",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 16.64819380536266,
-    "GP": 5
+    "PLAYER_NAME": "Nic Claxton",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 16.671048850574714,
+    "GP": 4
+  },
+  {
+    "PLAYER_NAME": "Ish Smith",
+    "AGE": 33.0,
+    "FANTASY_POINTS_PROJECTION": 16.618650926279603,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Deni Avdija",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 16.6051279263608,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Alex Len",
@@ -1284,45 +1350,33 @@
     "GP": 3
   },
   {
-    "PLAYER_NAME": "Isaiah Hartenstein",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 16.590388198757765,
-    "GP": 4
-  },
-  {
-    "PLAYER_NAME": "Thaddeus Young",
-    "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 16.535814794957332,
-    "GP": 3
-  },
-  {
-    "PLAYER_NAME": "Deni Avdija",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 16.397691527143582,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Kevin Huerter",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 16.39062390010352,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Bones Hyland",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 16.3,
-    "GP": 3
+    "PLAYER_NAME": "Xavier Tillman Sr.",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 16.55943812398421,
+    "GP": 5
   },
   {
     "PLAYER_NAME": "Kevon Looney",
     "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 16.289835553278685,
+    "FANTASY_POINTS_PROJECTION": 16.489835553278688,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "P.J. Tucker",
+    "AGE": 36.0,
+    "FANTASY_POINTS_PROJECTION": 16.362193004742547,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Jaden McDaniels",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 16.294564035659924,
     "GP": 6
   },
   {
     "PLAYER_NAME": "Jalen McDaniels",
     "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 16.068220926532096,
+    "FANTASY_POINTS_PROJECTION": 16.08104143935261,
     "GP": 6
   },
   {
@@ -1332,70 +1386,34 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Cedi Osman",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 15.994662117729135,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Danilo Gallinari",
-    "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 15.985412318153067,
-    "GP": 3
-  },
-  {
-    "PLAYER_NAME": "Jordan Nwora",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 15.977658186562298,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Xavier Tillman Sr.",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 15.934780589737638,
-    "GP": 4
-  },
-  {
-    "PLAYER_NAME": "Tyus Jones",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 15.92736506140918,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Herbert Jones",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 15.90357142857143,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Grant Williams",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 15.881309833483748,
-    "GP": 6
-  },
-  {
     "PLAYER_NAME": "Derrick Favors",
     "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 15.822898606811146,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Mike Muscala",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 15.780977583586628,
-    "GP": 4
-  },
-  {
-    "PLAYER_NAME": "Gorgui Dieng",
-    "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 15.39191520467836,
+    "FANTASY_POINTS_PROJECTION": 15.907898606811141,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Jarred Vanderbilt",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 15.374950980392157,
-    "GP": 5
+    "PLAYER_NAME": "Aleksej Pokusevski",
+    "AGE": 19.0,
+    "FANTASY_POINTS_PROJECTION": 15.894450967601655,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Jaxson Hayes",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 15.746213751526252,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Torrey Craig",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 15.618465517241379,
+    "GP": 8
+  },
+  {
+    "PLAYER_NAME": "Kevin Huerter",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 15.367707233436855,
+    "GP": 6
   },
   {
     "PLAYER_NAME": "Malik Monk",
@@ -1410,21 +1428,9 @@
     "GP": 3
   },
   {
-    "PLAYER_NAME": "P.J. Tucker",
+    "PLAYER_NAME": "Paul Millsap",
     "AGE": 36.0,
-    "FANTASY_POINTS_PROJECTION": 15.278859671409213,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Josh Okogie",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 15.270465852334018,
-    "GP": 4
-  },
-  {
-    "PLAYER_NAME": "Markieff Morris",
-    "AGE": 32.0,
-    "FANTASY_POINTS_PROJECTION": 15.2660835924251,
+    "FANTASY_POINTS_PROJECTION": 15.273207282913166,
     "GP": 6
   },
   {
@@ -1434,46 +1440,10 @@
     "GP": 3
   },
   {
-    "PLAYER_NAME": "Lou Williams",
-    "AGE": 35.0,
-    "FANTASY_POINTS_PROJECTION": 15.248249592074592,
-    "GP": 3
-  },
-  {
-    "PLAYER_NAME": "Jaxson Hayes",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 15.239803495115995,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Obi Toppin",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 15.228082191780823,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Georges Niang",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 15.221468525295327,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Ty Jerome",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 15.18248991152217,
-    "GP": 3
-  },
-  {
-    "PLAYER_NAME": "Svi Mykhailiuk",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 15.010470779220782,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Jabari Parker",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 15.001685855263156,
-    "GP": 3
+    "PLAYER_NAME": "Taj Gibson",
+    "AGE": 36.0,
+    "FANTASY_POINTS_PROJECTION": 15.16476113671275,
+    "GP": 5
   },
   {
     "PLAYER_NAME": "Reggie Bullock",
@@ -1482,21 +1452,9 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "DeAndre' Bembry",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 14.789046786894,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Patrick Williams",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 14.779915107080841,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Torrey Craig",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 14.770251231527094,
+    "PLAYER_NAME": "Jordan Nwora",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 14.927429876060014,
     "GP": 7
   },
   {
@@ -1506,16 +1464,28 @@
     "GP": 4
   },
   {
-    "PLAYER_NAME": "Kenrich Williams",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 14.600824465389683,
+    "PLAYER_NAME": "DeAndre' Bembry",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 14.64113012022733,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Paul Millsap",
-    "AGE": 36.0,
-    "FANTASY_POINTS_PROJECTION": 14.589873949579834,
-    "GP": 6
+    "PLAYER_NAME": "Thanasis Antetokounmpo",
+    "AGE": 29.0,
+    "FANTASY_POINTS_PROJECTION": 14.585099768652398,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Gorgui Dieng",
+    "AGE": 31.0,
+    "FANTASY_POINTS_PROJECTION": 14.544296157059312,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Obi Toppin",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 14.531409001956945,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Caleb Martin",
@@ -1530,52 +1500,34 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Thanasis Antetokounmpo",
-    "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 14.397065580618213,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Aleksej Pokusevski",
-    "AGE": 19.0,
-    "FANTASY_POINTS_PROJECTION": 14.330197869101978,
+    "PLAYER_NAME": "Markieff Morris",
+    "AGE": 32.0,
+    "FANTASY_POINTS_PROJECTION": 14.257750259091765,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "R.J. Hampton",
+    "PLAYER_NAME": "Grant Williams",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 14.187781139955051,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Patrick Williams",
     "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 14.25894248110203,
+    "FANTASY_POINTS_PROJECTION": 14.14977812077947,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Kenrich Williams",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 13.93951494158016,
     "GP": 7
   },
   {
-    "PLAYER_NAME": "Derrick Jones Jr.",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 14.251490843561271,
-    "GP": 2
-  },
-  {
-    "PLAYER_NAME": "Davis Bertans",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 14.2390716374269,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Facundo Campazzo",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 14.226392694063927,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Aaron Holiday",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 13.856730303030304,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Dennis Smith Jr.",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 13.79119522993775,
-    "GP": 5
+    "PLAYER_NAME": "Lou Williams",
+    "AGE": 35.0,
+    "FANTASY_POINTS_PROJECTION": 13.914916258741258,
+    "GP": 4
   },
   {
     "PLAYER_NAME": "Brandon Clarke",
@@ -1584,34 +1536,70 @@
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Garrett Temple",
+    "PLAYER_NAME": "P.J. Dozier",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 13.784747044334978,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Jabari Parker",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 13.664185855263156,
+    "GP": 3
+  },
+  {
+    "PLAYER_NAME": "Jeff Green",
     "AGE": 35.0,
-    "FANTASY_POINTS_PROJECTION": 13.433014919354838,
-    "GP": 5
+    "FANTASY_POINTS_PROJECTION": 13.581322773427553,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Davis Bertans",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 13.494428780284045,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "JaMychal Green",
+    "AGE": 31.0,
+    "FANTASY_POINTS_PROJECTION": 13.305110253252497,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Dalano Banton",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 13.275,
+    "GP": 8
   },
   {
     "PLAYER_NAME": "Delon Wright",
     "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 13.335006707979995,
-    "GP": 6
+    "FANTASY_POINTS_PROJECTION": 13.175185279408566,
+    "GP": 7
   },
   {
-    "PLAYER_NAME": "Justise Winslow",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 13.271931818181818,
+    "PLAYER_NAME": "Ty Jerome",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 13.169669398701657,
     "GP": 4
   },
   {
-    "PLAYER_NAME": "Drew Eubanks",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 13.149012498170105,
-    "GP": 6
+    "PLAYER_NAME": "Facundo Campazzo",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 13.001017612524462,
+    "GP": 7
   },
   {
-    "PLAYER_NAME": "P.J. Dozier",
+    "PLAYER_NAME": "Aaron Holiday",
     "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 12.953199425287357,
-    "GP": 6
+    "FANTASY_POINTS_PROJECTION": 13.000777922077924,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Chuma Okeke",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 12.961369863013699,
+    "GP": 2
   },
   {
     "PLAYER_NAME": "Marvin Bagley III",
@@ -1620,15 +1608,45 @@
     "GP": 1
   },
   {
+    "PLAYER_NAME": "Kelan Martin",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 12.849696325180197,
+    "GP": 1
+  },
+  {
+    "PLAYER_NAME": "Dennis Smith Jr.",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 12.799528563271085,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Drew Eubanks",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 12.774905355312965,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Josh Okogie",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 12.77296585233402,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Javonte Green",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 12.74961248101492,
+    "GP": 7
+  },
+  {
     "PLAYER_NAME": "Frank Ntilikina",
     "AGE": 23.0,
     "FANTASY_POINTS_PROJECTION": 12.645198017506768,
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Jeff Green",
-    "AGE": 35.0,
-    "FANTASY_POINTS_PROJECTION": 12.572691821046599,
+    "PLAYER_NAME": "Max Strus",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 12.601282051282052,
     "GP": 6
   },
   {
@@ -1638,9 +1656,15 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Dalano Banton",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 12.489285714285716,
+    "PLAYER_NAME": "Naji Marshall",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 12.516996901500326,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Immanuel Quickley",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 12.442236423679061,
     "GP": 7
   },
   {
@@ -1656,28 +1680,34 @@
     "GP": 6
   },
   {
+    "PLAYER_NAME": "Garrett Temple",
+    "AGE": 35.0,
+    "FANTASY_POINTS_PROJECTION": 12.37051491935484,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Gary Harris",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 12.337136591478695,
+    "GP": 4
+  },
+  {
+    "PLAYER_NAME": "Jeremiah Robinson-Earl",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 12.329761904761904,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Kira Lewis Jr.",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 12.316670290642895,
+    "GP": 7
+  },
+  {
     "PLAYER_NAME": "Avery Bradley",
     "AGE": 30.0,
     "FANTASY_POINTS_PROJECTION": 12.23524470899471,
     "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Naji Marshall",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 12.17224804305284,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Max Strus",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 12.16965811965812,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Moritz Wagner",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 12.160581949058695,
-    "GP": 7
   },
   {
     "PLAYER_NAME": "Juan Toscano-Anderson",
@@ -1692,22 +1722,22 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Gary Harris",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 11.903803258145363,
-    "GP": 4
+    "PLAYER_NAME": "Frank Jackson",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 12.075852152218209,
+    "GP": 6
   },
   {
-    "PLAYER_NAME": "Jeremiah Robinson-Earl",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 11.822222222222223,
+    "PLAYER_NAME": "Keita Bates-Diop",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 12.022124999999999,
     "GP": 6
   },
   {
     "PLAYER_NAME": "Bryn Forbes",
     "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 11.787449332171892,
-    "GP": 6
+    "FANTASY_POINTS_PROJECTION": 12.019592189314752,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Maurice Harkless",
@@ -1716,58 +1746,28 @@
     "GP": 5
   },
   {
+    "PLAYER_NAME": "Tony Bradley",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 11.679624384236451,
+    "GP": 4
+  },
+  {
+    "PLAYER_NAME": "R.J. Hampton",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 11.668922911630407,
+    "GP": 8
+  },
+  {
     "PLAYER_NAME": "Hamidou Diallo",
     "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 11.686946131713555,
+    "FANTASY_POINTS_PROJECTION": 11.649446131713555,
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Kira Lewis Jr.",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 11.679683989273032,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Oshae Brissett",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 11.54500032131611,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "John Konchar",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 11.457650461873227,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Payton Pritchard",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 11.4395599833956,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Trey Murphy III",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 11.383333333333333,
-    "GP": 7
-  },
-  {
-    "PLAYER_NAME": "Javonte Green",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 11.377207108609548,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "JaMychal Green",
-    "AGE": 31.0,
-    "FANTASY_POINTS_PROJECTION": 11.371479300871544,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Frank Jackson",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 11.321685485551543,
-    "GP": 6
+    "PLAYER_NAME": "Moritz Wagner",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 11.261474806201552,
+    "GP": 8
   },
   {
     "PLAYER_NAME": "Landry Shamet",
@@ -1776,16 +1776,34 @@
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Immanuel Quickley",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 11.10988156392694,
+    "PLAYER_NAME": "Brad Wanamaker",
+    "AGE": 32.0,
+    "FANTASY_POINTS_PROJECTION": 11.096269016649991,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Trey Murphy III",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 11.0,
+    "GP": 7
+  },
+  {
+    "PLAYER_NAME": "Ayo Dosunmu",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 10.822222222222221,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Keita Bates-Diop",
+    "PLAYER_NAME": "Justise Winslow",
     "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 10.920874999999999,
+    "FANTASY_POINTS_PROJECTION": 10.803598484848484,
     "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Ziaire Williams",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 10.696428571428571,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Jalen Smith",
@@ -1794,28 +1812,10 @@
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Ziaire Williams",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 10.566666666666666,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Robin Lopez",
-    "AGE": 33.0,
-    "FANTASY_POINTS_PROJECTION": 10.551321540009921,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Romeo Langford",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 10.530649038461538,
+    "PLAYER_NAME": "Solomon Hill",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 10.431103364752802,
     "GP": 3
-  },
-  {
-    "PLAYER_NAME": "Brad Wanamaker",
-    "AGE": 32.0,
-    "FANTASY_POINTS_PROJECTION": 10.429602349983323,
-    "GP": 4
   },
   {
     "PLAYER_NAME": "Willie Cauley-Stein",
@@ -1830,16 +1830,16 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Tony Bradley",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 10.304624384236453,
-    "GP": 3
+    "PLAYER_NAME": "Tony Snell",
+    "AGE": 29.0,
+    "FANTASY_POINTS_PROJECTION": 10.304155393222288,
+    "GP": 1
   },
   {
-    "PLAYER_NAME": "Goga Bitadze",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 10.276092117758784,
-    "GP": 4
+    "PLAYER_NAME": "Jevon Carter",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 10.282445710180625,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Enes Kanter",
@@ -1848,10 +1848,22 @@
     "GP": 2
   },
   {
+    "PLAYER_NAME": "Oshae Brissett",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 10.227540003855793,
+    "GP": 7
+  },
+  {
     "PLAYER_NAME": "Chris Chiozza",
     "AGE": 25.0,
     "FANTASY_POINTS_PROJECTION": 10.176887175324676,
     "GP": 2
+  },
+  {
+    "PLAYER_NAME": "Theo Maledon",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 10.162191780821919,
+    "GP": 7
   },
   {
     "PLAYER_NAME": "Isaiah Roby",
@@ -1860,16 +1872,34 @@
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Jevon Carter",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 9.928279043513959,
-    "GP": 7
+    "PLAYER_NAME": "Jordan McLaughlin",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 10.097875816993463,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Taurean Prince",
+    "AGE": 27.0,
+    "FANTASY_POINTS_PROJECTION": 10.041470955746489,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "John Konchar",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 9.937137641360408,
+    "GP": 6
   },
   {
     "PLAYER_NAME": "Rodney Hood",
     "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 9.89747619047619,
+    "FANTASY_POINTS_PROJECTION": 9.93497619047619,
     "GP": 4
+  },
+  {
+    "PLAYER_NAME": "James Johnson",
+    "AGE": 34.0,
+    "FANTASY_POINTS_PROJECTION": 9.82078456439394,
+    "GP": 5
   },
   {
     "PLAYER_NAME": "Trey Burke",
@@ -1884,15 +1914,9 @@
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Taurean Prince",
-    "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 9.726470955746489,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Troy Brown Jr.",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 9.540082751327954,
+    "PLAYER_NAME": "Payton Pritchard",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 9.672436695724368,
     "GP": 6
   },
   {
@@ -1902,51 +1926,45 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Jordan McLaughlin",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 9.17308949220714,
-    "GP": 5
-  },
-  {
     "PLAYER_NAME": "Austin Reaves",
     "AGE": 23.0,
     "FANTASY_POINTS_PROJECTION": 9.113888888888887,
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Solomon Hill",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 8.923327523564602,
-    "GP": 3
+    "PLAYER_NAME": "Romeo Langford",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 9.111845619658121,
+    "GP": 4
   },
   {
-    "PLAYER_NAME": "James Johnson",
-    "AGE": 34.0,
-    "FANTASY_POINTS_PROJECTION": 8.90828456439394,
+    "PLAYER_NAME": "Robin Lopez",
+    "AGE": 33.0,
+    "FANTASY_POINTS_PROJECTION": 9.08882154000992,
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Gabriel Deck",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 8.863926940639269,
-    "GP": 3
+    "PLAYER_NAME": "Goga Bitadze",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 8.954297245963913,
+    "GP": 5
   },
   {
-    "PLAYER_NAME": "Theo Maledon",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 8.849406392694064,
-    "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Justin Robinson",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 8.756186406186407,
-    "GP": 7
+    "PLAYER_NAME": "Ben McLemore",
+    "AGE": 28.0,
+    "FANTASY_POINTS_PROJECTION": 8.950729377922617,
+    "GP": 2
   },
   {
     "PLAYER_NAME": "D.J. Augustin",
     "AGE": 33.0,
     "FANTASY_POINTS_PROJECTION": 8.753830409356727,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Troy Brown Jr.",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 8.715082751327955,
     "GP": 6
   },
   {
@@ -1956,27 +1974,45 @@
     "GP": 6
   },
   {
+    "PLAYER_NAME": "Justin Robinson",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 8.63011803011803,
+    "GP": 7
+  },
+  {
     "PLAYER_NAME": "Moses Brown",
     "AGE": 22.0,
     "FANTASY_POINTS_PROJECTION": 8.346574570993175,
     "GP": 3
   },
   {
-    "PLAYER_NAME": "Juancho Hernangomez",
+    "PLAYER_NAME": "Gabriel Deck",
     "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 8.175625,
+    "FANTASY_POINTS_PROJECTION": 8.224657534246575,
+    "GP": 3
+  },
+  {
+    "PLAYER_NAME": "Zeke Nnaji",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 8.209393346379647,
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Alize Johnson",
-    "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 7.934935807656396,
+    "PLAYER_NAME": "Bol Bol",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 7.978954899267399,
+    "GP": 2
+  },
+  {
+    "PLAYER_NAME": "Dean Wade",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 7.978652828652828,
     "GP": 5
   },
   {
     "PLAYER_NAME": "Luka Garza",
     "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 7.872222222222223,
+    "FANTASY_POINTS_PROJECTION": 7.95,
     "GP": 4
   },
   {
@@ -2004,30 +2040,6 @@
     "GP": 3
   },
   {
-    "PLAYER_NAME": "Dean Wade",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 7.647028897028897,
-    "GP": 4
-  },
-  {
-    "PLAYER_NAME": "Ayo Dosunmu",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 7.59,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Chuma Okeke",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 7.577808219178083,
-    "GP": 1
-  },
-  {
-    "PLAYER_NAME": "Greg Brown III",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 7.5183333333333335,
-    "GP": 5
-  },
-  {
     "PLAYER_NAME": "Usman Garuba",
     "AGE": 19.0,
     "FANTASY_POINTS_PROJECTION": 7.516666666666667,
@@ -2036,20 +2048,8 @@
   {
     "PLAYER_NAME": "Austin Rivers",
     "AGE": 29.0,
-    "FANTASY_POINTS_PROJECTION": 7.5052814327485375,
+    "FANTASY_POINTS_PROJECTION": 7.446948099415205,
     "GP": 6
-  },
-  {
-    "PLAYER_NAME": "Ben McLemore",
-    "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": 7.4630470334419625,
-    "GP": 2
-  },
-  {
-    "PLAYER_NAME": "Nick Richards",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 7.4570776255707765,
-    "GP": 4
   },
   {
     "PLAYER_NAME": "Sterling Brown",
@@ -2058,10 +2058,16 @@
     "GP": 4
   },
   {
-    "PLAYER_NAME": "Zeke Nnaji",
+    "PLAYER_NAME": "Greg Brown III",
     "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 7.2778864970645785,
-    "GP": 2
+    "FANTASY_POINTS_PROJECTION": 7.271111111111112,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Ignas Brazdeikis",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 7.237464387464388,
+    "GP": 5
   },
   {
     "PLAYER_NAME": "Sam Merrill",
@@ -2070,10 +2076,22 @@
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Bol Bol",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 6.991775412087912,
-    "GP": 2
+    "PLAYER_NAME": "Lamar Stevens",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 7.0547146118721455,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Corey Kispert",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 7.052777777777777,
+    "GP": 6
+  },
+  {
+    "PLAYER_NAME": "Alize Johnson",
+    "AGE": 25.0,
+    "FANTASY_POINTS_PROJECTION": 6.947435807656396,
+    "GP": 5
   },
   {
     "PLAYER_NAME": "Abdel Nader",
@@ -2100,52 +2118,34 @@
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Amir Coffey",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 6.698672623672624,
-    "GP": 4
-  },
-  {
     "PLAYER_NAME": "Killian Tillie",
     "AGE": 23.0,
     "FANTASY_POINTS_PROJECTION": 6.692846270928463,
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Ignas Brazdeikis",
+    "PLAYER_NAME": "Saben Lee",
     "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 6.481054131054131,
-    "GP": 5
+    "FANTASY_POINTS_PROJECTION": 6.488926940639269,
+    "GP": 3
   },
   {
-    "PLAYER_NAME": "Lamar Stevens",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 6.449691780821918,
-    "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Jay Scrubb",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 6.05445205479452,
-    "GP": 2
-  },
-  {
-    "PLAYER_NAME": "Corey Kispert",
+    "PLAYER_NAME": "Paul Reed",
     "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 6.028333333333333,
+    "FANTASY_POINTS_PROJECTION": 6.415981735159818,
     "GP": 5
   },
   {
     "PLAYER_NAME": "Dylan Windler",
     "AGE": 25.0,
-    "FANTASY_POINTS_PROJECTION": 6.001414052143173,
+    "FANTASY_POINTS_PROJECTION": 6.396391221092944,
     "GP": 4
   },
   {
-    "PLAYER_NAME": "Jericho Sims",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 6.0,
-    "GP": 2
+    "PLAYER_NAME": "Tre Jones",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 6.356448229050969,
+    "GP": 6
   },
   {
     "PLAYER_NAME": "Jared Butler",
@@ -2154,10 +2154,10 @@
     "GP": 6
   },
   {
-    "PLAYER_NAME": "Saben Lee",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 5.872488584474885,
-    "GP": 3
+    "PLAYER_NAME": "Malachi Flynn",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 5.849732828135626,
+    "GP": 4
   },
   {
     "PLAYER_NAME": "Chandler Hutchison",
@@ -2178,9 +2178,9 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Rodney McGruder",
-    "AGE": 30.0,
-    "FANTASY_POINTS_PROJECTION": 5.637724567099568,
+    "PLAYER_NAME": "Juancho Hernangomez",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 5.642291666666667,
     "GP": 3
   },
   {
@@ -2190,9 +2190,27 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Aaron Nesmith",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 5.476360404703309,
+    "PLAYER_NAME": "Skylar Mays",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 5.570776255707762,
+    "GP": 3
+  },
+  {
+    "PLAYER_NAME": "Jock Landale",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 5.516666666666667,
+    "GP": 4
+  },
+  {
+    "PLAYER_NAME": "Amir Coffey",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 5.360211085211085,
+    "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Rodney McGruder",
+    "AGE": 30.0,
+    "FANTASY_POINTS_PROJECTION": 5.325224567099568,
     "GP": 3
   },
   {
@@ -2202,10 +2220,10 @@
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Paul Reed",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 5.1657534246575345,
-    "GP": 4
+    "PLAYER_NAME": "Jalen Johnson",
+    "AGE": 19.0,
+    "FANTASY_POINTS_PROJECTION": 5.2444444444444445,
+    "GP": 3
   },
   {
     "PLAYER_NAME": "Josh Green",
@@ -2214,9 +2232,9 @@
     "GP": 3
   },
   {
-    "PLAYER_NAME": "Jalen Johnson",
-    "AGE": 19.0,
-    "FANTASY_POINTS_PROJECTION": 5.111111111111112,
+    "PLAYER_NAME": "Timothe Luwawu-Cabarrot",
+    "AGE": 26.0,
+    "FANTASY_POINTS_PROJECTION": 5.0728365553925165,
     "GP": 3
   },
   {
@@ -2238,16 +2256,22 @@
     "GP": 1
   },
   {
+    "PLAYER_NAME": "Jay Scrubb",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 4.9311643835616445,
+    "GP": 2
+  },
+  {
     "PLAYER_NAME": "Gabe Vincent",
     "AGE": 25.0,
     "FANTASY_POINTS_PROJECTION": 4.8878034188034185,
     "GP": 5
   },
   {
-    "PLAYER_NAME": "Timothe Luwawu-Cabarrot",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 4.8853365553925165,
-    "GP": 3
+    "PLAYER_NAME": "Isaiah Joe",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 4.78291569217062,
+    "GP": 6
   },
   {
     "PLAYER_NAME": "Moses Moody",
@@ -2256,28 +2280,10 @@
     "GP": 4
   },
   {
-    "PLAYER_NAME": "Isaiah Joe",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 4.72629468760441,
-    "GP": 5
-  },
-  {
     "PLAYER_NAME": "Denzel Valentine",
     "AGE": 27.0,
-    "FANTASY_POINTS_PROJECTION": 4.642722406028858,
+    "FANTASY_POINTS_PROJECTION": 4.753833517139969,
     "GP": 5
-  },
-  {
-    "PLAYER_NAME": "Malachi Flynn",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 4.621422325852522,
-    "GP": 3
-  },
-  {
-    "PLAYER_NAME": "Skylar Mays",
-    "AGE": 24.0,
-    "FANTASY_POINTS_PROJECTION": 4.611872146118721,
-    "GP": 3
   },
   {
     "PLAYER_NAME": "Willy Hernangomez",
@@ -2286,9 +2292,9 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Tre Jones",
-    "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 4.174713069233617,
+    "PLAYER_NAME": "Nick Richards",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 4.437899543378995,
     "GP": 5
   },
   {
@@ -2298,16 +2304,16 @@
     "GP": 1
   },
   {
+    "PLAYER_NAME": "Justin Champagnie",
+    "AGE": 20.0,
+    "FANTASY_POINTS_PROJECTION": 3.961111111111111,
+    "GP": 3
+  },
+  {
     "PLAYER_NAME": "Udonis Haslem",
     "AGE": 41.0,
     "FANTASY_POINTS_PROJECTION": 3.8994375000000003,
     "GP": 1
-  },
-  {
-    "PLAYER_NAME": "Sandro Mamukelashvili",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 3.844444444444444,
-    "GP": 6
   },
   {
     "PLAYER_NAME": "Trent Forrest",
@@ -2328,6 +2334,12 @@
     "GP": 1
   },
   {
+    "PLAYER_NAME": "Duane Washington Jr.",
+    "AGE": 21.0,
+    "FANTASY_POINTS_PROJECTION": 3.6,
+    "GP": 2
+  },
+  {
     "PLAYER_NAME": "Joshua Primo",
     "AGE": 18.0,
     "FANTASY_POINTS_PROJECTION": 3.6,
@@ -2346,10 +2358,34 @@
     "GP": 1
   },
   {
+    "PLAYER_NAME": "Aaron Nesmith",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 3.4600059559261465,
+    "GP": 4
+  },
+  {
+    "PLAYER_NAME": "Sandro Mamukelashvili",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 3.2333333333333334,
+    "GP": 6
+  },
+  {
     "PLAYER_NAME": "CJ Elleby",
     "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 3.059908675799087,
+    "FANTASY_POINTS_PROJECTION": 3.201461187214612,
     "GP": 5
+  },
+  {
+    "PLAYER_NAME": "Day'Ron Sharpe",
+    "AGE": 19.0,
+    "FANTASY_POINTS_PROJECTION": 3.1333333333333333,
+    "GP": 4
+  },
+  {
+    "PLAYER_NAME": "Omer Yurtseven",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 3.066666666666667,
+    "GP": 4
   },
   {
     "PLAYER_NAME": "McKinley Wright IV",
@@ -2358,22 +2394,22 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Day'Ron Sharpe",
-    "AGE": 19.0,
-    "FANTASY_POINTS_PROJECTION": 2.888888888888889,
-    "GP": 4
-  },
-  {
-    "PLAYER_NAME": "Omer Yurtseven",
+    "PLAYER_NAME": "Jericho Sims",
     "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 2.877777777777778,
-    "GP": 4
+    "FANTASY_POINTS_PROJECTION": 2.7777777777777777,
+    "GP": 3
   },
   {
     "PLAYER_NAME": "KZ Okpala",
     "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 2.6485793485793487,
+    "FANTASY_POINTS_PROJECTION": 2.5972972972972976,
     "GP": 4
+  },
+  {
+    "PLAYER_NAME": "Nathan Knight",
+    "AGE": 24.0,
+    "FANTASY_POINTS_PROJECTION": 2.44549605645496,
+    "GP": 1
   },
   {
     "PLAYER_NAME": "Vernon Carey Jr.",
@@ -2400,6 +2436,12 @@
     "GP": 4
   },
   {
+    "PLAYER_NAME": "Jamorko Pickett",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 2.0,
+    "GP": 3
+  },
+  {
     "PLAYER_NAME": "Quentin Grimes",
     "AGE": 21.0,
     "FANTASY_POINTS_PROJECTION": 2.0,
@@ -2424,9 +2466,15 @@
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Markus Howard",
+    "PLAYER_NAME": "Bruno Fernando",
+    "AGE": 23.0,
+    "FANTASY_POINTS_PROJECTION": 1.514737345987346,
+    "GP": 1
+  },
+  {
+    "PLAYER_NAME": "Marcus Garrett",
     "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 1.650721954831544,
+    "FANTASY_POINTS_PROJECTION": 1.5,
     "GP": 2
   },
   {
@@ -2436,39 +2484,27 @@
     "GP": 2
   },
   {
-    "PLAYER_NAME": "Jock Landale",
-    "AGE": 26.0,
-    "FANTASY_POINTS_PROJECTION": 1.2666666666666666,
-    "GP": 3
-  },
-  {
-    "PLAYER_NAME": "Jamorko Pickett",
-    "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 1.1666666666666667,
-    "GP": 3
+    "PLAYER_NAME": "Markus Howard",
+    "AGE": 22.0,
+    "FANTASY_POINTS_PROJECTION": 1.376749352091818,
+    "GP": 2
   },
   {
     "PLAYER_NAME": "Leandro Bolmaro",
     "AGE": 21.0,
-    "FANTASY_POINTS_PROJECTION": 1.0,
-    "GP": 1
-  },
-  {
-    "PLAYER_NAME": "Marcus Garrett",
-    "AGE": 22.0,
-    "FANTASY_POINTS_PROJECTION": 1.0,
+    "FANTASY_POINTS_PROJECTION": 1.1333333333333333,
     "GP": 2
   },
   {
     "PLAYER_NAME": "Sharife Cooper",
     "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 0.8333333333333334,
+    "FANTASY_POINTS_PROJECTION": 1.0,
     "GP": 2
   },
   {
     "PLAYER_NAME": "Cam Thomas",
     "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 0.7933333333333333,
+    "FANTASY_POINTS_PROJECTION": 0.7433333333333334,
     "GP": 5
   },
   {
@@ -2496,12 +2532,6 @@
     "GP": 1
   },
   {
-    "PLAYER_NAME": "Justin Champagnie",
-    "AGE": 20.0,
-    "FANTASY_POINTS_PROJECTION": 0.4,
-    "GP": 2
-  },
-  {
     "PLAYER_NAME": "Aaron Henry",
     "AGE": 22.0,
     "FANTASY_POINTS_PROJECTION": 0.0,
@@ -2516,12 +2546,6 @@
   {
     "PLAYER_NAME": "DeJon Jarreau",
     "AGE": 23.0,
-    "FANTASY_POINTS_PROJECTION": 0.0,
-    "GP": 1
-  },
-  {
-    "PLAYER_NAME": "Duane Washington Jr.",
-    "AGE": 21.0,
     "FANTASY_POINTS_PROJECTION": 0.0,
     "GP": 1
   },
@@ -2552,7 +2576,7 @@
   {
     "PLAYER_NAME": "Kevin Pangos",
     "AGE": 28.0,
-    "FANTASY_POINTS_PROJECTION": -0.3888888888888889,
+    "FANTASY_POINTS_PROJECTION": -0.2222222222222222,
     "GP": 3
   },
   {

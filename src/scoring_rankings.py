@@ -1,12 +1,12 @@
 from nba_api.stats.endpoints import leaguedashplayerstats, leaguegamelog
 from pydash.collections import order_by
 from api.nba import get_current_season_full
-from constants import (
+from utils.constants import (
     CURRENT_SEASON_NUM_GAMES,
     CURRENT_SEASON_NUM_TEAMS,
     TSA_REQUIREMENT_NORMAL_SEASON,
 )
-from utils import write_txt
+from utils.helpers import write_txt
 
 
 def get_tsa_requirement():

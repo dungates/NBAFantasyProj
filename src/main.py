@@ -1,8 +1,8 @@
 import os
 from sys import platform
 from api.yahoo import get_current_league
-from constants import LEAGUE_TYPES
-from utils import get_config_files, option_selector, write_json
+from utils.constants import LEAGUE_TYPES
+from utils.helpers import get_config_files, option_selector, write_json
 
 
 def add_fantasy_account():
