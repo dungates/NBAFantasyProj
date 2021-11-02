@@ -404,3 +404,199 @@ final_res %>%
        title = "Predicted and True Values for Fantasy Points")
 ```
 
+But lets go ahead and look at some of the predictions for this year: 
+
+```{r}
+new_df <- readr::read_csv(here::here("Data/latest_season.csv")) %>%
+  dplyr::select(!where(is.factor)) %>%
+  rename(fgm_total = fgm_totals, fga_total = fga_totals)
+
+fitted_wf <- pluck(final_res$.workflow, 1)
+
+preds <- predict(fitted_wf, new_data = new_df) %>%
+  as_vector()
+
+pred_df <- new_df %>%
+  bind_cols(predictions = preds)
+```
+
+## Projections
+
+Here are the current projections based on totals, it looks pretty reasonable at the top but lower down I'm seeing some difficulties, and I think that the models reliance on time played is really impacting its performance.
+
+```{r}
+pred_df %>%
+  arrange(desc(predictions)) %>%
+  dplyr::slice(c(1:100)) %>%
+  ggplot(aes(fct_reorder(name_player, predictions), predictions)) +
+  geom_col(color = "#3EB489", alpha = 0.8, fill = "#3EB489") +
+  coord_flip() +
+  labs(x = "Player", y = "Fantasy Points Prediction", title = "Top 100 Predictions Based on Season Totals") +
+  theme(legend.position = "none",
+        axis.text.y = element_text(size = 7))
+```
+
+Ok so how can we adjust for this and make a model that doesnt account for games played? Lets remove games played since its unpredictable and try with some advanced stats.
+
+```{r}
+advanced_df <- df %>%
+  mutate(id = slugPlayerSeason) %>%
+  transmute(ratio_per = ratioPER,
+            pct_true_shooting = pctTrueShooting,
+            pct_3p_rate = pct3PRate,
+            pct_ft_rate = pctFTRate,
+            pct_orb = pctORB,
+            pct_drb = pctDRB,
+            pct_trb = pctTRB,
+            pct_ast = pctAST,
+            pct_stl = pctSTL,
+            pct_blk = pctBLK,
+            pct_tov = pctTOV,
+            pct_usg = pctUSG,
+            ratio_ows = ratioOWS,
+            ratio_dws = ratioDWS,
+            ratio_ws = ratioWS,
+            ratio_ws_per_48 = ratioWSPer48,
+            ratio_obpm = ratioOBPM,
+            ratio_dbpm = ratioDBPM,
+            ratio_bpm = ratioBPM,
+            ratio_vorp = ratioVORP,
+            pct_fg = pctFG,
+            pct_fg3 = pctFG3,
+            pct_fg2 = pctFG2,
+            pct_efg = pctEFG,
+            pct_ft = pctFT,
+            fgm_total = fgmTotals,
+            fga_total = fgaTotals,
+            fg3m_totals = fg3mTotals,
+            fg3a_totals = fg3aTotals,
+            fg2m_totals = fg2mTotals,
+            fg2a_totals = fg2aTotals,
+            ftm_totals = ftmTotals,
+            fta_totals = ftaTotals,
+            orb_totals = orbTotals,
+            drb_totals = drbTotals,
+            trb_totals = trbTotals,
+            ast_totals = astTotals,
+            stl_totals = stlTotals,
+            blk_totals = blkTotals,
+            tov_totals = tovTotals,
+            pf_totals = pfTotals,
+            pts_totals = ptsTotals,
+            fantasy_points = fantasy_points)
+
+set.seed(2021)
+nba_split <- initial_split(advanced_df)
+nba_train <- training(nba_split)
+nba_test <- testing(nba_split)
+
+xgb_spec <- boost_tree(
+  trees = 1000,
+  tree_depth = tune(), min_n = tune(), 
+  loss_reduction = tune(),                     ## first three: model complexity
+  sample_size = tune(), mtry = tune(),         ## randomness
+  learn_rate = tune()                          ## step size
+) %>%
+  set_engine("xgboost") %>%
+  set_mode("regression")
+
+xgb_grid <- grid_latin_hypercube(
+  tree_depth(),
+  min_n(),
+  loss_reduction(),
+  sample_size = sample_prop(),
+  finalize(mtry(), nba_train),
+  learn_rate(),
+  size = 30
+)
+
+xgb_wf <- workflow() %>%
+  add_formula(fantasy_points ~ .) %>%
+  add_model(xgb_spec)
+
+set.seed(2021)
+nba_folds <- vfold_cv(nba_train)
+```
+
+
+```{r eval = F}
+doParallel::registerDoParallel()
+
+set.seed(2021)
+xgb_res <- tune_grid(
+  xgb_wf,
+  resamples = nba_folds,
+  grid = xgb_grid,
+  control = control_grid(save_pred = T)
+)
+
+write_rds(xgb_res, here::here("models/advanced_model.rds"))
+```
+
+```{r}
+xgb_res <- read_rds(here::here("models/advanced_model.rds"))
+
+best_rsq <- select_best(xgb_res, "rsq")
+best_rsq
+
+final_xgb <- finalize_workflow(
+  xgb_wf,
+  best_rsq
+)
+
+final_res <- last_fit(final_xgb, nba_split)
+
+fitted_wf <- pluck(final_res$.workflow, 1)
+
+new_df <- readr::read_csv(here::here("Data/latest_season.csv")) %>%
+  dplyr::select(!where(is.factor)) %>%
+  rename(fgm_total = fgm_totals, fga_total = fga_totals,
+         pct_3p_rate = pct3p_rate, ratio_ws_per_48 = ratio_ws_per48)
+
+preds <- predict(fitted_wf, new_data = new_df) %>%
+  as_vector()
+
+pred_df <- new_df %>%
+  bind_cols(predictions = preds)
+```
+
+## What does this model say?
+
+```{r}
+pred_df %>%
+  arrange(desc(predictions)) %>%
+  dplyr::slice(c(1:50)) %>%
+  ggplot(aes(fct_reorder(name_player, predictions), predictions)) +
+  geom_col(color = "#3EB489", alpha = 0.8, fill = "#3EB489") +
+  geom_text(aes(label = round(predictions)), hjust = -0.6) +
+  coord_flip() +
+  labs(x = "Player", y = "Fantasy Points Prediction", title = "Top 50 Predictions Based on Season Totals So Far") +
+  theme(legend.position = "none",
+        axis.text.y = element_text(size = 8))
+
+ggsave(here::here("images/advanced_predictions.png"), width = 10, height = 10)
+```
+
+And what is the importance this time? It looks like field goal makes and point totals show up again, but this time we see vorp make a showing, as well as turnovers and defensive rebounds with some slight performances.
+
+```{r}
+final_xgb %>%
+  fit(data = nba_train) %>%
+  extract_fit_parsnip() %>%
+  vip::vip(geom = "point")
+
+ggsave(here::here("images/advanced_importance.png"), width = 10, height = 10)
+```
+
+## Linear Model
+
+So all this complicated machine learning stuff is nice but what if we simplified it all, is it really any better than just running an ols regression?
+
+```{r}
+lm1 <- lm(fantasy_points ~ ., data = advanced_df)
+summary(lm1)
+
+lm2 <- lm(fantasy_points ~ pts_totals + fgm_total + ratio_vorp, data = advanced_df)
+summary(lm2)
+```
+
