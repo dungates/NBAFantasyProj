@@ -1,7 +1,7 @@
 import os
 from sys import platform
 
-from api.yahoo import fetch_free_agents, get_current_league
+from api.yahoo import YahooClient
 from utils.constants import LEAGUE_TYPES
 from utils.helpers import (
     get_config_files,
@@ -61,8 +61,14 @@ def load_fantasy_account():
     selected_key = league_info[1][0]["key"]
 
     if selected_key == "yahoo":
-        current_league = get_current_league(league_info[1][1].path)
-        fetch_free_agents(current_league)
+        yahoo_client = YahooClient(league_info[1][1].path)
+        current_league = yahoo_client.get_current_league()
+
+        yahoo_client.fetch_free_agents(current_league)
+
+        print("Fetching fantasy matchups for current week...")
+        current_matchups = yahoo_client.get_matchups(current_league)
+        write_json(current_matchups, "current_matchups")
 
 
 def main():
