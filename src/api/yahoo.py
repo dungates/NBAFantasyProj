@@ -15,6 +15,13 @@ class YahooClient:
             oauth.refresh_access_token()
         self.oauth = oauth
 
+    def get_player_projections(self):
+        if not hasattr(self, "player_projections"):
+            self.player_projections = key_by(
+                fetch_player_projections(YAHOO_STAT_COEFFS), "PLAYER_NAME"
+            )
+        return self.player_projections
+
     def get_all_league_ids(self):
         current_game = game.Game(self.oauth, "nba")
         league_ids = current_game.league_ids()
@@ -44,14 +51,8 @@ class YahooClient:
             )
         return team_key_tuples
 
-    def get_roster(self, team_key=None):
-        current_team = team.Team(self.oauth, team_key)
-        return current_team.roster()
-
     def fetch_free_agents(self, league):
-        player_projections = key_by(
-            fetch_player_projections(YAHOO_STAT_COEFFS), "PLAYER_NAME"
-        )
+        player_projections = self.get_player_projections()
 
         print("Fetching free agents...")
         free_agents = league.free_agents("")
@@ -86,26 +87,37 @@ class YahooClient:
         print(f"\nTop free agents")
         print_fantasy_players(ordered_players_list, file_name="free_agents")
 
-    def print_roster(self, roster, name, player_projections):
-        print("\n" + name)
-        for player in roster:
-            fantasy_points_projection = "N/A"
-            games_played = 0
-            if player["name"] in player_projections.keys():
-                fantasy_points_projection = str(
-                    player_projections[player["name"]]["FANTASY_POINTS_PROJECTION"]
-                )
-                games_played = player_projections[player["name"]]["GP"]
-            print(
-                player["selected_position"]
-                + "\t"
-                + player["name"].ljust(24)
-                + "\t"
-                + str(games_played)
-                + "\t"
-                + fantasy_points_projection
+    def print_roster(self, team_data):
+        player_projections = self.get_player_projections()
+
+        current_team = team.Team(self.oauth, team_data["team_key"])
+        current_roster = current_team.roster()
+
+        players_list = []
+
+        print("\n" + team_data["name"])
+        for player in current_roster:
+            player_name = player["name"]
+            if player_name not in player_projections.keys():
+                continue
+            player_projection = player_projections[player_name]
+            players_list.append(
+                {
+                    "name": player_projection["PLAYER_NAME"],
+                    "status": player["status"],
+                    "positions": ",".join(player["eligible_positions"]),
+                    "selected_position": player["selected_position"],
+                    "age": player_projection["AGE"],
+                    "games_played": player_projection["GP"],
+                    "minutes_per_game": player_projection["MIN"]
+                    / player_projection["GP"],
+                    "preseason_fp_projection": player_projection[
+                        "FP_PROJECTION_PRESEASON"
+                    ],
+                    "current_fp_projection": player_projection["FP_PROJECTION_CURRENT"],
+                }
             )
-        print("\n")
+        print_fantasy_players(players_list)
 
     def get_team_data(self, team_dict):
         team_data = {}
@@ -114,4 +126,5 @@ class YahooClient:
                 team_data["team_key"] = get(line, "team_key")
             elif "name" in line:
                 team_data["name"] = get(line, "name")
+        team_data["points_total"] = get(team_dict, "team.1.team_points.total")
         return team_data

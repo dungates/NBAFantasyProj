@@ -41,9 +41,10 @@ def write_txt(data, filename):
 
 
 def print_fantasy_players(players_list, file_name=None):
-    row_format = "{:<4} {:<25} {:<7} {:<20} {:<6} {:<12} {:<10} {:<5} {:<7} {:<5}"
+    row_format = "{:<4} {:<5} {:<25} {:<7} {:<20} {:<6} {:<12} {:<10} {:<5} {:<7} {:<5}"
     header = row_format.format(
         "Rk.",
+        "Pos",
         "Player Name",
         "Status",
         "Positions",
@@ -58,17 +59,24 @@ def print_fantasy_players(players_list, file_name=None):
     lines = [header]
 
     for index, player in enumerate(players_list):
+        selected_position = (
+            player["selected_position"] if "selected_position" in player.keys() else ""
+        )
+        percent_owned = (
+            player["percent_owned"] if "percent_owned" in player.keys() else ""
+        )
         row = row_format.format(
             str(index + 1),
+            selected_position,
             player["name"],
             player["status"],
             player["positions"],
-            player["age"],
-            player["preseason_fp_projection"],
-            player["current_fp_projection"],
+            round(player["age"]),
+            round(player["preseason_fp_projection"], 4),
+            round(player["current_fp_projection"], 4),
             player["games_played"],
-            player["minutes_per_game"],
-            player["percent_owned"],
+            round(player["minutes_per_game"], 2),
+            percent_owned,
         )
         print(row)
         lines.append(row)

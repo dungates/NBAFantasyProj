@@ -66,9 +66,15 @@ def load_fantasy_account():
 
         yahoo_client.fetch_free_agents(current_league)
 
-        print("Fetching fantasy matchups for current week...")
+        print("\nFetching fantasy matchups for current week...")
         current_matchups = yahoo_client.get_matchups(current_league)
-        write_json(current_matchups, "current_matchups")
+        for team1, team2 in current_matchups:
+            print(
+                f"\n{team1['name']} ({team1['points_total']}) vs. {team2['name']} ({team2['points_total']})"
+            )
+            yahoo_client.print_roster(team1)
+            yahoo_client.print_roster(team2)
+            print("\n")
 
 
 def main():
