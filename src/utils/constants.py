@@ -3,7 +3,7 @@ LEAGUE_TYPES = {
     "espn": {"key": "espn", "name": "ESPN"},
 }
 
-STAT_COEFFS = {
+YAHOO_STAT_COEFFS = {
     "FG3M": 1,
     "PTS": 1,
     "REB": 1.2,
@@ -12,6 +12,8 @@ STAT_COEFFS = {
     "BLK": 3,
     "TOV": -1,
 }
+
+PEAK_AGE = 28
 
 CURRENT_SEASON_NUM_GAMES = 82
 CURRENT_SEASON_NUM_TEAMS = 30

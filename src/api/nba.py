@@ -1,5 +1,8 @@
 from datetime import datetime, timedelta
 from nba_api.stats.endpoints import leaguedashplayerstats
+from utils.constants import PEAK_AGE
+
+from utils.player_projection import calc_player_projection
 
 
 def get_current_season():
@@ -53,3 +56,65 @@ def get_current_season_stats(last_range):
         season=current_season, date_from_nullable=date_from
     )
     return parse_player_stats(stats)
+
+
+def fetch_player_projections(stat_categories):
+    current_season = get_current_season()
+
+    print(f"Fetching {current_season - 3} season stats...")
+    season_stats_3 = get_season_stats(current_season - 3)
+
+    print(f"Fetching {current_season - 2} season stats...")
+    season_stats_2 = get_season_stats(current_season - 2)
+
+    print(f"Fetching {current_season - 1} season stats...")
+    season_stats_1 = get_season_stats(current_season - 1)
+
+    print("Fetching current season stats...")
+    season_stats = get_current_season_stats("season")
+
+    print("Fetching past month stats...")
+    month_stats = get_current_season_stats("month")
+
+    print("Fetching past week stats...")
+    week_stats = get_current_season_stats("week")
+
+    for player_id, player_season_stats in season_stats.items():
+        prev_season_stats = []
+
+        if player_id in season_stats_3.keys():
+            prev_season_stats.append({"weight": 1, "stats": season_stats_3[player_id]})
+
+        if player_id in season_stats_2.keys():
+            prev_season_stats.append(
+                {"weight": 2.5, "stats": season_stats_2[player_id]}
+            )
+
+        if player_id in season_stats_1.keys():
+            prev_season_stats.append(
+                {"weight": 6.5, "stats": season_stats_1[player_id]}
+            )
+
+        age_adjustment = 1 + 0.015 * (PEAK_AGE - player_season_stats["AGE"])
+        preseason_projection = age_adjustment * calc_player_projection(
+            prev_season_stats, stat_categories
+        )
+
+        current_season_stats = []
+
+        current_season_stats.append({"weight": 1, "stats": player_season_stats})
+
+        if player_id in month_stats.keys():
+            current_season_stats.append({"weight": 1, "stats": month_stats[player_id]})
+
+        if player_id in week_stats.keys():
+            current_season_stats.append({"weight": 1, "stats": week_stats[player_id]})
+
+        current_projection = calc_player_projection(
+            current_season_stats, stat_categories
+        )
+
+        player_season_stats["FP_PROJECTION_PRESEASON"] = preseason_projection
+        player_season_stats["FP_PROJECTION_CURRENT"] = current_projection
+
+    return list(season_stats.values())

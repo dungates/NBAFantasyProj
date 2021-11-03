@@ -1,8 +1,13 @@
 import os
 from sys import platform
-from api.yahoo import get_current_league
+
+from api.yahoo import fetch_free_agents, get_current_league
 from utils.constants import LEAGUE_TYPES
-from utils.helpers import get_config_files, option_selector, write_json
+from utils.helpers import (
+    get_config_files,
+    option_selector,
+    write_json,
+)
 
 
 def add_fantasy_account():
@@ -57,10 +62,7 @@ def load_fantasy_account():
 
     if selected_key == "yahoo":
         current_league = get_current_league(league_info[1][1].path)
-        free_agents = current_league.free_agents("")
-        print(free_agents)
-
-    return league_info[1]
+        fetch_free_agents(current_league)
 
 
 def main():
@@ -76,8 +78,7 @@ def main():
         if choice[0] == 0:
             add_fantasy_account()
         elif choice[0] == 1:
-            account_info = load_fantasy_account()
-            print(account_info)
+            load_fantasy_account()
     else:
         print("No config files found!")
         add_fantasy_account()
