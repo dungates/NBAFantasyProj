@@ -1,26 +1,20 @@
-from pydash.collections import at, key_by, order_by
+from pydash.collections import at, order_by
 from pydash.objects import get
 from yahoo_fantasy_api import game, league, team
 from yahoo_oauth.oauth import OAuth2
-from api.nba import fetch_player_projections
+from api.nba import NBAClient
 from utils.constants import YAHOO_STAT_COEFFS
 from utils.helpers import print_fantasy_players
 
 
-class YahooClient:
+class YahooClient(NBAClient):
     def __init__(self, config_path):
+        super().__init__()
         oauth = OAuth2(None, None, from_file=config_path)
         if not oauth.token_is_valid():
             print("token invalid")
             oauth.refresh_access_token()
         self.oauth = oauth
-
-    def get_player_projections(self):
-        if not hasattr(self, "player_projections"):
-            self.player_projections = key_by(
-                fetch_player_projections(YAHOO_STAT_COEFFS), "PLAYER_NAME"
-            )
-        return self.player_projections
 
     def get_all_league_ids(self):
         current_game = game.Game(self.oauth, "nba")
@@ -52,7 +46,7 @@ class YahooClient:
         return team_key_tuples
 
     def fetch_free_agents(self, league):
-        player_projections = self.get_player_projections()
+        player_projections = self.get_player_projections(YAHOO_STAT_COEFFS)
 
         print("Fetching free agents...")
         free_agents = league.free_agents("")
@@ -88,7 +82,7 @@ class YahooClient:
         print_fantasy_players(ordered_players_list, file_name="free_agents")
 
     def print_roster(self, team_data):
-        player_projections = self.get_player_projections()
+        player_projections = self.get_player_projections(YAHOO_STAT_COEFFS)
 
         current_team = team.Team(self.oauth, team_data["team_key"])
         current_roster = current_team.roster()

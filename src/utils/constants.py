@@ -13,6 +13,20 @@ YAHOO_STAT_COEFFS = {
     "TOV": -1,
 }
 
+ESPN_STAT_COEFFS = {
+    "FGM": 2,
+    "FGA": -1,
+    "FTM": 1,
+    "FTA": -1,
+    "FG3M": 1,
+    "PTS": 1,
+    "REB": 1,
+    "AST": 2,
+    "STL": 4,
+    "BLK": 4,
+    "TOV": -2,
+}
+
 PEAK_AGE = 28
 
 CURRENT_SEASON_NUM_GAMES = 82

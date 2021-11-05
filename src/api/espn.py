@@ -1,5 +1,5 @@
-from espn_api.basketball import League
+from api.nba import NBAClient
 
 
-if __name__ == "__main__":
-    print("Hello World!")
+class ESPNClient(NBAClient):
+    pass
