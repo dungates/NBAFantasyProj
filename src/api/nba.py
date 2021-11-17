@@ -98,7 +98,7 @@ class NBAClient:
 
             if player_id in season_stats_1.keys():
                 prev_season_stats.append(
-                    {"weight": 6.5, "stats": season_stats_1[player_id]}
+                    {"weight": 6.25, "stats": season_stats_1[player_id]}
                 )
 
             age_adjustment = 1 + 0.015 * (PEAK_AGE - player_season_stats["AGE"])
@@ -112,12 +112,12 @@ class NBAClient:
 
             if player_id in month_stats.keys():
                 current_season_stats.append(
-                    {"weight": 1, "stats": month_stats[player_id]}
+                    {"weight": 3, "stats": month_stats[player_id]}
                 )
 
             if player_id in week_stats.keys():
                 current_season_stats.append(
-                    {"weight": 1, "stats": week_stats[player_id]}
+                    {"weight": 12, "stats": week_stats[player_id]}
                 )
 
             current_projection = calc_player_projection(
