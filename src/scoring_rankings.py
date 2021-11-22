@@ -1,6 +1,6 @@
 from nba_api.stats.endpoints import leaguedashplayerstats, leaguegamelog
 from pydash.collections import order_by
-from api.nba import get_current_season_full
+from api.nba import NBAClient
 from utils.constants import (
     CURRENT_SEASON_NUM_GAMES,
     CURRENT_SEASON_NUM_TEAMS,
@@ -9,9 +9,9 @@ from utils.constants import (
 from utils.helpers import write_txt
 
 
-def get_tsa_requirement():
+def get_tsa_requirement(nba_client):
     # Get current NBA season
-    full_season = get_current_season_full()
+    full_season = nba_client.get_current_season_full()
 
     # Fetch league game log for current season
     stats = leaguegamelog.LeagueGameLog(season=full_season)
@@ -65,9 +65,9 @@ def inject_scoring_rating(player_season_totals, player_season_per_100):
     player_season_totals["SCORING_RATING"] = scoring_rating
 
 
-def print_stats(player_seasons_by_scoring_rtg):
+def print_stats(nba_client, player_seasons_by_scoring_rtg):
     # Get TSA qualifier
-    tsa_requirement = get_tsa_requirement()
+    tsa_requirement = get_tsa_requirement(nba_client)
 
     # Initialize rank counter
     rank = 1
@@ -130,8 +130,11 @@ def print_stats(player_seasons_by_scoring_rtg):
 
 
 def main():
+    # Create NBA Data Client
+    nba_client = NBAClient()
+
     # Get current NBA season
-    full_season = get_current_season_full()
+    full_season = nba_client.get_current_season_full()
 
     # Fetch current season stats (totals and per 100)
     stats = leaguedashplayerstats.LeagueDashPlayerStats(season=full_season)
@@ -150,7 +153,7 @@ def main():
     player_seasons_by_scoring_rtg = order_by(stats_totals, ["-SCORING_RATING"])
 
     # Output data
-    print_stats(player_seasons_by_scoring_rtg)
+    print_stats(nba_client, player_seasons_by_scoring_rtg)
 
 
 if __name__ == "__main__":

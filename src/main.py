@@ -1,8 +1,13 @@
 import os
 from sys import platform
-from api.yahoo import get_current_league
+
+from api.yahoo import YahooClient
 from utils.constants import LEAGUE_TYPES
-from utils.helpers import get_config_files, option_selector, write_json
+from utils.helpers import (
+    get_config_files,
+    option_selector,
+    write_json,
+)
 
 
 def add_fantasy_account():
@@ -56,11 +61,20 @@ def load_fantasy_account():
     selected_key = league_info[1][0]["key"]
 
     if selected_key == "yahoo":
-        current_league = get_current_league(league_info[1][1].path)
-        free_agents = current_league.free_agents("")
-        print(free_agents)
+        yahoo_client = YahooClient(league_info[1][1].path)
+        current_league = yahoo_client.get_current_league()
 
-    return league_info[1]
+        yahoo_client.fetch_free_agents(current_league)
+
+        print("\nFetching fantasy matchups for current week...")
+        current_matchups = yahoo_client.get_matchups(current_league)
+        for team1, team2 in current_matchups:
+            print(
+                f"\n{team1['name']} ({team1['points_total']}) vs. {team2['name']} ({team2['points_total']})"
+            )
+            yahoo_client.print_roster(team1)
+            yahoo_client.print_roster(team2)
+            print("\n")
 
 
 def main():
@@ -76,8 +90,7 @@ def main():
         if choice[0] == 0:
             add_fantasy_account()
         elif choice[0] == 1:
-            account_info = load_fantasy_account()
-            print(account_info)
+            load_fantasy_account()
     else:
         print("No config files found!")
         add_fantasy_account()
