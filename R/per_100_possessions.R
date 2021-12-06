@@ -1,80 +1,36 @@
 library(tictoc)
-library(future)
-
-player_ids <- c(
-  1630173, 203500, 1628389, 200746,
-  1629638, 1628960, 1628386, 203937, 203507, 203648, 2546, 1630175,
-  1628384, 201571, 1630166, 1629028, 1628963, 1630163, 1628366,
-  1628964, 1630217, 1630625, 203084, 1630567, 1629628, 203115,
-  1629646, 1628966, 203145, 1629647, 203078, 1627736, 1627761,
-  202722, 1630180, 203920, 202357, 202339, 203992, 202711, 1630195,
-  1629067, 1626164, 1628449, 1630547, 202340, 1628396, 1629649,
-  1628969, 1628970, 1629052, 1627763, 1629717, 1628971, 1627759,
-  1628425, 1628972, 1628973, 203493, 203504, 202692, 1630215, 202710,
-  203484, 1630267, 203991, 1628975, 1628976, 1627936, 1626161,
-  1630551, 1630528, 1629634, 203903, 0, 1629599, 1628381, 201144,
-  1626192, 1630536, 203496, 1628470, 203109, 203552, 201939, 203076,
-  1629056, 1630466, 203473, 201942, 1628977, 203476, 203915, 1629029,
-  1629652, 1630245, 0, 201609, 203083, 1630537, 201142, 1630162,
-  203954, 1629234, 1629605, 202324, 1627827, 1630238, 1630201,
-  1627854, 1630235, 203095, 1628368, 1629655, 1629636, 1630585,
-  1630586, 202331, 1630581, 1628983, 203497, 203932, 201569, 1628984,
-  203924, 201980, 203110, 1630224, 203210, 1629750, 201145, 1630182,
-  201933, 1629656, 1630169, 1630181, 203501, 201935, 203090, 1626149,
-  203925, 202699, 1628404, 1629637, 1630165, 202330, 1630565, 1627823,
-  1629639, 1627741, 201588, 203524, 1628988, 201950, 203200, 1626158,
-  201143, 1627863, 2730, 1628989, 1630190, 1629631, 2738, 204060,
-  1627742, 1628402, 1628991, 1628367, 202704, 2544, 1629660, 1630198,
-  1628993, 1629661, 1630552, 201949, 1629640, 203999, 1627884,
-  0, 1630539, 1630200, 1626145, 201599, 202709, 1630686, 202683,
-  1628379, 1630557, 1628467, 1628995, 1629723, 1627788, 1630249,
-  1628398, 203087, 1629111, 1629641, 203897, 1627774, 1627814,
-  203458, 1630184, 203081, 1629642, 1626172, 201572, 201577, 201567,
-  200768, 1627789, 1626168, 1630177, 1630572, 1629611, 1630544,
-  1628374, 1630230, 1628997, 1628998, 1630231, 1630178, 1630219,
-  1630540, 203468, 204456, 1630183, 1629667, 203926, 201580, 1629162,
-  1629001, 203114, 201988, 200794, 1630558, 1628378, 1630596, 1628370,
-  1630541, 1629630, 202694, 202693, 1628420, 1630530, 1627749,
-  203488, 1629004, 1627846, 1626204, 1630174, 203526, 1627777,
-  1629669, 1628373, 203994, 1628021, 1629670, 1626220, 1629006,
-  1630171, 1629644, 203482, 1629671, 1626224, 1626162, 1630698,
-  1629672, 101108, 1626166, 1627780, 203486, 1627751, 1630197,
-  1629673, 1629645, 1629008, 203490, 204001, 203939, 1626181, 1630563,
-  1627752, 1630202, 1630193, 203944, 1630559, 1629629, 1630194,
-  1629675, 1630208, 1626196, 203085, 1629130, 1629620, 1629011,
-  1630526, 1629676, 200765, 201565, 203082, 1626179, 201937, 1626156,
-  1627734, 203107, 203471, 1627782, 1630578, 1629012, 1629013,
-  1629014, 1630579, 203935, 202397, 1630531, 1630205, 1630191,
-  1629622, 1630591, 1630256, 1628369, 202066, 1628464, 0, 1629744,
-  202684, 1630550, 1629680, 1630167, 1629308, 1626157, 1629018,
-  200782, 1626167, 202685, 1627756, 1629020, 1627832, 1630170,
-  1629216, 202696, 1629731, 1630532, 1629021, 202689, 1629022,
-  202954, 1629023, 201566, 1628401, 202355, 203952, 1629684, 1629026,
-  1630172, 1629057, 1630533, 1626159, 1626174, 1626153, 1630593,
-  201152, 1629027, 1630209, 203469, 1627826
-)
-
-plan(multicore)
-tic()
-df <- nbastatR::players_tables(
-  seasons = 2022,
-  player_ids = player_ids,
-  assign_to_environment = F,
-  measures = c("Base", "Advanced"),
-  modes = "Per100Possessions",
-  tables = "year over year",
-  date_from = as.Date("2021-10-19"),
-  date_to = Sys.Date()
-)
-toc()
+library(httr)
+library(tidyverse)
 
 tic()
-df_unnested <- df %>%
-  dplyr::select(typeMeasure, namePlayer, dataTable) %>%
-  tidyr::pivot_wider(names_from = typeMeasure, values_from = dataTable) %>%
-  tidyr::unnest(cols = c(Base, Advanced), names_repair = "unique")
+
+h <- c("x-nba-stats-origin" = "stats",
+       "x-nba-stats-token" = "true",
+       "origin" = "refer")
+
+df <- httr::GET(url = "https://stats.nba.com/stats/leaguedashplayerstats?College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&GameScope=&GameSegment=&Height=&LastNGames=0&LeagueID=00&Location=&MeasureType=Base&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2021-22&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&TwoWay=0&VsConference=&VsDivision=&Weight=",
+                httr::add_headers(.headers = h),
+                user_agent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"))
+
+all_player_stats <- content(df, as = "parsed", type = "application/json")
+
+split_players <- all_player_stats$resultSets
+
+headers <- split_players[[1]]$headers %>% unlist() %>% as.vector()
+
+values <- split_players[[1]]$rowSet
+
+final_df <- purrr::map_dfr(values, ~ tibble::as_tibble(t(.x)))
+
+colnames(final_df) <- headers
 toc()
 
-readr::write_csv(df_unnested, "Data/player_tables.csv")
+database_connect <- function(upload_data, name) {
+  con <- DBI::dbConnect(RSQLite::SQLite(), dbname = "nba.db")
+  
+  # upload_data <- readr::write_csv(paste0("Data/", name, ".csv"))
+  
+  RSQLite::dbWriteTable(conn = con, name = name, value = upload_data, overwrite = TRUE)
+}
 
-database_connect(upload_data = df_unnested, name = "player_tables_2022")
+database_connect(upload_data = final_df, name = "player_tables_2022")
