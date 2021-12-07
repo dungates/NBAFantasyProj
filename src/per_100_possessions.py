@@ -1,13 +1,22 @@
-import requests
+from nba_api.stats.endpoints import leaguedashplayerstats
+from pydash.objects import get
 
-url = "https://stats.nba.com/stats/leaguedashplayerstats?College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&GameScope=&GameSegment=&Height=&LastNGames=0&LeagueID=00&Location=&MeasureType=Base&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2021-22&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&TwoWay=0&VsConference=&VsDivision=&Weight="
+from utils.sqlite import update_data_table
 
-payload = {}
-headers = {
-  'x-nba-stats-origin': 'stats',
-  'x-nba-stats-token': 'true'
-}
 
-response = requests.request("GET", url, headers = headers, data = payload)
+def update_season_stats(season):
+    stats_response = leaguedashplayerstats.LeagueDashPlayerStats(season=season)
 
-print(response.text)
+    data = get(stats_response, "data_sets.0.data")
+    headers = get(data, "headers")
+    data_rows = get(data, "data")
+    if not len(data_rows):
+        return
+
+    primary_keys = ["SEASON", "PLAYER_NAME"]
+    extra_values = [("SEASON", season)]
+    update_data_table("test_table", headers, data_rows, primary_keys, extra_values)
+
+
+if __name__ == "__main__":
+    update_season_stats("2021-22")
