@@ -20,18 +20,21 @@ def fetch_current_schedule():
         return None
 
 
+def get_current_season():
+    today = datetime.today()
+    return today.year if today.month < 9 else today.year + 1
+
+
+def format_season(season):
+    return str(season - 1) + "-" + str(season)[-2:]
+
+
+def get_current_season_full():
+    current_season = get_current_season()
+    return format_season(current_season)
+
+
 class NBAClient:
-    def get_current_season(self):
-        today = datetime.today()
-        return today.year if today.month < 9 else today.year + 1
-
-    def format_season(self, season):
-        return str(season - 1) + "-" + str(season)[-2:]
-
-    def get_current_season_full(self):
-        current_season = self.get_current_season()
-        return self.format_season(current_season)
-
     def parse_player_stats(self, player_stats):
         normalized_player_stats = player_stats.get_normalized_dict()[
             "LeagueDashPlayerStats"
@@ -46,12 +49,12 @@ class NBAClient:
         return results
 
     def get_season_stats(self, season):
-        full_season = self.format_season(season)
+        full_season = format_season(season)
         stats = leaguedashplayerstats.LeagueDashPlayerStats(season=full_season)
         return self.parse_player_stats(stats)
 
     def get_current_season_stats(self, last_range):
-        current_season = self.get_current_season_full()
+        current_season = get_current_season_full()
         time_to_subtract = None
         if last_range == "week":
             time_to_subtract = timedelta(days=7)
@@ -77,7 +80,7 @@ class NBAClient:
         if hasattr(self, "player_projections"):
             return
 
-        current_season = self.get_current_season()
+        current_season = get_current_season()
 
         print(f"Fetching {current_season - 3} season stats...")
         season_stats_3 = self.get_season_stats(current_season - 3)

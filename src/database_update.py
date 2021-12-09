@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from nba_api.stats.endpoints import leaguedashplayerstats
 from pydash.collections import flat_map
 from pydash.objects import get, omit
-from api.nba import fetch_current_schedule
+from api.nba import fetch_current_schedule, get_current_season_full
 from utils.sqlite import (
     update_data_table_from_dicts,
     update_data_table_from_stats_response,
@@ -73,7 +73,7 @@ def update_player_season(season):
 
 
 def update_current_season_stats():
-    current_season = "2021-22"
+    current_season = get_current_season_full()
     update_player_season(current_season)
     update_last_totals(current_season, "month")
     update_last_totals(current_season, "week")
