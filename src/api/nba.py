@@ -1,9 +1,22 @@
 from datetime import datetime, timedelta
 from nba_api.stats.endpoints import leaguedashplayerstats
 from pydash.collections import key_by
+import requests
 from utils.constants import PEAK_AGE
 
 from utils.player_projection import calc_player_projection
+
+
+def fetch_current_schedule():
+    try:
+        response = requests.get(
+            "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json"
+        )
+        data = response.json()
+        return data
+    except requests.ConnectionError:
+        print("Unable to fetch schedule data")
+        return None
 
 
 class NBAClient:
