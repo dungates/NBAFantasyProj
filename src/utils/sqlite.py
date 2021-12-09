@@ -1,5 +1,6 @@
 import sqlite3
 from typing import Any, Dict, List, Tuple
+from pydash.objects import get
 
 
 def update_data_table(
@@ -39,4 +40,18 @@ def update_data_table_from_dicts(
 ):
     headers = list(data_dicts[0].keys())
     data_rows = list(map(lambda game: list(game.values()), data_dicts))
+    update_data_table(table_name, headers, data_rows, primary_keys, extra_values)
+
+
+def update_data_table_from_stats_response(
+    table_name: str,
+    stats_response: Dict[str, Any],
+    primary_keys: List[str] | None = None,
+    extra_values: List[Tuple[str, Any]] | None = None,
+):
+    data = get(stats_response, "data_sets.0.data")
+    headers = get(data, "headers")
+    data_rows = get(data, "data")
+    if not len(data_rows):
+        return
     update_data_table(table_name, headers, data_rows, primary_keys, extra_values)

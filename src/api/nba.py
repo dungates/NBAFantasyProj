@@ -8,6 +8,7 @@ from utils.player_projection import calc_player_projection
 
 
 def fetch_current_schedule():
+    print("Fetching game schedule for current season...")
     try:
         response = requests.get(
             "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json"
