@@ -40,6 +40,10 @@ def write_txt(data, filename):
         txt_file.write(data)
 
 
+def remove_periods(str):
+    return str.replace(".", "")
+
+
 def print_fantasy_players(players_list, file_name=None):
     row_format = "{:<4} {:<5} {:<25} {:<7} {:<20} {:<6} {:<12} {:<10} {:<5} {:<7} {:<5}"
     header = row_format.format(

@@ -4,7 +4,7 @@ from yahoo_fantasy_api import game, league, team
 from yahoo_oauth.oauth import OAuth2
 from api.nba import NBAClient
 from utils.constants import YAHOO_STAT_COEFFS
-from utils.helpers import print_fantasy_players
+from utils.helpers import print_fantasy_players, remove_periods
 
 
 class YahooClient(NBAClient):
@@ -91,13 +91,13 @@ class YahooClient(NBAClient):
 
         print("\n" + team_data["name"])
         for player in current_roster:
-            player_name = player["name"]
+            player_name = remove_periods(player["name"])
             if player_name not in player_projections.keys():
                 continue
             player_projection = player_projections[player_name]
             players_list.append(
                 {
-                    "name": player_projection["PLAYER_NAME"],
+                    "name": player_name,
                     "status": player["status"],
                     "positions": ",".join(player["eligible_positions"]),
                     "selected_position": player["selected_position"],

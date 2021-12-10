@@ -3,6 +3,7 @@ from nba_api.stats.endpoints import leaguedashplayerstats
 from pydash.collections import key_by
 import requests
 from utils.constants import PEAK_AGE
+from utils.helpers import remove_periods
 
 from utils.player_projection import calc_player_projection
 
@@ -143,5 +144,8 @@ class NBAClient:
 
             player_season_stats["FP_PROJECTION_PRESEASON"] = preseason_projection
             player_season_stats["FP_PROJECTION_CURRENT"] = current_projection
+            player_season_stats["PLAYER_NAME"] = remove_periods(
+                player_season_stats["PLAYER_NAME"]
+            )
 
         self.player_projections = key_by(season_stats.values(), "PLAYER_NAME")
