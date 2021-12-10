@@ -1,5 +1,7 @@
+from datetime import datetime, timedelta
 import json
 import os
+import pytz
 
 from .constants import LEAGUE_TYPES
 
@@ -42,6 +44,14 @@ def write_txt(data, filename):
 
 def remove_periods(str):
     return str.replace(".", "")
+
+
+def get_end_of_week():
+    today = datetime.now(tz=pytz.timezone("America/Los_Angeles")).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
+    first_day_of_week = today + timedelta(days=7 - today.weekday())
+    return first_day_of_week.isoformat()
 
 
 def print_fantasy_players(players_list, file_name=None):
