@@ -31,22 +31,16 @@ def schedule_row_reducer(acc, row):
     return acc
 
 
-def get_schedule_by_team(team_id):
+def get_schedule_by_team():
     con = sqlite3.connect("nba.db")
     con.row_factory = sqlite3.Row
     cur = con.cursor()
-    results = list(
-        cur.execute(
-            "SELECT * FROM game_schedule WHERE homeTeamId=:team_id OR awayTeamId=:team_id",
-            {"team_id": team_id},
-        )
-    )
+    results = list(cur.execute("SELECT * FROM game_schedule;"))
     con.close()
     return reduce(schedule_row_reducer, results, {})
 
 
 def get_player_season_totals(season):
-    print(season)
     con = sqlite3.connect("nba.db")
     con.row_factory = sqlite3.Row
     cur = con.cursor()
@@ -73,52 +67,32 @@ def get_player_last_totals(last_range):
 
 def get_player_projections(fantasy_coeffs):
     current_season = get_current_season()
-
-    print(f"Fetching {current_season - 3} season stats...")
     season_stats_3 = get_player_season_totals(current_season - 3)
-
-    print(f"Fetching {current_season - 2} season stats...")
     season_stats_2 = get_player_season_totals(current_season - 2)
-
-    print(f"Fetching {current_season - 1} season stats...")
     season_stats_1 = get_player_season_totals(current_season - 1)
-
-    print("Fetching current season stats...")
     season_stats = get_player_season_totals(current_season)
-
-    print("Fetching past month stats...")
     month_stats = get_player_last_totals("month")
-
-    print("Fetching past week stats...")
     week_stats = get_player_last_totals("week")
 
     for player_id, player_season_stats in season_stats.items():
         prev_season_stats = []
-
         if player_id in season_stats_3.keys():
             prev_season_stats.append({"weight": 1, "stats": season_stats_3[player_id]})
-
         if player_id in season_stats_2.keys():
             prev_season_stats.append({"weight": 2, "stats": season_stats_2[player_id]})
-
         if player_id in season_stats_1.keys():
             prev_season_stats.append({"weight": 5, "stats": season_stats_1[player_id]})
-
         age_adjustment = 1 + 0.015 * (PEAK_AGE - player_season_stats["AGE"])
         preseason_projection = age_adjustment * calc_player_projection(
             prev_season_stats, fantasy_coeffs
         )
 
         current_season_stats = []
-
         current_season_stats.append({"weight": 1, "stats": player_season_stats})
-
         if player_id in month_stats.keys():
             current_season_stats.append({"weight": 3, "stats": month_stats[player_id]})
-
         if player_id in week_stats.keys():
             current_season_stats.append({"weight": 10, "stats": week_stats[player_id]})
-
         current_projection = calc_player_projection(
             current_season_stats, fantasy_coeffs
         )

@@ -44,7 +44,6 @@ class YahooClient:
         return team_key_tuples
 
     def fetch_free_agents(self, league, player_projections):
-        print("Fetching free agents...")
         free_agents = league.free_agents("")
 
         players_list = []
