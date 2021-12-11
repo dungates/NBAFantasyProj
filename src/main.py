@@ -1,8 +1,8 @@
 import os
 from sys import platform
-
+from api.database import get_player_projections
 from api.yahoo import YahooClient
-from utils.constants import LEAGUE_TYPES
+from utils.constants import LEAGUE_TYPES, YAHOO_STAT_COEFFS
 from utils.helpers import (
     get_config_files,
     option_selector,
@@ -64,7 +64,9 @@ def load_fantasy_account():
         yahoo_client = YahooClient(league_info[1][1].path)
         current_league = yahoo_client.get_current_league()
 
-        yahoo_client.fetch_free_agents(current_league)
+        player_projections = get_player_projections(YAHOO_STAT_COEFFS)
+
+        yahoo_client.fetch_free_agents(current_league, player_projections)
 
         print("\nFetching fantasy matchups for current week...")
         current_matchups = yahoo_client.get_matchups(current_league)
@@ -72,8 +74,8 @@ def load_fantasy_account():
             print(
                 f"\n{team1['name']} ({team1['points_total']}) vs. {team2['name']} ({team2['points_total']})"
             )
-            yahoo_client.print_roster(team1)
-            yahoo_client.print_roster(team2)
+            yahoo_client.print_roster(team1, player_projections)
+            yahoo_client.print_roster(team2, player_projections)
             print("\n")
 
 
