@@ -10,8 +10,4 @@ def update_current_season_stats():
 
 
 if __name__ == "__main__":
-    current_season = get_current_season()
-    update_player_season(current_season - 3)
-    update_player_season(current_season - 2)
-    update_player_season(current_season - 1)
     update_current_season_stats()
