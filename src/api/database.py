@@ -4,14 +4,14 @@ import sqlite3
 from nba_api.stats.endpoints import leaguedashplayerstats
 from pydash.collections import flat_map, key_by
 from pydash.objects import get, omit
-from api.nba import (
-    fetch_current_schedule,
+from api.nba import fetch_current_schedule
+from utils.constants import PEAK_AGE
+from utils.helpers import (
     format_season,
     get_current_season,
     get_current_season_full,
+    remove_periods,
 )
-from utils.constants import PEAK_AGE
-from utils.helpers import remove_periods
 from utils.player_projection import calc_player_projection
 from utils.sqlite import (
     update_data_table_from_dicts,

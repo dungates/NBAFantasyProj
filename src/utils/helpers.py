@@ -46,6 +46,20 @@ def remove_periods(str):
     return str.replace(".", "")
 
 
+def get_current_season():
+    today = datetime.today()
+    return today.year if today.month < 9 else today.year + 1
+
+
+def format_season(season):
+    return str(season - 1) + "-" + str(season)[-2:]
+
+
+def get_current_season_full():
+    current_season = get_current_season()
+    return format_season(current_season)
+
+
 def get_start_of_week():
     today = datetime.now(tz=pytz.timezone("America/Los_Angeles")).replace(
         hour=0, minute=0, second=0, microsecond=0
