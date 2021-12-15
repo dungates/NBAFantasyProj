@@ -92,7 +92,7 @@ def get_player_projections(fantasy_coeffs):
         if player_id in month_stats.keys():
             current_season_stats.append({"weight": 3, "stats": month_stats[player_id]})
         if player_id in week_stats.keys():
-            current_season_stats.append({"weight": 10, "stats": week_stats[player_id]})
+            current_season_stats.append({"weight": 12, "stats": week_stats[player_id]})
         current_projection = calc_player_projection(
             current_season_stats, fantasy_coeffs
         )

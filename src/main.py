@@ -93,10 +93,8 @@ def load_fantasy_account():
         yahoo_client = YahooClient(league_info[1][1].path)
         current_league = yahoo_client.get_current_league()
 
-        print("\nFetching player projections..")
         player_projections = get_player_projections(YAHOO_STAT_COEFFS)
 
-        print("\nFetching upcoming game schedule...")
         # schedule_by_team = get_schedule_by_team()
         # weekly_schedules = get_weekly_schedule_by_team(schedule_by_team)
 
