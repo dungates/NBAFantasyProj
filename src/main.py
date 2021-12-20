@@ -1,16 +1,14 @@
 from datetime import datetime
 import os
 from sys import platform
-from api.database import get_player_projections, get_schedule_by_team
 from api.yahoo import YahooClient
 from utils.constants import LEAGUE_TYPES, YAHOO_STAT_COEFFS
 from utils.helpers import (
     get_config_files,
-    get_end_of_week,
-    get_start_of_week,
     option_selector,
     write_json,
 )
+from utils.player_projection import get_player_projections
 
 
 def iso_to_timestamp(iso):
