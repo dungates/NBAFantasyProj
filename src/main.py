@@ -1,40 +1,15 @@
-from datetime import datetime
 import os
 from sys import platform
+from api.database import get_schedule_by_team
 from api.yahoo import YahooClient
 from utils.constants import LEAGUE_TYPES, YAHOO_STAT_COEFFS
 from utils.helpers import (
     get_config_files,
     option_selector,
+    print_fantasy_players,
     write_json,
 )
 from utils.player_projection import get_player_projections
-
-
-def iso_to_timestamp(iso):
-    return datetime.fromisoformat(iso).timestamp()
-
-
-# def filter_games_from_range(season_games, start_time, end_time):
-#     weekly_games = []
-#     for game in season_games:
-#         start_time = iso_to_timestamp(start_time)
-#         end_time = iso_to_timestamp(end_time)
-#         game_time = iso_to_timestamp(game["gameDateTimeUTC"])
-#         if start_time < game_time and game_time < end_time:
-#             weekly_games.append(game)
-#     return weekly_games
-
-
-# def get_weekly_schedule_by_team(schedule_by_team):
-#     weekly_schedule = {}
-#     for team_id, games in enumerate(schedule_by_team):
-#         start_time = get_start_of_week()
-#         end_time = get_end_of_week()
-#         weekly_schedule[team_id] = len(
-#             filter_games_from_range(games, start_time, end_time)
-#         )
-#     return weekly_schedule
 
 
 def add_fantasy_account():
@@ -92,21 +67,28 @@ def load_fantasy_account():
         current_league = yahoo_client.get_current_league()
 
         player_projections = get_player_projections(YAHOO_STAT_COEFFS)
-
-        # schedule_by_team = get_schedule_by_team()
-        # weekly_schedules = get_weekly_schedule_by_team(schedule_by_team)
+        schedule_by_team = get_schedule_by_team()
 
         print("\nFetching free agents...")
-        yahoo_client.fetch_free_agents(current_league, player_projections)
+        free_agents = yahoo_client.fetch_free_agents(current_league, player_projections)
+        print(f"\nTop free agents")
+        print_fantasy_players(free_agents, schedule_by_team, 1, file_name="free_agents")
 
         print("\nFetching fantasy matchups for current week...")
-        current_matchups = yahoo_client.get_matchups(current_league)
+        current_matchups = yahoo_client.fetch_matchups(current_league)
         for team1, team2 in current_matchups:
             print(
                 f"\n{team1['name']} ({team1['points_total']}) vs. {team2['name']} ({team2['points_total']})"
             )
-            yahoo_client.print_roster(team1, player_projections)
-            yahoo_client.print_roster(team2, player_projections)
+
+            team1_roster = yahoo_client.fetch_roster(team1, player_projections)
+            print(f"\n{team1['name']}")
+            print_fantasy_players(team1_roster, schedule_by_team, 1)
+
+            team2_roster = yahoo_client.fetch_roster(team2, player_projections)
+            print(f"\n{team2['name']}")
+            print_fantasy_players(team2_roster, schedule_by_team, 1)
+
             print("\n")
 
 

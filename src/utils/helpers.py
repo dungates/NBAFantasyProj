@@ -1,9 +1,43 @@
 from datetime import datetime, timedelta
 import json
 import os
+import re
+import sqlite3
+from typing import Dict, List
 import pytz
 
-from .constants import LEAGUE_TYPES
+from .constants import DAYS_OF_WEEK, LEAGUE_TYPES
+
+
+def filter_games_by_time_range(
+    season_games: List[sqlite3.Row], start_time: float, end_time: float
+) -> List[str]:
+    weekly_games = []
+    for game in season_games:
+        game_time = iso_8601_to_unix(game["gameDateTimeUTC"])
+        if start_time < game_time and game_time < end_time:
+            weekly_games.append(game["day"])
+
+    return weekly_games
+
+
+def get_days_schedule_by_team(
+    schedule_by_team: Dict[str, List[sqlite3.Row]], extra_weeks: int = 0
+) -> Dict[str, str]:
+    weekly_schedule = {}
+    for week in range(0, extra_weeks + 1):
+        start_time = get_start_of_week(week)
+        end_time = get_end_of_week(week)
+        for team_id, games in schedule_by_team.items():
+            if team_id not in weekly_schedule.keys():
+                weekly_schedule[team_id] = ""
+            week_games = filter_games_by_time_range(games, start_time, end_time)
+            if week > 0:
+                weekly_schedule[team_id] += "  "
+            for day in DAYS_OF_WEEK.keys():
+                char = DAYS_OF_WEEK[day] if day in week_games else " "
+                weekly_schedule[team_id] += char
+    return weekly_schedule
 
 
 def get_config_files():
@@ -60,24 +94,43 @@ def get_current_season_full():
     return format_season(current_season)
 
 
-def get_start_of_week():
-    today = datetime.now(tz=pytz.timezone("America/Los_Angeles")).replace(
-        hour=0, minute=0, second=0, microsecond=0
+def get_current_time():
+    return datetime.now(tz=pytz.timezone("America/Los_Angeles"))
+
+
+def iso_8601_to_unix(iso):
+    formatted_iso = re.sub(r"Z$", "+00:00", iso)
+    return datetime.fromisoformat(formatted_iso).timestamp()
+
+
+def get_start_of_week(weeks_from_now=0):
+    today = get_current_time()
+    first_day_of_week = (
+        today + timedelta(weeks=weeks_from_now) - timedelta(days=today.weekday())
     )
-    first_day_of_week = today - timedelta(days=today.weekday())
-    return first_day_of_week.isoformat()
-
-
-def get_end_of_week():
-    today = datetime.now(tz=pytz.timezone("America/Los_Angeles")).replace(
+    return first_day_of_week.replace(
         hour=0, minute=0, second=0, microsecond=0
+    ).timestamp()
+
+
+def get_end_of_week(weeks_from_now=0):
+    today = get_current_time()
+    first_day_of_next_week = (
+        today + timedelta(weeks=weeks_from_now) + timedelta(days=7 - today.weekday())
     )
-    first_day_of_next_week = today + timedelta(days=7 - today.weekday())
-    return first_day_of_next_week.isoformat()
+    return first_day_of_next_week.replace(
+        hour=0, minute=0, second=0, microsecond=0
+    ).timestamp()
 
 
-def print_fantasy_players(players_list, file_name=None):
-    row_format = "{:<4} {:<5} {:<25} {:<7} {:<24} {:<6} {:<12} {:<10} {:<5} {:<7} {:<5}"
+def print_fantasy_players(
+    players_list, schedule_by_team, extra_weeks=0, file_name=None
+):
+    days_schedule_by_team = get_days_schedule_by_team(schedule_by_team, extra_weeks)
+
+    row_format = (
+        "{:<4} {:<5} {:<25} {:<7} {:<24} {:<6} {:<12} {:<10} {:<5} {:<7} {:<8} {:<15}"
+    )
     header = row_format.format(
         "Rk.",
         "Pos",
@@ -90,16 +143,23 @@ def print_fantasy_players(players_list, file_name=None):
         "GP",
         "MPG",
         "% Owned",
+        "Schedule",
     )
     print(header)
     lines = [header]
 
     for index, player in enumerate(players_list):
+        team_id = player["team_id"]
         selected_position = (
             player["selected_position"] if "selected_position" in player.keys() else ""
         )
         percent_owned = (
             player["percent_owned"] if "percent_owned" in player.keys() else ""
+        )
+        game_days = (
+            days_schedule_by_team[team_id]
+            if team_id in days_schedule_by_team.keys()
+            else ""
         )
         row = row_format.format(
             str(index + 1),
@@ -113,6 +173,7 @@ def print_fantasy_players(players_list, file_name=None):
             player["games_played"],
             round(player["minutes_per_game"], 2),
             percent_owned,
+            game_days,
         )
         print(row)
         lines.append(row)

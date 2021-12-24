@@ -27,6 +27,16 @@ ESPN_STAT_COEFFS = {
     "TOV": -2,
 }
 
+DAYS_OF_WEEK = {
+    "Mon": "M",
+    "Tue": "T",
+    "Wed": "W",
+    "Thu": "R",
+    "Fri": "F",
+    "Sat": "S",
+    "Sun": "U",
+}
+
 PEAK_AGE = 28
 
 CURRENT_SEASON_NUM_GAMES = 82

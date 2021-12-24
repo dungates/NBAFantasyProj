@@ -1,5 +1,4 @@
 from datetime import datetime, timedelta
-from functools import reduce
 import sqlite3
 from nba_api.stats.endpoints import leaguedashplayerstats
 from pydash.collections import flat_map, key_by
@@ -16,25 +15,24 @@ from utils.sqlite import (
 )
 
 
-def schedule_row_reducer(acc, row):
-    home_team_id = row["homeTeamId"]
-    away_team_id = row["awayTeamId"]
-    if home_team_id not in acc.keys():
-        acc[home_team_id] = []
-    if away_team_id not in acc.keys():
-        acc[away_team_id] = []
-    acc[home_team_id].append(row)
-    acc[away_team_id].append(row)
-    return acc
-
-
 def get_schedule_by_team():
     con = sqlite3.connect("nba.db")
     con.row_factory = sqlite3.Row
     cur = con.cursor()
     results = list(cur.execute("SELECT * FROM game_schedule;"))
     con.close()
-    return reduce(schedule_row_reducer, results, {})
+
+    schedule_by_team = {}
+    for row in results:
+        home_team_id = row["homeTeamId"]
+        away_team_id = row["awayTeamId"]
+        if home_team_id not in schedule_by_team.keys():
+            schedule_by_team[home_team_id] = []
+        if away_team_id not in schedule_by_team.keys():
+            schedule_by_team[away_team_id] = []
+        schedule_by_team[home_team_id].append(row)
+        schedule_by_team[away_team_id].append(row)
+    return schedule_by_team
 
 
 def get_player_season_totals(season):

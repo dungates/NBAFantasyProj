@@ -2,7 +2,7 @@ from pydash.collections import at, order_by
 from pydash.objects import get
 from yahoo_fantasy_api import game, league, team
 from yahoo_oauth.oauth import OAuth2
-from utils.helpers import print_fantasy_players, remove_periods
+from utils.helpers import remove_periods
 
 
 class YahooClient:
@@ -27,7 +27,7 @@ class YahooClient:
         current_league = league.League(self.oauth, league_id)
         return current_league
 
-    def get_matchups(self, league, week=None):
+    def fetch_matchups(self, league, week=None):
         current_matchups = league.matchups(week)
         matchups = get(
             current_matchups, "fantasy_content.league.1.scoreboard.0.matchups"
@@ -55,6 +55,7 @@ class YahooClient:
             players_list.append(
                 {
                     "name": player_projection["PLAYER_NAME"],
+                    "team_id": player_projection["TEAM_ID"],
                     "status": free_agent["status"],
                     "positions": ",".join(free_agent["eligible_positions"]),
                     "age": round(player_projection["AGE"]),
@@ -72,17 +73,14 @@ class YahooClient:
                     "percent_owned": free_agent["percent_owned"],
                 }
             )
-        ordered_players_list = order_by(players_list, ["-current_fp_projection"])
-        print(f"\nTop free agents")
-        print_fantasy_players(ordered_players_list, file_name="free_agents")
+        return order_by(players_list, ["-current_fp_projection"])
 
-    def print_roster(self, team_data, player_projections):
+    def fetch_roster(self, team_data, player_projections):
         current_team = team.Team(self.oauth, team_data["team_key"])
         current_roster = current_team.roster()
 
         players_list = []
 
-        print("\n" + team_data["name"])
         for player in current_roster:
             player_name = remove_periods(player["name"])
             if player_name not in player_projections.keys():
@@ -91,6 +89,7 @@ class YahooClient:
             players_list.append(
                 {
                     "name": player_name,
+                    "team_id": player_projection["TEAM_ID"],
                     "status": player["status"],
                     "positions": ",".join(player["eligible_positions"]),
                     "selected_position": player["selected_position"],
@@ -104,7 +103,8 @@ class YahooClient:
                     "current_fp_projection": player_projection["FP_PROJECTION_CURRENT"],
                 }
             )
-        print_fantasy_players(players_list)
+
+        return players_list
 
     def get_team_data(self, team_dict):
         team_data = {}
