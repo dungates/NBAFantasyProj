@@ -3,7 +3,8 @@ import json
 import os
 import re
 import sqlite3
-from typing import Dict, List
+from types import FunctionType
+from typing import Any, Dict, List, Tuple
 import pytz
 
 from .constants import DAYS_OF_WEEK, LEAGUE_TYPES
@@ -41,7 +42,7 @@ def get_days_schedule_by_team(
     return weekly_schedule
 
 
-def get_config_files():
+def get_config_files() -> List[Tuple[Dict[str, str], os.DirEntry]]:
     files = []
     for type_info in LEAGUE_TYPES.values():
         path = f"config/{type_info['key']}"
@@ -54,7 +55,9 @@ def get_config_files():
     return files
 
 
-def option_selector(prompt, data, get_label=None):
+def option_selector(
+    prompt: str, data: List[Any], get_label: FunctionType = None
+) -> Tuple[int, Any]:
     print(f"\n{prompt}")
     for index, item in enumerate(data):
         label = str(item) if get_label == None else get_label(item)
@@ -67,44 +70,44 @@ def option_selector(prompt, data, get_label=None):
         return option_selector(prompt, data, get_label)
 
 
-def write_json(data, filename):
+def write_json(data: str, filename: str):
     with open(f"Data/{filename}.json", "w") as json_file:
         json.dump(data, json_file, indent=2)
 
 
-def write_txt(data, filename):
+def write_txt(data: str, filename: str):
     with open(f"Data/{filename}.txt", "w") as txt_file:
         txt_file.write(data)
 
 
-def remove_periods(str):
+def remove_periods(str: str) -> str:
     return str.replace(".", "")
 
 
-def get_current_season():
+def get_current_season() -> int:
     today = datetime.today()
     return today.year if today.month < 9 else today.year + 1
 
 
-def format_season(season):
+def format_season(season: int) -> str:
     return str(season - 1) + "-" + str(season)[-2:]
 
 
-def get_current_season_full():
+def get_current_season_full() -> str:
     current_season = get_current_season()
     return format_season(current_season)
 
 
-def get_current_time():
+def get_current_time() -> datetime:
     return datetime.now(tz=pytz.timezone("America/Los_Angeles"))
 
 
-def iso_8601_to_unix(iso):
+def iso_8601_to_unix(iso: str) -> float:
     formatted_iso = re.sub(r"Z$", "+00:00", iso)
     return datetime.fromisoformat(formatted_iso).timestamp()
 
 
-def get_start_of_week(weeks_from_now=0):
+def get_start_of_week(weeks_from_now: int = 0) -> float:
     today = get_current_time()
     first_day_of_week = (
         today + timedelta(weeks=weeks_from_now) - timedelta(days=today.weekday())
@@ -114,7 +117,7 @@ def get_start_of_week(weeks_from_now=0):
     ).timestamp()
 
 
-def get_end_of_week(weeks_from_now=0):
+def get_end_of_week(weeks_from_now: int = 0) -> float:
     today = get_current_time()
     first_day_of_next_week = (
         today + timedelta(weeks=weeks_from_now) + timedelta(days=7 - today.weekday())
@@ -125,7 +128,10 @@ def get_end_of_week(weeks_from_now=0):
 
 
 def print_fantasy_players(
-    players_list, schedule_by_team, extra_weeks=0, file_name=None
+    players_list: List[Dict[str, Any]],
+    schedule_by_team: Dict[str, List[sqlite3.Row]],
+    extra_weeks: int = 0,
+    file_name: str = None,
 ):
     days_schedule_by_team = get_days_schedule_by_team(schedule_by_team, extra_weeks)
 

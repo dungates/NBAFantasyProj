@@ -1,17 +1,22 @@
+from typing import Any, Dict, List
 from pydash.collections import key_by
 from api.database import get_player_last_totals, get_player_season_totals
 from utils.constants import PEAK_AGE
 from utils.helpers import get_current_season, remove_periods
 
 
-def calc_fantasy_points(player_season, stat_categories):
+def calc_fantasy_points(
+    player_season: Dict[str, Any], stat_categories: Dict[str, float]
+) -> int:
     total = 0
     for key, coeff in stat_categories.items():
         total = total + coeff * player_season[key]
     return total
 
 
-def calc_player_projection(player_stats_list, stat_categories):
+def calc_player_projection(
+    player_stats_list: List[Dict[str, Any]], stat_categories: Dict[str, float]
+) -> float:
     if not player_stats_list:
         return 0
     total = 0
@@ -24,7 +29,9 @@ def calc_player_projection(player_stats_list, stat_categories):
     return total / divisor
 
 
-def get_player_projections(fantasy_coeffs):
+def get_player_projections(
+    fantasy_coeffs: Dict[str, float]
+) -> Dict[str, Dict[str, Any]]:
     current_season = get_current_season()
     season_stats_3 = get_player_season_totals(current_season - 3)
     season_stats_2 = get_player_season_totals(current_season - 2)
