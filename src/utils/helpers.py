@@ -9,34 +9,35 @@ import pytz
 from .constants import DAYS_OF_WEEK, LEAGUE_TYPES
 
 
-def filter_games_by_time_range(
-    season_games: List[sqlite3.Row], start_time: float, end_time: float
+def get_weekly_days_string(
+    team_games: List[sqlite3.Row], weeks_from_now: int = 0
 ) -> List[str]:
-    weekly_games = []
-    for game in season_games:
+    start_time = get_start_of_week(weeks_from_now)
+    end_time = get_end_of_week(weeks_from_now)
+    game_days = []
+    for game in team_games:
         game_time = iso_8601_to_unix(game["gameDateTimeUTC"])
         if start_time < game_time and game_time < end_time:
-            weekly_games.append(game["day"])
-
-    return weekly_games
+            game_days.append(game["day"])
+    days = ""
+    for day in DAYS_OF_WEEK.keys():
+        char = DAYS_OF_WEEK[day] if day in game_days else " "
+        days += char
+    return days
 
 
 def get_days_schedule_by_team(
     schedule_by_team: Dict[str, List[sqlite3.Row]], extra_weeks: int = 0
 ) -> Dict[str, str]:
     weekly_schedule = {}
-    for week in range(0, extra_weeks + 1):
-        start_time = get_start_of_week(week)
-        end_time = get_end_of_week(week)
+    for weeks_from_now in range(0, extra_weeks + 1):
         for team_id, games in schedule_by_team.items():
             if team_id not in weekly_schedule.keys():
                 weekly_schedule[team_id] = ""
-            week_games = filter_games_by_time_range(games, start_time, end_time)
-            if week > 0:
+            weekly_game_days = get_weekly_days_string(games, weeks_from_now)
+            if weeks_from_now > 0:
                 weekly_schedule[team_id] += "  "
-            for day in DAYS_OF_WEEK.keys():
-                char = DAYS_OF_WEEK[day] if day in week_games else " "
-                weekly_schedule[team_id] += char
+            weekly_schedule[team_id] += weekly_game_days
     return weekly_schedule
 
 
