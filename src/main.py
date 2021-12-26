@@ -70,9 +70,15 @@ def load_fantasy_account():
         schedule_by_team = get_schedule_by_team()
 
         print("\nFetching free agents...")
-        free_agents = yahoo_client.fetch_free_agents(current_league, player_projections)
+        free_agents = yahoo_client.fetch_free_agents(current_league)
         print(f"\nTop free agents")
-        print_fantasy_players(free_agents, schedule_by_team, 1, file_name="free_agents")
+        print_fantasy_players(
+            free_agents,
+            player_projections,
+            schedule_by_team,
+            1,
+            file_name="free_agents",
+        )
 
         print("\nFetching fantasy matchups for current week...")
         current_matchups = yahoo_client.fetch_matchups(current_league)
@@ -81,13 +87,13 @@ def load_fantasy_account():
                 f"\n{team1['name']} ({team1['points_total']}) vs. {team2['name']} ({team2['points_total']})"
             )
 
-            team1_roster = yahoo_client.fetch_roster(team1, player_projections)
+            team1_roster = yahoo_client.fetch_roster(team1)
             print(f"\n{team1['name']}")
-            print_fantasy_players(team1_roster, schedule_by_team, 1)
+            print_fantasy_players(team1_roster, player_projections, schedule_by_team, 1)
 
-            team2_roster = yahoo_client.fetch_roster(team2, player_projections)
+            team2_roster = yahoo_client.fetch_roster(team2)
             print(f"\n{team2['name']}")
-            print_fantasy_players(team2_roster, schedule_by_team, 1)
+            print_fantasy_players(team2_roster, player_projections, schedule_by_team, 1)
 
             print("\n")
 

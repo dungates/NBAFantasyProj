@@ -43,67 +43,35 @@ class YahooClient:
             )
         return team_key_tuples
 
-    def fetch_free_agents(self, league, player_projections):
+    def fetch_free_agents(self, league):
         free_agents = league.free_agents("")
-
         players_list = []
         for free_agent in free_agents:
-            player_name = free_agent["name"]
-            if player_name not in player_projections.keys():
-                continue
-            player_projection = player_projections[player_name]
             players_list.append(
                 {
-                    "name": player_projection["PLAYER_NAME"],
-                    "team_id": player_projection["TEAM_ID"],
+                    "name": free_agent["name"],
                     "status": free_agent["status"],
                     "positions": ",".join(free_agent["eligible_positions"]),
-                    "age": round(player_projection["AGE"]),
-                    "games_played": player_projection["GP"],
-                    "minutes_per_game": round(
-                        player_projection["MIN"] / player_projection["GP"],
-                        2,
-                    ),
-                    "preseason_fp_projection": round(
-                        player_projection["FP_PROJECTION_PRESEASON"], 4
-                    ),
-                    "current_fp_projection": round(
-                        player_projection["FP_PROJECTION_CURRENT"], 4
-                    ),
+                    "selected_position": "",
                     "percent_owned": free_agent["percent_owned"],
                 }
             )
-        return order_by(players_list, ["-current_fp_projection"])
+        return order_by(players_list, ["-percent_owned"])
 
-    def fetch_roster(self, team_data, player_projections):
+    def fetch_roster(self, team_data):
         current_team = team.Team(self.oauth, team_data["team_key"])
         current_roster = current_team.roster()
-
         players_list = []
-
         for player in current_roster:
-            player_name = remove_periods(player["name"])
-            if player_name not in player_projections.keys():
-                continue
-            player_projection = player_projections[player_name]
             players_list.append(
                 {
-                    "name": player_name,
-                    "team_id": player_projection["TEAM_ID"],
+                    "name": player["name"],
                     "status": player["status"],
                     "positions": ",".join(player["eligible_positions"]),
                     "selected_position": player["selected_position"],
-                    "age": player_projection["AGE"],
-                    "games_played": player_projection["GP"],
-                    "minutes_per_game": player_projection["MIN"]
-                    / player_projection["GP"],
-                    "preseason_fp_projection": player_projection[
-                        "FP_PROJECTION_PRESEASON"
-                    ],
-                    "current_fp_projection": player_projection["FP_PROJECTION_CURRENT"],
+                    "percent_owned": "",
                 }
             )
-
         return players_list
 
     def get_team_data(self, team_dict):

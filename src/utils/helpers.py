@@ -127,17 +127,25 @@ def get_end_of_week(weeks_from_now: int = 0) -> float:
     ).timestamp()
 
 
+def calc_fantasy_points(
+    player_season: Dict[str, Any], stat_categories: Dict[str, float]
+) -> int:
+    total = 0
+    for key, coeff in stat_categories.items():
+        total = total + coeff * player_season[key]
+    return total
+
+
 def print_fantasy_players(
     players_list: List[Dict[str, Any]],
+    player_projections: Dict[str, Dict[str, Any]],
     schedule_by_team: Dict[str, List[sqlite3.Row]],
     extra_weeks: int = 0,
     file_name: str = None,
 ):
     days_schedule_by_team = get_days_schedule_by_team(schedule_by_team, extra_weeks)
 
-    row_format = (
-        "{:<4} {:<5} {:<25} {:<7} {:<24} {:<6} {:<12} {:<10} {:<5} {:<7} {:<8} {:<15}"
-    )
+    row_format = "{:<4} {:<5} {:<25} {:<7} {:<24} {:<6} {:<12} {:<12} {:<10} {:<5} {:<7} {:<8} {:<15}"
     header = row_format.format(
         "Rk.",
         "Pos",
@@ -145,6 +153,7 @@ def print_fantasy_players(
         "Status",
         "Positions",
         "Age",
+        "FP/G (Pre)",
         "FP/G (Proj)",
         "FP/G",
         "GP",
@@ -156,13 +165,11 @@ def print_fantasy_players(
     lines = [header]
 
     for index, player in enumerate(players_list):
-        team_id = player["team_id"]
-        selected_position = (
-            player["selected_position"] if "selected_position" in player.keys() else ""
-        )
-        percent_owned = (
-            player["percent_owned"] if "percent_owned" in player.keys() else ""
-        )
+        name = remove_periods(player["name"])
+        if name not in player_projections.keys():
+            continue
+        player_projection = player_projections[name]
+        team_id = player_projection["TEAM_ID"]
         game_days = (
             days_schedule_by_team[team_id]
             if team_id in days_schedule_by_team.keys()
@@ -170,16 +177,17 @@ def print_fantasy_players(
         )
         row = row_format.format(
             str(index + 1),
-            selected_position,
+            player["selected_position"],
             player["name"],
             player["status"],
             player["positions"],
-            round(player["age"]),
-            round(player["preseason_fp_projection"], 4),
-            round(player["current_fp_projection"], 4),
-            player["games_played"],
-            round(player["minutes_per_game"], 2),
-            percent_owned,
+            round(player_projection["AGE"]),
+            round(player_projection["FP_PROJECTION_PRESEASON"], 4),
+            round(player_projection["FP_PROJECTION_CURRENT"], 4),
+            round(player_projection["FP"] / player_projection["GP"], 4),
+            player_projection["GP"],
+            round(player_projection["MIN"] / player_projection["GP"], 2),
+            player["percent_owned"],
             game_days,
         )
         print(row)
