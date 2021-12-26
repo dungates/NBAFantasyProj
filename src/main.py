@@ -87,11 +87,11 @@ def load_fantasy_account():
                 f"\n{team1['name']} ({team1['points_total']}) vs. {team2['name']} ({team2['points_total']})"
             )
 
-            team1_roster = yahoo_client.fetch_roster(team1)
+            team1_roster = yahoo_client.fetch_roster(team1["team_key"])
             print(f"\n{team1['name']}")
             print_fantasy_players(team1_roster, player_projections, schedule_by_team, 1)
 
-            team2_roster = yahoo_client.fetch_roster(team2)
+            team2_roster = yahoo_client.fetch_roster(team2["team_key"])
             print(f"\n{team2['name']}")
             print_fantasy_players(team2_roster, player_projections, schedule_by_team, 1)
 

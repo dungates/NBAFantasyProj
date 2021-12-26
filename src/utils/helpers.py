@@ -7,6 +7,8 @@ from types import FunctionType
 from typing import Any, Dict, List, Tuple
 import pytz
 
+from utils.types import FantasyPlayer
+
 from .constants import DAYS_OF_WEEK, LEAGUE_TYPES
 
 
@@ -137,7 +139,7 @@ def calc_fantasy_points(
 
 
 def print_fantasy_players(
-    players_list: List[Dict[str, Any]],
+    players_list: List[FantasyPlayer],
     player_projections: Dict[str, Dict[str, Any]],
     schedule_by_team: Dict[str, List[sqlite3.Row]],
     extra_weeks: int = 0,

@@ -4,7 +4,6 @@ from nba_api.stats.endpoints import leaguedashplayerstats
 from pydash.collections import flat_map, key_by
 from pydash.objects import get, omit
 from api.nba import fetch_current_schedule
-from utils.constants import PEAK_AGE
 from utils.helpers import (
     format_season,
     get_current_season_full,

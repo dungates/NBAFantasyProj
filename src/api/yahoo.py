@@ -1,8 +1,10 @@
+from typing import List
 from pydash.collections import at, order_by
 from pydash.objects import get
 from yahoo_fantasy_api import game, league, team
 from yahoo_oauth.oauth import OAuth2
-from utils.helpers import remove_periods
+
+from utils.types import FantasyPlayer
 
 
 class YahooClient:
@@ -43,7 +45,7 @@ class YahooClient:
             )
         return team_key_tuples
 
-    def fetch_free_agents(self, league):
+    def fetch_free_agents(self, league: league.League) -> List[FantasyPlayer]:
         free_agents = league.free_agents("")
         players_list = []
         for free_agent in free_agents:
@@ -58,8 +60,8 @@ class YahooClient:
             )
         return order_by(players_list, ["-percent_owned"])
 
-    def fetch_roster(self, team_data):
-        current_team = team.Team(self.oauth, team_data["team_key"])
+    def fetch_roster(self, team_key: str) -> List[FantasyPlayer]:
+        current_team = team.Team(self.oauth, team_key)
         current_roster = current_team.roster()
         players_list = []
         for player in current_roster:
