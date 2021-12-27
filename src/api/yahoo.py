@@ -1,9 +1,8 @@
 from typing import List
-from pydash.collections import at, order_by
+from pydash.collections import at
 from pydash.objects import get
 from yahoo_fantasy_api import game, league, team
 from yahoo_oauth.oauth import OAuth2
-
 from utils.types import FantasyPlayer
 
 
@@ -55,10 +54,9 @@ class YahooClient:
                     "status": free_agent["status"],
                     "positions": ",".join(free_agent["eligible_positions"]),
                     "selected_position": "",
-                    "percent_owned": free_agent["percent_owned"],
                 }
             )
-        return order_by(players_list, ["-percent_owned"])
+        return players_list
 
     def fetch_roster(self, team_key: str) -> List[FantasyPlayer]:
         current_team = team.Team(self.oauth, team_key)
@@ -71,7 +69,6 @@ class YahooClient:
                     "status": player["status"],
                     "positions": ",".join(player["eligible_positions"]),
                     "selected_position": player["selected_position"],
-                    "percent_owned": "",
                 }
             )
         return players_list

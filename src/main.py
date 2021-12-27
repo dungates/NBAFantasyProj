@@ -1,15 +1,17 @@
 import os
 from sys import platform
+from pydash.collections import order_by
 from api.database import get_schedule_by_team
 from api.yahoo import YahooClient
 from utils.constants import LEAGUE_TYPES, YAHOO_STAT_COEFFS
 from utils.helpers import (
     get_config_files,
+    get_fantasy_player_projections,
     option_selector,
-    print_fantasy_players,
+    print_fantasy_player_projections,
     write_json,
 )
-from utils.player_projection import get_player_projections
+from utils.player_projection import get_fantasy_projections
 
 
 def add_fantasy_account():
@@ -66,16 +68,21 @@ def load_fantasy_account():
         yahoo_client = YahooClient(league_info[1][1].path)
         current_league = yahoo_client.get_current_league()
 
-        player_projections = get_player_projections(YAHOO_STAT_COEFFS)
+        player_projections = get_fantasy_projections(YAHOO_STAT_COEFFS)
         schedule_by_team = get_schedule_by_team()
 
         print("\nFetching free agents...")
         free_agents = yahoo_client.fetch_free_agents(current_league)
+        free_agent_projections = get_fantasy_player_projections(
+            free_agents, player_projections, schedule_by_team
+        )
+        ordered_free_agent_projections = order_by(
+            free_agent_projections, ["-fp_projection_current"]
+        )
+
         print(f"\nTop free agents")
-        print_fantasy_players(
-            free_agents,
-            player_projections,
-            schedule_by_team,
+        print_fantasy_player_projections(
+            ordered_free_agent_projections,
             1,
             file_name="free_agents",
         )
@@ -88,12 +95,18 @@ def load_fantasy_account():
             )
 
             team1_roster = yahoo_client.fetch_roster(team1["team_key"])
+            team1_projections = get_fantasy_player_projections(
+                team1_roster, player_projections, schedule_by_team
+            )
             print(f"\n{team1['name']}")
-            print_fantasy_players(team1_roster, player_projections, schedule_by_team, 1)
+            print_fantasy_player_projections(team1_projections, 1)
 
             team2_roster = yahoo_client.fetch_roster(team2["team_key"])
+            team2_projections = get_fantasy_player_projections(
+                team2_roster, player_projections, schedule_by_team
+            )
             print(f"\n{team2['name']}")
-            print_fantasy_players(team2_roster, player_projections, schedule_by_team, 1)
+            print_fantasy_player_projections(team2_projections, 1)
 
             print("\n")
 

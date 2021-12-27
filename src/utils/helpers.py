@@ -6,19 +6,17 @@ import sqlite3
 from types import FunctionType
 from typing import Any, Dict, List, Tuple
 import pytz
-
-from utils.types import FantasyPlayer
-
+from utils.types import FantasyPlayer, FantasyPlayerProjection
 from .constants import DAYS_OF_WEEK, LEAGUE_TYPES
 
 
 def get_weekly_days_string(
-    team_games: List[sqlite3.Row], weeks_from_now: int = 0
+    games: List[sqlite3.Row], weeks_from_now: int = 0
 ) -> List[str]:
     start_time = get_start_of_week(weeks_from_now)
     end_time = get_end_of_week(weeks_from_now)
     game_days = []
-    for game in team_games:
+    for game in games:
         game_time = iso_8601_to_unix(game["gameDateTimeUTC"])
         if start_time < game_time and game_time < end_time:
             game_days.append(game["day"])
@@ -29,19 +27,14 @@ def get_weekly_days_string(
     return days
 
 
-def get_days_schedule_by_team(
-    schedule_by_team: Dict[str, List[sqlite3.Row]], extra_weeks: int = 0
-) -> Dict[str, str]:
-    weekly_schedule = {}
+def get_days_string(games: List[sqlite3.Row], extra_weeks: int = 0) -> str:
+    days_string = ""
     for weeks_from_now in range(0, extra_weeks + 1):
-        for team_id, games in schedule_by_team.items():
-            if team_id not in weekly_schedule.keys():
-                weekly_schedule[team_id] = ""
-            weekly_game_days = get_weekly_days_string(games, weeks_from_now)
-            if weeks_from_now > 0:
-                weekly_schedule[team_id] += "  "
-            weekly_schedule[team_id] += weekly_game_days
-    return weekly_schedule
+        weekly_game_days = get_weekly_days_string(games, weeks_from_now)
+        if weeks_from_now > 0:
+            days_string += "  "
+        days_string += weekly_game_days
+    return days_string
 
 
 def get_config_files() -> List[Tuple[Dict[str, str], os.DirEntry]]:
@@ -138,16 +131,44 @@ def calc_fantasy_points(
     return total
 
 
-def print_fantasy_players(
-    players_list: List[FantasyPlayer],
+def get_fantasy_player_projections(
+    fantasy_players: List[FantasyPlayer],
     player_projections: Dict[str, Dict[str, Any]],
     schedule_by_team: Dict[str, List[sqlite3.Row]],
+):
+    fantasy_player_projections = []
+    for player in fantasy_players:
+        name = remove_periods(player["name"])
+        if name not in player_projections.keys():
+            continue
+        player_projection = player_projections[name]
+        team_id = player_projection["TEAM_ID"]
+        games = schedule_by_team[team_id] if team_id in schedule_by_team.keys() else []
+        fantasy_player_projections.append(
+            {
+                **player,
+                "age": player_projection["AGE"],
+                "fp_projection_preseason": player_projection["FP_PROJECTION_PRESEASON"],
+                "fp_projection_current": player_projection["FP_PROJECTION_CURRENT"],
+                "fp": player_projection["FP"],
+                "fp_per_game": player_projection["FP"] / player_projection["GP"],
+                "games_played": player_projection["GP"],
+                "min": player_projection["MIN"],
+                "min_per_game": player_projection["MIN"] / player_projection["GP"],
+                "games": games,
+            }
+        )
+    return fantasy_player_projections
+
+
+def print_fantasy_player_projections(
+    fantasy_players: List[FantasyPlayerProjection],
     extra_weeks: int = 0,
     file_name: str = None,
 ):
-    days_schedule_by_team = get_days_schedule_by_team(schedule_by_team, extra_weeks)
-
-    row_format = "{:<4} {:<5} {:<25} {:<7} {:<24} {:<6} {:<12} {:<12} {:<10} {:<5} {:<7} {:<8} {:<15}"
+    row_format = (
+        "{:<4} {:<5} {:<25} {:<7} {:<24} {:<6} {:<12} {:<12} {:<10} {:<5} {:<7} {:<15}"
+    )
     header = row_format.format(
         "Rk.",
         "Pos",
@@ -160,36 +181,25 @@ def print_fantasy_players(
         "FP/G",
         "GP",
         "MPG",
-        "% Owned",
         "Schedule",
     )
     print(header)
     lines = [header]
 
-    for index, player in enumerate(players_list):
-        name = remove_periods(player["name"])
-        if name not in player_projections.keys():
-            continue
-        player_projection = player_projections[name]
-        team_id = player_projection["TEAM_ID"]
-        game_days = (
-            days_schedule_by_team[team_id]
-            if team_id in days_schedule_by_team.keys()
-            else ""
-        )
+    for index, player in enumerate(fantasy_players):
+        game_days = get_days_string(player["games"], extra_weeks)
         row = row_format.format(
-            str(index + 1),
+            index + 1,
             player["selected_position"],
             player["name"],
             player["status"],
             player["positions"],
-            round(player_projection["AGE"]),
-            round(player_projection["FP_PROJECTION_PRESEASON"], 4),
-            round(player_projection["FP_PROJECTION_CURRENT"], 4),
-            round(player_projection["FP"] / player_projection["GP"], 4),
-            player_projection["GP"],
-            round(player_projection["MIN"] / player_projection["GP"], 2),
-            player["percent_owned"],
+            round(player["age"]),
+            round(player["fp_projection_preseason"], 4),
+            round(player["fp_projection_current"], 4),
+            round(player["fp_per_game"], 4),
+            player["games_played"],
+            round(player["min_per_game"], 1),
             game_days,
         )
         print(row)

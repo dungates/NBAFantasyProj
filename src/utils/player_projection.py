@@ -20,7 +20,7 @@ def calc_player_projection(
     return total / divisor
 
 
-def get_player_projections(
+def get_fantasy_projections(
     fantasy_coeffs: Dict[str, float]
 ) -> Dict[str, Dict[str, Any]]:
     current_season = get_current_season()
