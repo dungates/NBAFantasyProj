@@ -122,6 +122,18 @@ def get_end_of_week(weeks_from_now: int = 0) -> float:
     ).timestamp()
 
 
+def get_date_from_last_range(last_range):
+    time_to_subtract = None
+    if last_range == "week":
+        time_to_subtract = timedelta(days=7)
+    elif last_range == "month":
+        time_to_subtract = timedelta(days=30.4375)
+    else:
+        print(f"Invalid last range '{last_range}'")
+        return None
+    return datetime.today() - time_to_subtract
+
+
 def calc_fantasy_points(
     player_season: Dict[str, Any], stat_categories: Dict[str, float]
 ) -> int:

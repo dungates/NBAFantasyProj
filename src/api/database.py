@@ -1,12 +1,16 @@
-from datetime import datetime, timedelta
 import sqlite3
-from nba_api.stats.endpoints import leaguedashplayerstats
+from nba_api.stats.endpoints import (
+    leaguedashplayerstats,
+    leaguedashteamstats,
+)
+from nba_api.stats.library.parameters import MeasureTypeSimple
 from pydash.collections import flat_map, key_by
 from pydash.objects import get, omit
 from api.nba import fetch_current_schedule
 from utils.helpers import (
     format_season,
     get_current_season_full,
+    get_date_from_last_range,
 )
 from utils.sqlite import (
     update_data_table_from_dicts,
@@ -82,18 +86,9 @@ def update_current_schedule():
 
 
 def update_last_totals(last_range):
-    time_to_subtract = None
-    if last_range == "week":
-        time_to_subtract = timedelta(days=7)
-    elif last_range == "month":
-        time_to_subtract = timedelta(days=30.4375)
-    else:
-        print(f"Invalid last range '{last_range}'")
-        return
-
     print(f"Fetching player stats totals for last {last_range}...")
     current_season = get_current_season_full()
-    date_from = datetime.today() - time_to_subtract
+    date_from = get_date_from_last_range(last_range)
     stats_response = leaguedashplayerstats.LeagueDashPlayerStats(
         season=current_season, date_from_nullable=date_from
     )
@@ -122,4 +117,36 @@ def update_player_season(season):
     )
     update_data_table_from_stats_response(
         "player_seasons_per_100", per_100_response, primary_keys, extra_values
+    )
+
+
+def update_opponent_season_totals(season):
+    full_season = format_season(season)
+
+    print(f"Fetching opponent stats totals for {full_season}...")
+    totals_response = leaguedashteamstats.LeagueDashTeamStats(
+        measure_type_detailed_defense=MeasureTypeSimple.opponent, season=full_season
+    )
+
+    primary_keys = ["SEASON", "TEAM_ID"]
+    extra_values = [("SEASON", full_season)]
+    update_data_table_from_stats_response(
+        "opponent_season_totals", totals_response, primary_keys, extra_values
+    )
+
+
+def update_opponent_last_totals(last_range):
+    current_season = get_current_season_full()
+
+    print(f"Fetching opponent stats totals for last {last_range}...")
+    date_from = get_date_from_last_range(last_range)
+    totals_response = leaguedashteamstats.LeagueDashTeamStats(
+        measure_type_detailed_defense=MeasureTypeSimple.opponent,
+        season=current_season,
+        date_from_nullable=date_from,
+    )
+
+    primary_keys = ["TEAM_ID"]
+    update_data_table_from_stats_response(
+        f"opponent_last_{last_range}_totals", totals_response, primary_keys
     )
