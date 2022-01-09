@@ -85,8 +85,8 @@ def update_current_schedule():
     update_data_table_from_dicts("game_schedule", game_data, primary_keys)
 
 
-def update_last_totals(last_range):
-    print(f"Fetching player stats totals for last {last_range}...")
+def update_player_last_totals(last_range):
+    print(f"Fetching player stat totals for last {last_range}...")
     current_season = get_current_season_full()
     date_from = get_date_from_last_range(last_range)
     stats_response = leaguedashplayerstats.LeagueDashPlayerStats(
@@ -102,7 +102,7 @@ def update_last_totals(last_range):
 def update_player_season(season):
     full_season = format_season(season)
 
-    print(f"Fetching player stats totals for {full_season}...")
+    print(f"Fetching player stat totals for {full_season}...")
     totals_response = leaguedashplayerstats.LeagueDashPlayerStats(season=full_season)
 
     print(f"Fetching player stats per 100 for {full_season}...")
@@ -120,10 +120,39 @@ def update_player_season(season):
     )
 
 
+def update_team_season_totals(season):
+    full_season = format_season(season)
+
+    print(f"Fetching team stat totals for {full_season}...")
+    totals_response = leaguedashteamstats.LeagueDashTeamStats(season=full_season)
+
+    primary_keys = ["SEASON", "TEAM_ID"]
+    extra_values = [("SEASON", full_season)]
+    update_data_table_from_stats_response(
+        "team_season_totals", totals_response, primary_keys, extra_values
+    )
+
+
+def update_team_last_totals(last_range):
+    current_season = get_current_season_full()
+
+    print(f"Fetching team stat totals for last {last_range}...")
+    date_from = get_date_from_last_range(last_range)
+    totals_response = leaguedashteamstats.LeagueDashTeamStats(
+        season=current_season,
+        date_from_nullable=date_from,
+    )
+
+    primary_keys = ["TEAM_ID"]
+    update_data_table_from_stats_response(
+        f"team_last_{last_range}_totals", totals_response, primary_keys
+    )
+
+
 def update_opponent_season_totals(season):
     full_season = format_season(season)
 
-    print(f"Fetching opponent stats totals for {full_season}...")
+    print(f"Fetching opponent stat totals for {full_season}...")
     totals_response = leaguedashteamstats.LeagueDashTeamStats(
         measure_type_detailed_defense=MeasureTypeSimple.opponent, season=full_season
     )
@@ -138,7 +167,7 @@ def update_opponent_season_totals(season):
 def update_opponent_last_totals(last_range):
     current_season = get_current_season_full()
 
-    print(f"Fetching opponent stats totals for last {last_range}...")
+    print(f"Fetching opponent stat totals for last {last_range}...")
     date_from = get_date_from_last_range(last_range)
     totals_response = leaguedashteamstats.LeagueDashTeamStats(
         measure_type_detailed_defense=MeasureTypeSimple.opponent,
