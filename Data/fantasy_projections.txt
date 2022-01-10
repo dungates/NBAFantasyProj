@@ -1,249 +1,242 @@
-Lasso special (1010.70) vs. CocoaLoco (916.40)
+Lasso special (0.00) vs. REIGN (0.00)
 
 Lasso special
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    Gary Payton II                    PG,SG,G,Util             29     10.0088      23.7867      18.5528    36    16.9    M WR  U   T RF U
-2    SG    Anthony Edwards                   SG,G,SF,F,Util           20     38.5264      39.7115      40.8312    32    35.6    M W F U   T R  U
-3    G     Norman Powell                     SG,G,SF,F,Util           28     28.1921      34.7939      30.1394    33    32.8    M W F U  M  R S
-4    SF    Jaylen Brown                      SG,G,SF,F,Util           25     39.6394      47.6954      40.6542    24    34.4      WR S   M W FS
-5    PF    Jalen Smith                       PF,F,Util                21     4.7229       24.526       15.5688    16    13.0     T R S    T  F U
-6    F     Cameron Johnson                   SF,PF,F,Util             25     20.2735      28.2849      23.4676    37    25.2     T R S    T  F U
-7    C     Jusuf Nurkic                      C,Util                   27     34.6937      34.0926      31.9882    34    25.8    M W F U  M  R S
-8    Util  Kevin Porter Jr.                  PG,SG,G,SF,F,Util        21     29.6467      28.3046      29.8609    23    30.0    M W F U  M W F U
-9    Util  Jayson Tatum                      SF,PF,F,Util             23     47.1348      46.3149      46.7971    34    36.7      WR S   M W FS
-10   Util  Terrence Ross                     SG,G,SF,F,Util           30     26.4866      29.8573      21.0968    31    26.0    M W  SU    W FS
-11   BN    Nikola Jokic                      PF,F,C,Util              26     53.8375      57.647       57.5323    31    32.7    M W F U   T R SU
-12   BN    Jarred Vanderbilt                 PF,F,C,Util              22     18.274       25.2165      24.1455    33    25.2    M W F U   T R  U
-13   BN    Evan Mobley                       PF,F,C,Util              20     0.0          36.1433      34.9167    30    33.7     T  F U  M W FS
-14   BN    Cam Reddish                       SG,G,SF,F,Util           22     24.303       23.5141      22.2781    32    24.4    M W F U    W FS
-15   BN    Giannis Antetokounmpo     GTD     PF,F,C,Util,IL+          27     56.8471      58.3023      56.1742    31    32.5    M W FS   M  R S
-16   IL    De'Andre Hunter           INJ     SF,PF,F,Util,IL,IL+      24     27.0296      14.9786      17.8636    11    27.8    M W F U    W FS
-17   IL    Rajon Rondo               INJ     PG,G,Util,IL,IL+         35     17.1718      11.795       13.2944    18    16.1     T  F U  M W FS
-18   IL+   Kyrie Irving              O       PG,SG,G,Util,IL+         29     47.2805      41.6         41.6       1     32.0    M W F U  M WR S
-19   IL+   Caris LeVert              INJ     SG,G,SF,F,Util,IL,IL+    27     37.1443      39.2324      32.2643    28    30.4     TW  S   M W F
-20   IL+   Kemba Walker              INJ     PG,G,Util,IL,IL+         31     36.8107      26.4788      27.4375    24    27.3     T R S   M W  S
-21   IL+   Isaac Okoro               INJ     SG,G,SF,F,Util,IL,IL+    20     22.0523      18.2036      19.1704    27    28.4     T  F U  M W FS
-22   IL+   Trae Young                GTD     PG,G,Util,IL+            23     48.6702      57.8026      49.2667    33    34.6    M W F U    W FS
-23   IL+   Hassan Whiteside          INJ     PF,F,C,Util,IL,IL+       32     28.05        19.35        19.8303    33    15.1    M W FS   M W   U
-
-CocoaLoco
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    Ja Morant                         PG,G,Util                22     38.9077      49.0901      45.9852    27    32.5    MT R SU   T RF
-2    SG    Desmond Bane              O       PG,SG,G,SF,F,Util,IL+    23     20.2827      35.9895      32.1051    39    30.0    MT R SU   T RF
-3    G     Zach LaVine                       SG,G,SF,F,Util           26     44.6055      41.5966      41.8606    33    35.1    M   F U   TW FS
-4    SF    Josh Hart                         SG,G,SF,F,Util           26     25.3723      35.9516      31.5033    30    32.8    MT R  U   T R S
-5    PF    Marcus Morris Sr.                 PF,F,C,Util              32     24.1865      29.4541      27.5882    17    30.1    M  R SU   T R S
-6    F     Saddiq Bey                        SG,G,SF,F,Util           22     26.3796      36.4305      30.7972    36    33.6    M WR S   MT  F U
-7    C     Pascal Siakam                     PF,F,C,Util              27     40.7404      47.6022      40.5091    22    35.1     TW F U   T  FS
-8    Util  Will Barton                       SG,G,SF,F,Util           31     26.658       31.4579      32.2313    32    32.9    M W F U   T R SU
-9    BN    Jalen Brunson                     PG,SG,G,Util             25     22.3275      30.8544      30.7568    37    31.0    M W F U    W FS
-10   BN    Gary Harris                       SG,G,SF,F,Util           27     20.8067      26.2577      20.2281    32    29.1    M W  SU    W FS
-11   BN    Tobias Harris                     SF,PF,F,Util             29     36.7767      35.5093      36.2857    28    35.0    M W F    M W FS
-12   BN    Keldon Johnson            INJ     SF,PF,F,Util,IL,IL+      22     26.575       24.8008      28.0083    36    30.9     TW F U  M W FS
-13   BN    Malik Monk                        PG,SG,G,Util             23     20.3572      28.3862      22.3176    34    25.6     T  F U    W  S
-14   IL    Bogdan Bogdanovic         INJ     SG,G,SF,PF,F,Util,IL,IL+ 29     30.0674      26.7935      23.6417    24    28.8    M W F U    W FS
-15   IL+   PJ Washington                     PF,F,C,Util              23     32.2473      28.0071      27.0727    22    25.0    M W  S   M W F
-16   IL+   De'Anthony Melton                 PG,SG,G,Util             23     22.7982      29.2104      26.59      30    24.1    MT R SU   T RF
-17   IL+   Dewayne Dedmon            INJ     C,Util,IL,IL+            32     18.8835      16.809       17.0515    33    17.2    M W  S     W FS
-18   IL+   Isaiah Hartenstein        INJ     PF,F,C,Util,IL,IL+       23     14.4786      23.0185      21.4552    29    16.4    M  R SU   T R S
-
-
-
-Timbers terry (856.00) vs. 😈 xx Bb God  xx 😈 (814.50)
-
-Timbers terry
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    Alec Burks                        PG,SG,G,SF,F,Util        30     24.6004      28.1761      25.9432    37    27.0     T R S   M W  S
-2    SG    Fred VanVleet                     PG,SG,G,Util             27     39.8648      51.4131      44.6156    32    37.5     TW F U   T  FS
-3    G     Jalen Green                       SG,G,Util                19     0.0          26.4756      24.6417    24    30.6    M W F U  M W F U
-4    SF    Khris Middleton                   SF,PF,F,Util             30     37.033       34.878       35.0929    28    31.1    M W FS   M  R S
-5    PF    Otto Porter Jr.                   SF,PF,F,Util             28     24.2879      27.9284      21.7129    31    21.2    M WR  U   T RF U
-6    F     OG Anunoby                        SF,PF,F,Util             24     29.4617      35.236       36.585     20    36.0     TW F U   T  FS
-7    C     Bobby Portis                      PF,F,C,Util              26     25.2577      30.2567      33.3516    31    27.8    M W FS   M  R S
-8    Util  Clint Capela                      C,Util                   27     40.6836      40.5421      36.28      35    29.9    M W F U    W FS
-9    Util  Anfernee Simons                   PG,SG,G,Util             22     15.8104      32.3049      22.7406    32    25.1    M W F U  M  R S
-10   Util  Dejounte Murray                   PG,SG,G,Util             25     35.6636      48.3653      47.6125    32    34.2     TW F U  M W FS
-11   BN    Christian Wood                    PF,F,C,Util              26     35.1616      33.6171      36.975     36    30.9    M W F U  M W F U
-12   BN    Duane Washington Jr.              PG,G,Util                21     0.0          20.903       13.725     8     19.4     TW  S   M W F
-13   BN    Dorian Finney-Smith               SF,PF,F,Util             28     22.9107      27.4623      25.7838    37    32.4    M W F U    W FS
-14   BN    Maxi Kleber                       PF,F,C,Util              29     20.2965      21.6542      20.7565    23    24.4    M W F U    W FS
-15   BN    Coby White                        PG,SG,G,Util             21     31.1075      30.893       20.3412    17    24.3    M   F U   TW FS
-16   IL    Bam Adebayo               INJ     PF,F,C,Util,IL,IL+       24     40.9933      37.9952      37.0611    18    32.9    M W  S     W FS
-17   IL+   Paul George               INJ     SF,PF,F,Util,IL,IL+      31     42.5835      48.0476      47.1538    26    35.5    M  R SU   T R S
-18   IL+   Chris Duarte              INJ     SG,G,SF,F,Util,IL,IL+    24     0.0          23.7329      24.7242    33    28.9     TW  S   M W F
-19   IL+   Cedi Osman                INJ     SF,PF,F,Util,IL,IL+      26     23.5981      23.493       22.8269    26    22.4     T  F U  M W FS
-20   IL+   Malcolm Brogdon           INJ     PG,SG,G,Util,IL,IL+      29     36.679       28.8941      37.9923    26    34.3     TW  S   M W F
-
-😈 xx Bb God  xx 😈
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    Eric Bledsoe                      PG,SG,G,Util             32     26.3982      26.3981      24.9605    38    26.6    M  R SU   T R S
-2    SG    Kevin Huerter                     SG,G,SF,F,Util           23     27.9858      27.5912      22.0067    30    28.1    M W F U    W FS
-3    G     De'Aaron Fox                      PG,G,Util                24     45.0482      37.2964      36.2194    36    34.1     TW F U  M W F U
-4    SF    Kevin Durant                      SF,PF,F,Util             33     44.5367      53.548       51.2839    31    37.1    M W F U  M WR S
-5    PF    P.J. Tucker                       PF,F,C,Util              36     15.7218      25.5558      21.5061    33    28.5    M W  S     W FS
-6    F     Harrison Barnes                   SF,PF,F,Util             29     29.3808      25.665       30.3886    35    33.4     TW F U  M W F U
-7    C     Mitchell Robinson                 C,Util                   23     27.9212      23.5115      23.5441    34    24.6     T R S   M W  S
-8    Util  Deni Avdija                       SG,G,SF,F,Util           21     18.6602      23.288       20.3632    38    23.5    M W F U   TW  S
-9    Util  Bradley Beal                      SG,G,SF,F,Util           28     47.503       48.6539      41.25      32    36.0    M W F U   TW  S
-10   Util  Nicolas Batum                     SF,PF,F,Util             33     20.7605      16.0977      22.4211    19    26.0    M  R SU   T R S
-11   BN    Mo Bamba                          C,Util                   23     20.8443      27.4795      31.3433    30    28.1    M W  SU    W FS
-12   BN    Carmelo Anthony                   SF,PF,F,Util             37     21.8812      25.0798      25.8564    39    27.1     T  F U    W  S
-13   BN    Kevin Love                        PF,F,C,Util              33     30.0004      38.1321      30.2533    30    21.7     T  F U  M W FS
-14   BN    Jarrett Allen                     C,Util                   23     32.8243      40.6443      38.1968    31    32.8     T  F U  M W FS
-15   BN    Lauri Markkanen                   SF,PF,F,C,Util           24     29.0633      25.6213      26.6931    29    30.2     T  F U  M W FS
-16   IL    Pat Connaughton           INJ     SG,G,SF,F,Util,IL,IL+    28     17.6754      20.964       24.4846    39    28.3    M W FS   M  R S
-17   IL    Tyrese Maxey              INJ     PG,SG,G,Util,IL,IL+      21     16.2997      31.6232      31.4281    32    34.5    M W F    M W FS
-18   IL+   Shake Milton              O       PG,SG,G,Util,IL+         25     22.1306      17.4014      21.5074    27    24.8    M W F    M W FS
-19   IL+   Montrezl Harrell          INJ     PF,F,C,Util,IL,IL+       27     28.7623      25.7313      28.9061    33    25.4    M W F U   TW  S
-20   IL+   Monte Morris                      PG,SG,G,Util             26     21.2854      27.1452      25.4788    33    30.0    M W F U   T R SU
-21   IL+   CJ McCollum               INJ     PG,SG,G,Util,IL,IL+      30     38.3732      38.6459      38.8875    24    35.3    M W F U  M  R S
-
-
-
-REIGN (803.90) vs. Ethan's Expert Team (796.80)
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    Kyrie Irving                      PG,SG,G,Util             29     47.2805      41.6         41.6       1     32.0    M WR S   M W F U
+2    SG    James Harden                      PG,SG,G,Util             32     55.0171      47.6469      50.1912    34    36.9    M WR S   M W F U
+3    G     Lance Stephenson                  SG,G,SF,F,Util           31     15.3081      24.98        16.29      10    16.0    M W F    M WR S 
+4    SF    Jayson Tatum                      SF,PF,F,Util             23     47.1348      47.0591      46.9139    36    36.6    M W FS   M W F U
+5    PF    Giannis Antetokounmpo             PF,F,C,Util              27     56.8471      57.0167      56.4606    33    32.4    M  R S   M W FS 
+6    F     Kevin Porter Jr.                  PG,SG,G,SF,F,Util        21     29.6467      29.3041      29.416     25    29.8    M W F U    W F  
+7    C     Trey Lyles                        PF,F,C,Util              26     15.9535      24.8952      18.38      35    18.5    MT  F U   TW F U
+8    Util  Isaiah Stewart                    PF,F,C,Util              20     24.6746      22.9225      23.0067    30    25.6    MT  F U   TW F U
+9    Util  Jarred Vanderbilt                 PF,F,C,Util              22     18.274       32.4152      25.6943    35    25.5     T R  U   TW   U
+10   Util  Karl-Anthony Towns                C,Util                   26     51.5623      49.4506      46.6788    33    34.3     T R  U   TW   U
+11   BN    Trae Young                        PG,G,Util                23     48.6702      53.2196      48.9914    35    34.7      W FS   M W F U
+12   BN    Anthony Edwards                   SG,G,SF,F,Util           20     38.5264      44.2796      41.2912    34    35.4     T R  U   TW   U
+13   BN    Nikola Jokic                      PF,F,C,Util              26     53.8375      59.725       57.7758    33    32.7     T R SU    W F U
+14   BN    Terrence Ross                     SG,G,SF,F,Util           30     26.4866      28.7186      21.8303    33    26.3      W FS   M W F U
+15   BN    Cameron Johnson                   SF,PF,F,Util             25     20.2735      30.0649      24.1333    39    25.6     T  F U  M  R S 
+16   IL    De'Andre Hunter           INJ     SF,PF,F,Util,IL,IL+      24     27.0296      14.9786      17.8636    11    27.8      W FS   M W F U
+17   IL    Michael Porter Jr.        INJ     SF,PF,F,Util,IL,IL+      23     33.6788      24.3667      24.3667    9     29.4     T R SU    W F U
+18   IL+   Caris LeVert              INJ     SG,G,SF,F,Util,IL,IL+    27     37.1443      38.9887      32.2643    28    30.4    M W F    M WR S 
+19   IL+   Kemba Walker              INJ     PG,G,Util,IL,IL+         31     36.8107      26.4788      27.4375    24    27.3    M W  S   MT R  U
+20   IL+   Isaac Okoro               INJ     SG,G,SF,F,Util,IL,IL+    20     22.0523      18.5845      19.1704    27    28.4    M W FS   M W  S 
+21   IL+   Joe Harris                INJ     SG,G,SF,F,Util,IL,IL+    30     25.1504      19.1471      21.3       14    30.2    M WR S   M W F U
+22   IL+   Bol Bol                   O       PF,F,C,Util,IL+          22     5.6135       5.1435       5.0357     14    5.8      T R SU    W F U
 
 REIGN
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    Chris Paul                        PG,G,Util                36     34.4229      38.7575      39.3432    37    32.2     T R S    T  F U
-2    SG    Devonte' Graham                   PG,SG,G,Util             26     31.7212      31.6931      29.7143    35    31.4    MT R  U   T R S
-3    G     Mikal Bridges                     SG,G,SF,F,Util           25     27.3941      26.8726      25.7784    37    33.9     T R S    T  F U
-4    SF    Dillon Brooks                     SG,G,SF,F,Util           25     29.1697      30.7528      31.2632    19    29.2    MT R SU   T RF
-5    PF    Isaiah Stewart                    PF,F,C,Util              20     24.6746      24.6559      23.125     28    26.0    M WR S   MT  F U
-6    F     LaMarcus Aldridge                 PF,F,C,Util              36     29.7704      23.6276      25.925     28    23.3    M W F U  M WR S
-7    C     Jakob Poeltl                      C,Util                   26     24.8399      32.1817      31.2833    30    28.4     TW F U  M W FS
-8    Util  Malik Beasley                     PG,SG,G,Util             25     27.6555      23.7917      23.3842    38    27.5    M W F U   T R  U
-9    Util  Daniel Gafford                    C,Util                   23     17.8972      28.7693      25.0743    35    22.7    M W F U   TW  S
-10   Util  Josh Giddey                       PG,SG,G,Util             19     0.0          39.0153      32.4969    32    30.4      W F U   T R S
-11   BN    Miles Bridges                     SF,PF,F,Util             23     27.9926      38.611       39.7162    37    35.8    M W  S   M W F
-12   BN    Myles Turner                      PF,F,C,Util              25     34.8941      33.5547      34.2605    38    29.8     TW  S   M W F
-13   BN    LaMelo Ball                       PG,SG,G,Util             20     41.2621      39.6511      46.0121    33    31.9    M W  S   M W F
-14   BN    Tim Hardaway Jr.                  SG,G,SF,F,Util           29     26.8031      25.7728      27.9062    32    30.9    M W F U    W FS
-15   BN    Nikola Vucevic                    C,Util                   31     45.0077      42.6398      41.4179    28    33.3    M   F U   TW FS
-16   IL    Jrue Holiday              INJ     PG,SG,G,Util,IL,IL+      31     38.3667      45.5896      39.6697    33    33.1    M W FS   M  R S
-17   IL+   Jimmy Butler              GTD     SF,PF,F,Util,IL+         32     41.253       42.5088      43.8696    23    33.8    M W  S     W FS
-18   IL+   Jae Crowder               INJ     SF,PF,F,Util,IL,IL+      31     23.8083      21.6513      22.675     32    28.1     T R S    T  F U
-
-Ethan's Expert Team
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    Immanuel Quickley                 PG,SG,G,Util             22     21.662       19.4289      19.5235    34    22.3     T R S   M W  S
-2    SG    Cameron Payne                     PG,SG,G,Util             27     19.4911      21.9525      21.45      32    20.5     T R S    T  F U
-3    G     Tyus Jones                        PG,G,Util                25     18.768       23.4009      20.2       38    21.3    MT R SU   T RF
-4    SF    Kelly Oubre Jr.                   SG,G,SF,F,Util           26     32.2505      29.4185      29.2333    39    28.2    M W  S   M W F
-5    PF    Trey Lyles                        PF,F,C,Util              26     15.9535      22.0108      17.5455    33    18.0    M WR S   MT  F U
-6    F     Serge Ibaka                       PF,F,C,Util              32     26.5218      19.0452      14.6474    19    15.6    M  R SU   T R S
-7    C     Wendell Carter Jr.                PF,F,C,Util              22     29.4747      35.6487      33.1622    37    29.3    M W  SU    W FS
-8    Util  Jae'Sean Tate                     SF,PF,F,Util             26     26.9978      27.4227      27.2459    37    27.5    M W F U  M W F U
-9    Util  Kyle Kuzma                        SF,PF,F,Util             26     27.2739      40.467       32.8778    36    33.1    M W F U   TW  S
-10   Util  Eric Gordon                       SG,G,SF,F,Util           33     24.4839      26.152       25.203     33    29.4    M W F U  M W F U
-11   BN    Nassir Little                     SF,F,Util                21     10.4899      24.4274      22.1781    32    24.4    M W F U  M  R S
-12   BN    Tyrese Haliburton                 PG,SG,G,Util             21     33.6854      37.6143      35.65      38    34.0     TW F U  M W F U
-13   BN    Chuma Okeke                       PF,F,Util                23     22.4245      20.2831      19.0107    28    22.5    M W  SU    W FS
-14   BN    DeMar DeRozan                     SF,PF,F,Util             32     36.6889      42.5186      42.0375    32    35.3    M   F U   TW FS
-15   BN    Spencer Dinwiddie                 PG,SG,G,Util             28     32.9555      32.9206      29.369     29    30.1    M W F U   TW  S
-16   IL    Anthony Davis             INJ     PF,F,C,Util,IL,IL+       28     48.4506      36.0429      47.2556    27    35.4     T  F U    W  S
-17   IL    Damian Lillard            INJ     PG,G,Util,IL,IL+         31     47.7182      43.0545      43.1034    29    36.4    M W F U  M  R S
-18   IL+   Mike Conley               O       PG,G,Util,IL+            34     30.9839      32.0544      30.7441    34    28.3    M W FS   M W   U
-19   IL+   Stephen Curry             O       PG,SG,G,Util,IL+         33     48.2319      44.2198      49.9543    35    34.7    M WR  U   T RF U
-20   IL+   Draymond Green            O       PF,F,C,Util,IL+          31     31.3894      33.9373      33.9818    33    30.8    M WR  U   T RF U
-21   IL+   Chimezie Metu             INJ     PF,F,Util,IL,IL+         24     12.0879      22.2765      23.336     25    23.2     TW F U  M W F U
-22   IL+   Larry Nance Jr.           O       PF,F,C,Util,IL+          29     27.4144      22.9748      20.5486    37    23.2    M W F U  M  R S
-23   IL+   Rudy Gobert               INJ     C,Util,IL,IL+            29     39.909       43.045       42.5108    37    32.1    M W FS   M W   U
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    LaMelo Ball                       PG,SG,G,Util             20     41.2621      41.7532      45.9765    34    31.7    M W F    M W F U
+2    SG    Devonte' Graham                   PG,SG,G,Util             26     31.7212      27.8947      28.8568    37    31.3     T R S   M  R   
+3    G     Malik Beasley                     PG,SG,G,Util             25     27.6555      21.0598      23.0475    40    27.1     T R  U   TW   U
+4    SF    Miles Bridges                     SF,PF,F,Util             23     27.9926      40.6816      39.7526    38    35.8    M W F    M W F U
+5    PF    Myles Turner                      PF,F,C,Util              25     34.8941      32.7267      34.0795    39    29.8    M W F    M WR S 
+6    F     Marvin Bagley III                 PF,F,C,Util              22     29.8311      19.0589      18.7273    22    21.0    M W F U    W  S 
+7    C     Jakob Poeltl                      C,Util                   26     24.8399      33.0009      31.6906    32    28.7    M W FS   M W F U
+8    Util  Facundo Campazzo                  PG,G,Util                30     17.7107      22.6603      20.0216    37    21.9     T R SU    W F U
+9    Util  Tim Hardaway Jr.                  SG,G,SF,F,Util           29     26.8031      28.3861      28.2059    34    30.7      W FS   M WR  U
+10   Util  Daniel Gafford                    C,Util                   23     17.8972      26.8244      25.2216    37    22.9     TW  S   M W F U
+11   BN    Nikola Vucevic                    C,Util                   31     45.0077      43.3989      41.5067    30    33.4     TW FS   M W F U
+12   BN    Josh Giddey                       PG,SG,G,Util             19     0.0          34.0186      32.3176    34    30.4     T R S   M W FS 
+13   BN    Mikal Bridges                     SG,G,SF,F,Util           25     27.3941      26.1369      25.7385    39    34.0     T  F U  M  R S 
+14   BN    Chris Paul                        PG,G,Util                36     34.4229      38.455       39.2872    39    32.2     T  F U  M  R S 
+15   BN    Rui Hachimura                     SF,PF,F,Util             23     26.9754      11.1         11.1       1     14.2     TW  S   M W F U
+16   IL    Jrue Holiday              INJ     PG,SG,G,Util,IL,IL+      31     38.3667      44.9674      39.6697    33    33.1    M  R S   M W FS 
+17   IL    Dillon Brooks             INJ     SG,G,SF,F,Util,IL,IL+    25     29.1697      29.7897      30.681     21    27.9     T RF    M W F U
+18   IL+   Jimmy Butler              INJ     SF,PF,F,Util,IL,IL+      32     41.253       42.1167      43.8696    23    33.8      W FS   M W F U
+19   IL+   LaMarcus Aldridge         O       PF,F,C,Util,IL+          36     29.7704      18.9875      25.2448    29    22.9    M WR S   M W F U
 
 
 
-PristineSupreme (754.40) vs. Night of the Beating (816.70)
+Timbers terry (0.00) vs. CocoaLoco (0.00)
 
-PristineSupreme
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    Patty Mills                       PG,SG,G,Util             33     18.5035      22.3043      24.5056    36    30.7    M W F U  M WR S
-2    SG    Nickeil Alexander-Walker          SG,G,SF,F,Util           23     21.1536      22.7087      26.1429    35    27.7    MT R  U   T R S
-3    G     Aaron Wiggins                     SG,G,SF,F,Util           23     0.0          19.5899      14.3158    19    20.9      W F U   T R S
-4    SF    Caleb Martin                      SG,G,SF,F,Util           26     13.3445      25.8944      19.4655    29    22.4    M W  S     W FS
-5    PF    Brandon Clarke                    SF,PF,F,Util             25     25.9788      26.3205      19.732     25    16.8    MT R SU   T RF
-6    F     Franz Wagner                      SG,G,SF,F,Util           20     0.0          29.7628      29.7923    39    32.3    M W  SU    W FS
-7    C     Steven Adams                      C,Util                   28     27.1647      26.9763      25.2487    39    25.7    MT R SU   T RF
-8    Util  Omer Yurtseven                    C,Util                   23     0.0          28.467       15.94      30    14.2    M W  S     W FS
-9    Util  Hamidou Diallo                    SG,G,SF,F,Util           23     21.0764      31.6949      21.6517    29    21.6    M WR S   MT  F U
-10   Util  Jordan Clarkson           GTD     PG,SG,G,Util,IL+         29     28.6661      25.4203      26.3737    38    25.6    M W FS   M W   U
-11   BN    Buddy Hield                       SG,G,SF,F,Util           29     33.5046      29.4312      28.7275    40    29.3     TW F U  M W F U
-12   BN    Bojan Bogdanovic          O       SF,PF,F,Util,IL+         32     26.5781      32.9545      28.2079    38    30.2    M W FS   M W   U
-13   BN    Russell Westbrook                 PG,G,Util                33     50.2342      40.1719      42.2128    39    35.8     T  F U    W  S
-14   BN    LeBron James              GTD     PG,SG,G,SF,F,Util,IL+    37     44.3887      59.5382      55.2889    27    36.9     T  F U    W  S
-15   BN    Lonzo Ball                        PG,SG,G,Util             24     37.0808      35.86        36.0267    30    35.4    M   F U   TW FS
-16   IL    Richaun Holmes            INJ     PF,F,C,Util,IL,IL+       28     29.5851      23.46        27.6111    27    26.1     TW F U  M W F U
-17   IL    Frank Jackson             INJ     PG,SG,G,Util,IL,IL+      23     14.7564      18.7986      17.1727    33    22.7    M WR S   MT  F U
-18   IL+   Alex Caruso               INJ     PG,SG,G,Util,IL,IL+      27     17.2369      19.4         25.5346    26    28.0    M   F U   TW FS
-19   IL+   Kelly Olynyk              INJ     PF,F,C,Util,IL,IL+       30     26.4407      29.2462      28.51      10    22.9    M WR S   MT  F U
-20   IL+   Deandre Ayton             INJ     C,Util,IL,IL+            23     36.9175      37.4952      35.9542    24    30.7     T R S    T  F U
+Timbers terry
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    Darius Garland                    PG,G,Util                21     32.2526      37.5505      37.1824    34    34.3    M W FS   M W  S 
+2    SG    Cade Cunningham                   PG,SG,G,Util             20     0.0          33.3146      34.3966    29    32.2    MT  F U   TW F U
+3    G     Jalen Green                       SG,G,Util                19     0.0          23.5111      24.1692    26    30.2    M W F U    W F  
+4    SF    Alec Burks                        PG,SG,G,SF,F,Util        30     24.6004      28.0278      26.0128    39    27.4    M W  S   MT R  U
+5    PF    Cedi Osman                        SF,PF,F,Util             26     23.5981      21.9478      22.6786    28    22.6    M W FS   M W  S 
+6    F     OG Anunoby                        SF,PF,F,Util             24     29.4617      33.2398      36.1136    22    35.8     T  FS   M W F U
+7    C     Bobby Portis                      PF,F,C,Util              26     25.2577      34.234       33.9212    33    28.2    M  R S   M W FS 
+8    Util  Anfernee Simons                   PG,SG,G,Util             22     15.8104      34.0982      23.7176    34    25.6    M  R S   M W F U
+9    Util  Dejounte Murray                   PG,SG,G,Util             25     35.6636      50.8245      48.0559    34    34.4    M W FS   M W F U
+10   Util  Duane Washington Jr.              PG,G,Util                21     0.0          22.8421      15.7667    9     20.9    M W F    M WR S 
+11   BN    Fred VanVleet                     PG,SG,G,Util             27     39.8648      53.502       45.8088    34    37.5     T  FS   M W F U
+12   BN    Otto Porter Jr.                   SF,PF,F,Util             28     24.2879      23.4458      21.6485    33    21.2     T RF U   T RF U
+13   BN    Dorian Finney-Smith               SF,PF,F,Util             28     22.9107      26.4182      25.5513    39    32.1      W FS   M WR  U
+14   BN    Maxi Kleber                       PF,F,C,Util              29     20.2965      25.9022      21.596     25    24.7      W FS   M WR  U
+15   BN    Coby White                        PG,SG,G,Util             21     31.1075      26.0025      20.9211    19    24.9     TW FS   M W F U
+16   IL    Bam Adebayo               INJ     PF,F,C,Util,IL,IL+       24     40.9933      37.9952      37.0611    18    32.9      W FS   M W F U
+17   IL+   Clint Capela              GTD     C,Util,IL+               27     40.6836      35.7417      35.9722    36    29.7      W FS   M W F U
+18   IL+   Paul George               INJ     SF,PF,F,Util,IL,IL+      31     42.5835      48.0476      47.1538    26    35.5     T R S   M W F U
+19   IL+   Chris Duarte                      SG,G,SF,F,Util           24     0.0          23.2426      24.5735    34    28.6    M W F    M WR S 
+20   IL+   Malcolm Brogdon           INJ     PG,SG,G,Util,IL,IL+      29     36.679       28.3667      37.9923    26    34.3    M W F    M WR S 
 
-Night of the Beating
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    Jordan Poole                      PG,SG,G,Util             22     20.8863      26.889       30.271     31    29.9    M WR  U   T RF U
-2    SG    Evan Fournier                     SG,G,SF,F,Util           29     30.2032      20.167       23.0514    37    28.7     T R S   M W  S
-3    G     RJ Barrett                        SG,G,SF,F,Util           21     33.8666      33.6091      28.1       31    31.2     T R S   M W  S
-4    SF    Brandon Ingram                    SF,PF,F,Util             24     42.132       36.3253      38.569     29    34.5    MT R  U   T R S
-5    PF    Al Horford                        PF,F,C,Util              35     29.4264      30.4221      34.0793    29    30.0      WR S   M W FS
-6    F     Jerami Grant              INJ     SF,PF,F,Util,IL,IL+      27     32.1893      37.234       36.1333    24    33.2    M WR S   MT  F U
-7    C     Domantas Sabonis                  PF,F,C,Util              25     45.6609      45.6351      41.6947    38    34.6     TW  S   M W F
-8    Util  Tyler Herro                       PG,SG,G,Util             21     30.7527      32.4887      33.8667    33    32.8    M W  S     W FS
-9    Util  Andrew Wiggins                    SG,G,SF,F,Util           26     35.6666      35.4978      32.5485    33    31.5    M WR  U   T RF U
-10   Util  Kristaps Porzingis        INJ     PF,F,C,Util,IL,IL+       26     42.2237      43.0739      41.1115    26    30.4    M W F U    W FS
-11   BN    Precious Achiuwa                  SF,PF,F,C,Util           22     12.4742      18.2852      21.8308    26    24.6     TW F U   T  FS
-12   BN    Luka Doncic               GTD     PG,SG,G,Util,IL+         22     57.1559      50.1403      50.6625    24    34.8    M W F U    W FS
-13   BN    Donovan Mitchell          O       PG,SG,G,Util,IL+         25     43.821       44.9167      43.5143    35    33.2    M W FS   M W   U
-14   BN    Scottie Barnes                    SF,PF,F,Util             20     0.0          32.2369      34.7467    30    35.8     TW F U   T  FS
-15   BN    Shai Gilgeous-Alexander           PG,SG,G,Util             23     38.4176      39.5818      40.3594    32    35.2      W F U   T R S
-16   IL    Patrick Beverley                  PG,SG,G,Util             33     20.2917      34.014       28.4111    27    26.7    M W F U   T R  U
-17   IL    Donte DiVincenzo          INJ     PG,SG,G,Util,IL,IL+      24     26.2815      18.9364      16.1333    3     16.7    M W FS   M  R S
+CocoaLoco
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    Malik Monk                        PG,SG,G,Util             23     20.3572      31.543       23.1833    36    26.0      W  S   M W F U
+2    SG    Jaylen Brown                      SG,G,SF,F,Util           25     39.6394      43.1674      40.55      26    34.4    M W FS   M W F U
+3    G     Dennis Smith Jr.                  PG,G,Util                24     20.8618      16.5722      17.1524    21    17.3    M  R S   M W F U
+4    SF    Tobias Harris                     SF,PF,F,Util             29     36.7767      37.5653      36.3759    29    35.0    M W FS   M W F U
+5    PF    PJ Washington                     PF,F,C,Util              23     32.2473      26.9478      26.8565    23    24.9    M W F    M W F U
+6    F     Saddiq Bey                        SG,G,SF,F,Util           22     26.3796      32.8085      30.3553    38    33.6    MT  F U   TW F U
+7    Util  Zach LaVine                       SG,G,SF,F,Util           26     44.6055      38.4391      41.2429    35    35.0     TW FS   M W F U
+8    Util  Bogdan Bogdanovic                 SG,G,SF,PF,F,Util        29     30.0674      28.1328      24.3808    26    28.8      W FS   M W F U
+9    BN    Cole Anthony                      PG,SG,G,Util             21     29.487       39.2423      39.0481    27    34.0      W FS   M W F U
+10   BN    Gary Harris                       SG,G,SF,F,Util           27     20.8067      26.1991      20.9412    34    29.3      W FS   M W F U
+11   BN    Marcus Morris Sr.                 PF,F,C,Util              32     24.1865      31.2411      28.73      20    30.1     T R S   M W F U
+12   BN    Pascal Siakam                     PF,F,C,Util              27     40.7404      46.5747      41.2583    24    35.6     T  FS   M W F U
+13   BN    De'Anthony Melton                 PG,SG,G,Util             23     22.7982      26.7269      26.5697    33    23.8     T RF    M W F U
+14   IL+   Ja Morant                         PG,G,Util                22     38.9077      45.5404      45.4103    29    32.2     T RF    M W F U
+15   IL+   Josh Hart                         SG,G,SF,F,Util           26     25.3723      33.1121      31.2032    31    32.8     T R S   M  R   
+16   IL+   Dewayne Dedmon            INJ     C,Util,IL,IL+            32     18.8835      17.0437      17.0515    33    17.2      W FS   M W F U
+17   IL+   Isaiah Hartenstein        INJ     PF,F,C,Util,IL,IL+       23     14.4786      22.8961      21.4552    29    16.4     T R S   M W F U
 
 
 
-Swedish Fire (462.40) vs. Race's Rad Team (1052.60)
+😈 xx Bb God  xx 😈 (0.00) vs. Race's Rad Team (0.00)
 
-Swedish Fire
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    James Harden                      PG,SG,G,Util             32     55.0171      52.7283      50.5875    32    36.7    M W F U  M WR S
-2    SG    Gary Trent Jr.                    SG,G,SF,F,Util           22     24.745       28.9696      31.8375    32    34.0     TW F U   T  FS
-3    G     Max Strus                         SG,G,SF,F,Util           25     10.6254      28.0603      20.7107    28    23.4    M W  S     W FS
-4    SF    Garrett Temple                    PG,SG,G,SF,F,Util        35     17.4859      16.4745      15.7444    36    19.5    MT R  U   T R S
-5    PF    Jaren Jackson Jr.                 PF,F,C,Util              22     33.6805      32.3127      32.6447    38    27.4    MT R SU   T RF
-6    F     Kyle Anderson             INJ     SF,PF,F,Util,IL,IL+      28     27.1096      21.7873      22.6152    33    22.4    MT R SU   T RF
-7    C     Jaxson Hayes                      C,Util                   21     17.9307      17.8195      13.7769    26    13.3    MT R  U   T R S
-8    Util  Terance Mann                      SG,G,SF,F,Util           25     14.4721      24.1755      22.4919    37    29.5    M  R SU   T R S
-9    Util  Reggie Jackson                    PG,SG,G,Util             31     21.8045      28.3549      30.2       34    32.3    M  R SU   T R S
-10   Util  Andre Drummond                    C,Util                   28     41.4657      26.3517      25.3344    32    19.4    M W F    M W FS
-11   BN    Royce O'Neale             GTD     SG,G,SF,PF,F,Util,IL+    28     21.3646      21.8124      23.0306    36    31.0    M W FS   M W   U
-12   BN    Seth Curry                        PG,SG,G,Util             31     20.3795      32.868       28.8618    34    34.7    M W F    M W FS
-13   BN    Luguentz Dort                     SG,G,SF,F,Util           22     24.8152      25.9382      28.4091    33    32.6      W F U   T R S
-14   BN    Cole Anthony                      PG,SG,G,Util             21     29.487       41.1528      39.18      25    33.9    M W  SU    W FS
-15   BN    Karl-Anthony Towns                C,Util                   26     51.5623      46.0231      46.129     31    34.5    M W F U   T R  U
-16   IL    Derrick Rose              INJ     PG,SG,G,Util,IL,IL+      33     26.5733      24.9135      25.35      26    24.5     T R S   M W  S
-17   IL    Robert Covington                  PF,F,C,Util              31     28.0393      23.8802      22.3118    34    27.6    M W F U  M  R S
-18   IL    Jalen Suggs               INJ     PG,SG,G,Util,IL,IL+      20     0.0          25.1667      24.4619    21    27.7    M W  SU    W FS
-19   IL+   Rudy Gay                  GTD     SF,PF,F,Util,IL+         35     21.7492      21.0752      19.6958    24    20.1    M W FS   M W   U
-20   IL+   Joe Ingles                INJ     SG,G,SF,PF,F,Util,IL,IL+ 34     24.6182      17.6884      19.2694    36    25.2    M W FS   M W   U
-21   IL+   Aaron Gordon              GTD     SF,PF,F,Util,IL+         26     30.9474      27.0312      27.3606    33    31.9    M W F U   T R SU
-22   IL+   Gabe Vincent              INJ     PG,G,Util,IL,IL+         25     10.0113      24.8764      18.7625    32    21.8    M W  S     W FS
+😈 xx Bb God  xx 😈
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    Eric Bledsoe                      PG,SG,G,Util             32     26.3982      22.2825      24.3951    41    26.7     T R S   M W F U
+2    SG    Kevin Huerter                     SG,G,SF,F,Util           23     27.9858      26.4204      22.1562    32    28.4      W FS   M W F U
+3    G     De'Aaron Fox                      PG,G,Util                24     45.0482      36.314       36.1789    38    34.3    M W F U    W  S 
+4    SF    Kevin Durant                      SF,PF,F,Util             33     44.5367      55.274       51.4212    33    37.2    M WR S   M W F U
+5    PF    Kevin Love                        PF,F,C,Util              33     30.0004      29.0822      29.3094    32    21.6    M W FS   M W  S 
+6    F     Harrison Barnes                   SF,PF,F,Util             29     29.3808      27.3288      30.2108    37    33.4    M W F U    W  S 
+7    C     Jarrett Allen                     C,Util                   23     32.8243      37.1611      37.7       33    32.7    M W FS   M W  S 
+8    Util  Mo Bamba                          C,Util                   23     20.8443      27.7086      31.0469    32    28.1      W FS   M W F U
+9    Util  Mitchell Robinson                 C,Util                   23     27.9212      21.9838      23.275     36    24.7    M W  S   MT R  U
+10   Util  Lauri Markkanen                   SF,PF,F,C,Util           24     29.0633      26.144       26.7419    31    30.3    M W FS   M W  S 
+11   BN    Bradley Beal                      SG,G,SF,F,Util           28     47.503       44.7551      41.1853    34    36.0     TW  S   M W F U
+12   BN    Nicolas Batum                     SF,PF,F,Util             33     20.7605      21.9014      22.6318    22    25.5     T R S   M W F U
+13   BN    P.J. Tucker                       PF,F,C,Util              36     15.7218      26.3091      21.8706    34    28.5      W FS   M W F U
+14   BN    Deni Avdija                       SG,G,SF,F,Util           21     18.6602      20.6992      19.8775    40    23.1     TW  S   M W F U
+15   BN    Carmelo Anthony                   SF,PF,F,Util             37     21.8812      24.8177      25.8171    41    27.0      W  S   M W F U
+16   IL    Pat Connaughton           INJ     SG,G,SF,F,Util,IL,IL+    29     17.4102      21.0965      24.4846    39    28.3    M  R S   M W FS 
+17   IL    Tyrese Maxey              INJ     PG,SG,G,Util,IL,IL+      21     16.2997      33.0397      31.4281    32    34.5    M W FS   M W F U
+18   IL+   Shake Milton              INJ     PG,SG,G,Util,IL,IL+      25     22.1306      19.6073      21.5074    27    24.8    M W FS   M W F U
+19   IL+   Montrezl Harrell          INJ     PF,F,C,Util,IL,IL+       27     28.7623      26.6844      28.9061    33    25.4     TW  S   M W F U
+20   IL+   Monte Morris                      PG,SG,G,Util             26     21.2854      26.0137      25.3571    35    29.9     T R SU    W F U
+21   IL+   CJ McCollum               INJ     PG,SG,G,Util,IL,IL+      30     38.3732      38.6459      38.8875    24    35.3    M  R S   M W F U
 
 Race's Rad Team
-Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule
-1    PG    Dennis Schroder                   PG,G,Util                28     30.551       28.0         29.4       31    32.4      WR S   M W FS
-2    SG    Cade Cunningham                   PG,SG,G,Util             20     0.0          36.0581      35.0148    27    32.3    M WR S   MT  F U
-3    G     D'Angelo Russell                  PG,SG,G,Util             25     39.7218      32.2729      37.4036    28    33.0    M W F U   T R  U
-4    SF    Devin Booker                      SG,G,SF,F,Util           25     42.1719      43.1885      41.0933    30    32.7     T R S    T  F U
-5    PF    Herbert Jones                     SF,PF,F,Util             23     0.0          28.6317      22.3257    35    28.4    MT R  U   T R S
-6    F     Julius Randle                     PF,F,C,Util              27     44.7505      42.6047      41.5556    36    35.4     T R S   M W  S
-7    C     Jonas Valanciunas                 C,Util                   29     35.7285      40.1866      39.9286    35    31.6    MT R  U   T R S
-8    Util  Kyle Lowry                        PG,G,Util                35     35.3671      34.7703      34.6286    35    34.3    M W  S     W FS
-9    Util  Terry Rozier                      PG,SG,G,Util             27     35.3327      33.0215      33.5933    30    31.6    M W  S   M W F
-10   Util  Marcus Smart                      PG,SG,G,Util             27     30.8971      34.1554      31.0029    35    34.7      WR S   M W FS
-11   BN    Darius Bazley                     SF,PF,F,Util             21     25.8656      24.987       24.3406    32    26.8      W F U   T R S
-12   BN    Joel Embiid                       PF,F,C,Util              27     50.7498      54.3815      52.1577    26    33.2    M W F    M W FS
-13   BN    Gordon Hayward                    SG,G,SF,F,Util           31     32.8272      34.1298      32.8632    38    33.1    M W  S   M W F
-14   BN    Darius Garland                    PG,G,Util                21     32.2526      40.6043      37.6437    32    34.3     T  F U  M W FS
-15   BN    Duncan Robinson                   SG,G,SF,F,Util           27     24.5599      23.2013      22.9278    36    28.1    M W  S     W FS
-16   IL    Derrick White             INJ     PG,SG,G,Util,IL,IL+      27     27.873       34.9787      33.0811    37    30.5     TW F U  M W FS
-17   IL    Luke Kennard              INJ     SG,G,SF,F,Util,IL,IL+    25     18.9708      25.596       23.3657    35    29.0    M  R SU   T R S
-18   IL+   Alperen Sengun            INJ     C,Util,IL,IL+            19     0.0          21.4119      22.3829    35    18.4    M W F U  M W F U
-19   IL+   Ivica Zubac               INJ     C,Util,IL,IL+            24     23.0058      24.4747      24.8743    35    25.0    M  R SU   T R S
-20   IL+   John Collins              INJ     PF,F,C,Util,IL,IL+       24     37.2433      36.2274      36.3219    32    32.6    M W F U    W FS
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    Marcus Smart                      PG,SG,G,Util             27     30.8971      31.589       30.8       37    34.4    M W FS   M W F U
+2    SG    Terry Rozier                      PG,SG,G,Util             27     35.3327      36.8371      34.0839    31    31.7    M W F    M W F U
+3    G     Gordon Hayward                    SG,G,SF,F,Util           31     32.8272      32.6578      32.559     39    33.1    M W F    M W F U
+4    SF    Herbert Jones                     SF,PF,F,Util             23     0.0          27.6062      22.7703    37    28.8     T R S   M  R   
+5    PF    Khris Middleton                   SF,PF,F,Util             30     37.033       37.6097      35.8933    30    31.3    M  R S   M W FS 
+6    F     Julius Randle                     PF,F,C,Util              27     44.7505      41.8173      41.3947    38    35.5    M W  S   MT R  U
+7    C     Christian Wood                    PF,F,C,Util              26     35.1616      37.1477      37.0605    38    30.6    M W F U    W F  
+8    Util  Ivica Zubac                       C,Util                   24     23.0058      24.2233      24.7865    37    24.9     T R S   M W F U
+9    Util  Dennis Schroder                   PG,G,Util                28     30.551       24.5095      28.903     33    31.9    M W FS   M W F U
+10   Util  Joel Embiid                       PF,F,C,Util              27     50.7498      54.6278      52.2593    27    33.2    M W FS   M W F U
+11   BN    Jonas Valanciunas                 C,Util                   29     35.7285      39.6029      39.8486    37    31.7     T R S   M  R   
+12   BN    John Collins                      PF,F,C,Util              24     37.2433      31.9295      35.5676    34    32.6      W FS   M W F U
+13   BN    Kyle Lowry                        PG,G,Util                35     35.3671      34.9647      34.6639    36    34.3      W FS   M W F U
+14   BN    Devin Booker                      SG,G,SF,F,Util           25     42.1719      41.2063      40.5969    32    32.7     T  F U  M  R S 
+15   BN    D'Angelo Russell                  PG,SG,G,Util             25     39.7218      38.4931      38.35      30    32.9     T R  U   TW   U
+16   IL    Derrick White             INJ     PG,SG,G,Util,IL,IL+      27     27.873       33.1948      33.0811    37    30.5    M W FS   M W F U
+17   IL    Luke Kennard              INJ     SG,G,SF,F,Util,IL,IL+    25     18.9708      25.625       23.3657    35    29.0     T R S   M W F U
+18   IL+   Alperen Sengun            INJ     C,Util,IL,IL+            19     0.0          21.7936      22.3829    35    18.4    M W F U    W F  
+
+
+
+PristineSupreme (0.00) vs. Ethan's Expert Team (0.00)
+
+PristineSupreme
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    Jordan Clarkson                   PG,SG,G,Util             29     28.6661      25.4604      26.3359    39    25.7    M W   U  M W F U
+2    SG    Seth Curry                GTD     PG,SG,G,Util,IL+         31     20.3795      33.9367      29.2914    35    34.8    M W FS   M W F U
+3    G     Franz Wagner                      SG,G,SF,F,Util           20     0.0          28.523       29.3463    41    32.1      W FS   M W F U
+4    SF    Hamidou Diallo                    SG,G,SF,F,Util           23     21.0764      27.3345      22.0903    31    22.0    MT  F U   TW F U
+5    PF    Bojan Bogdanovic                  SF,PF,F,Util             32     26.5781      32.4883      28.2462    39    30.4    M W   U  M W F U
+6    F     LeBron James                      PG,SG,G,SF,F,Util        37     44.3887      59.3178      55.9379    29    36.8      W  S   M W F U
+7    C     Alex Len                          PF,F,C,Util              28     17.6897      20.92        16.6077    26    17.6    M W F U    W  S 
+8    Util  Buddy Hield                       SG,G,SF,F,Util           29     33.5046      28.8477      28.5214    42    29.3    M W F U    W  S 
+9    Util  Nickeil Alexander-Walker          SG,G,SF,F,Util           23     21.1536      20.2769      25.4919    37    27.1     T R S   M  R   
+10   Util  Rajon Rondo                       PG,G,Util                35     17.1718      19.1931      14.545     20    16.7    M W FS   M W  S 
+11   BN    Omer Yurtseven                    C,Util                   23     0.0          28.6515      16.7871    31    14.8      W FS   M W F U
+12   BN    Lonzo Ball                        PG,SG,G,Util             24     37.0808      36.84        36.2344    32    35.3     TW FS   M W F U
+13   BN    Aaron Wiggins                     SG,G,SF,F,Util           23     0.0          21.0345      15.5286    21    21.0     T R S   M W FS 
+14   BN    Brandon Clarke                    SF,PF,F,Util             25     25.9788      27.1143      20.9179    28    17.3     T RF    M W F U
+15   BN    Deandre Ayton                     C,Util                   23     36.9175      34.7696      35.56      25    30.8     T  F U  M  R S 
+16   IL    Steven Adams              INJ     C,Util,IL,IL+            28     27.1647      26.4         25.2875    40    25.6     T RF    M W F U
+17   IL    Richaun Holmes            INJ     PF,F,C,Util,IL,IL+       28     29.5851      24.2885      27.6111    27    26.1    M W F U    W  S 
+18   IL    Frank Jackson             INJ     PG,SG,G,Util,IL,IL+      23     14.7564      18.4313      17.1727    33    22.7    MT  F U   TW F U
+19   IL+   Will Barton               INJ     SG,G,SF,F,Util,IL,IL+    31     26.658       29.0346      31.7824    34    32.8     T R SU    W F U
+20   IL+   Alex Caruso               INJ     PG,SG,G,Util,IL,IL+      27     17.2369      19.4         25.5346    26    28.0     TW FS   M W F U
+21   IL+   Kelly Olynyk              INJ     PF,F,C,Util,IL,IL+       30     26.4407      29.2462      28.51      10    22.9    MT  F U   TW F U
+
+Ethan's Expert Team
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    Mike Conley                       PG,G,Util                34     30.9839      33.0861      30.7371    35    28.4    M W   U  M W F U
+2    SG    Tyrese Haliburton                 PG,SG,G,Util             21     33.6854      36.9719      35.655     40    33.9    M W F U    W  S 
+3    G     Garrison Mathews                  SG,G,SF,F,Util           25     10.9097      22.566       22.7792    24    28.8    M W F U    W F  
+4    SF    Nassir Little                     SF,F,Util                21     10.4899      24.6664      22.0853    34    24.9    M  R S   M W F U
+5    PF    Jae'Sean Tate                     SF,PF,F,Util             26     26.9978      27.8174      27.3744    39    27.3    M W F U    W F  
+6    F     Furkan Korkmaz                    SG,G,SF,F,Util           24     18.3891      24.3912      19.0853    34    22.9    M W FS   M W F U
+7    C     Mason Plumlee                     PF,F,C,Util              31     25.0492      22.1989      23.3968    31    24.7    M W F    M W F U
+8    Util  Kyle Kuzma                        SF,PF,F,Util             26     27.2739      41.4044      33.7816    38    33.2     TW  S   M W F U
+9    Util  Spencer Dinwiddie                 PG,SG,G,Util             28     32.9555      29.7321      29.4355    31    30.2     TW  S   M W F U
+10   Util  DeMar DeRozan                     SF,PF,F,Util             32     36.6889      39.7745      41.6471    34    35.1     TW FS   M W F U
+11   BN    Gary Payton II                    PG,SG,G,Util             29     10.0088      22.2633      18.4158    38    16.8     T RF U   T RF U
+12   BN    Stephen Curry                     PG,SG,G,Util             33     48.2319      43.4412      49.775     36    34.8     T RF U   T RF U
+13   BN    Klay Thompson                     SG,G,SF,F,Util           31     34.7326      26.1         26.1       1     19.9     T RF U   T RF U
+14   IL    Anthony Davis             INJ     PF,F,C,Util,IL,IL+       28     48.4506      34.9465      47.2556    27    35.4      W  S   M W F U
+15   IL    Damian Lillard            INJ     PG,G,Util,IL,IL+         31     47.7182      43.0545      43.1034    29    36.4    M  R S   M W F U
+16   IL    Rudy Gobert               INJ     C,Util,IL,IL+            29     39.909       43.2747      42.5108    37    32.1    M W   U  M W F U
+17   IL+   Kelly Oubre Jr.           INJ     SG,G,SF,F,Util,IL,IL+    26     32.2505      29.5075      29.3225    40    28.2    M W F    M W F U
+18   IL+   Draymond Green            GTD     PF,F,C,Util,IL+          31     31.3894      28.9447      32.9824    34    29.9     T RF U   T RF U
+19   IL+   Wendell Carter Jr.        GTD     PF,F,C,Util,IL+          22     29.4747      33.5144      33.1622    37    29.3      W FS   M W F U
+20   IL+   Eric Gordon               O       SG,G,SF,F,Util,IL+       33     24.4839      23.4219      24.6229    35    29.1    M W F U    W F  
+21   IL+   Larry Nance Jr.           INJ     PF,F,C,Util,IL,IL+       29     27.4144      22.8078      20.5486    37    23.2    M  R S   M W F U
+
+
+
+Swedish Fire (0.00) vs. Night of the Beating (0.00)
+
+Swedish Fire
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    Russell Westbrook                 PG,G,Util                33     50.2342      39.0504      41.7415    41    35.4      W  S   M W F U
+2    SG    Royce O'Neale                     SG,G,SF,PF,F,Util        28     21.3646      22.7716      23.0892    37    31.2    M W   U  M W F U
+3    G     Desmond Bane                      PG,SG,G,SF,F,Util        23     20.2827      38.7984      32.8244    41    29.9     T RF    M W F U
+4    SF    Luguentz Dort                     SG,G,SF,F,Util           22     24.8152      27.5636      28.4029    35    32.3     T R S   M W FS 
+5    PF    Robert Covington                  PF,F,C,Util              31     28.0393      27.3057      23.0944    36    28.0    M  R S   M W F U
+6    F     Gary Trent Jr.            GTD     SG,G,SF,F,Util,IL+       22     24.745       30.1544      31.4939    33    34.0     T  FS   M W F U
+7    C     Andre Drummond                    C,Util                   28     41.4657      25.6644      25.0879    33    19.2    M W FS   M W F U
+8    Util  Evan Mobley                       PF,F,C,Util              20     0.0          33.9652      34.775     32    33.8    M W FS   M W  S 
+9    Util  Jusuf Nurkic                      C,Util                   27     34.6937      37.7519      32.8528    36    26.3    M  R S   M W F U
+10   Util  Aaron Gordon                      SF,PF,F,Util             26     30.9474      23.5171      26.72      35    31.8     T R SU    W F U
+11   BN    Jalen Brunson                     PG,SG,G,Util             25     22.3275      31.7218      30.8872    39    30.7      W FS   M WR  U
+12   BN    Jaren Jackson Jr.                 PF,F,C,Util              22     33.6805      36.4522      33.8951    41    27.5     T RF    M W F U
+13   BN    Duncan Robinson                   SG,G,SF,F,Util           27     24.5599      26.4767      23.4243    37    28.2      W FS   M W F U
+14   BN    Max Strus                         SG,G,SF,F,Util           25     10.6254      26.8114      20.6793    29    23.3      W FS   M W F U
+15   BN    Reggie Jackson                    PG,SG,G,Util             31     21.8045      25.7418      29.6811    37    31.8     T R S   M W F U
+16   IL    Derrick Rose              INJ     PG,SG,G,Util,IL,IL+      33     26.5733      25.22        25.35      26    24.5    M W  S   MT R  U
+17   IL    Norman Powell             INJ     SG,G,SF,F,Util,IL,IL+    28     28.1921      35.741       30.3265    34    32.9    M  R S   M W F U
+18   IL+   Keldon Johnson            INJ     SF,PF,F,Util,IL,IL+      22     26.575       26.3368      28.0083    36    30.9    M W FS   M W F U
+19   IL+   Kyle Anderson                     SF,PF,F,Util             28     27.1096      27.305       23.2853    34    22.5     T RF    M W F U
+
+Night of the Beating
+Rk.  Pos   Player Name               Status  Positions                Age    FP/G (Pre)   FP/G (Proj)  FP/G       GP    MPG     Schedule       
+1    PG    Luka Doncic                       PG,SG,G,Util             22     57.1559      53.5522      50.948     25    34.8      W FS   M WR  U
+2    SG    Shai Gilgeous-Alexander           PG,SG,G,Util             23     38.4176      36.827       39.6794    34    34.9     T R S   M W FS 
+3    G     Jordan Poole                      PG,SG,G,Util             22     20.8863      27.4299      29.9485    33    29.8     T RF U   T RF U
+4    SF    Scottie Barnes            GTD     SF,PF,F,Util,IL+         20     0.0          30.3385      34.125     32    35.5     T  FS   M W F U
+5    PF    Brandon Ingram                    SF,PF,F,Util             24     42.132       37.9099      38.8935    31    34.6     T R S   M  R   
+6    F     Andrew Wiggins                    SG,G,SF,F,Util           26     35.6666      33.0019      32.18      35    31.5     T RF U   T RF U
+7    C     Precious Achiuwa                  SF,PF,F,C,Util           22     12.4742      21.5876      21.9071    28    24.5     T  FS   M W F U
+8    Util  Tyler Herro                       PG,SG,G,Util             21     30.7527      35.6918      34.4735    34    32.8      W FS   M W F U
+9    Util  Kristaps Porzingis        INJ     PF,F,C,Util,IL,IL+       26     42.2237      44.405       41.1115    26    30.4      W FS   M WR  U
+10   Util  Jerami Grant              INJ     SF,PF,F,Util,IL,IL+      27     32.1893      36.6426      36.1333    24    33.2    MT  F U   TW F U
+11   BN    Donovan Mitchell                  PG,SG,G,Util             25     43.821       45.201       43.9417    36    33.3    M W   U  M W F U
+12   BN    Evan Fournier             GTD     SG,G,SF,F,Util,IL+       29     30.2032      27.9489      24.2237    38    29.0    M W  S   MT R  U
+13   BN    Al Horford                        PF,F,C,Util              35     29.4264      26.6859      32.9323    31    29.7    M W FS   M W F U
+14   BN    RJ Barrett                        SG,G,SF,F,Util           21     33.8666      32.3678      28.3303    33    31.6    M W  S   MT R  U
+15   BN    Domantas Sabonis                  PF,F,C,Util              25     45.6609      44.8392      42.1564    39    34.6    M W F    M WR S 
+16   IL    Patrick Beverley          GTD     PG,SG,G,Util,IL+         33     20.2917      33.9986      28.4111    27    26.7     T R  U   TW   U
+17   IL    Donte DiVincenzo                  PG,SG,G,Util             24     26.2815      18.9364      16.1333    3     16.7    M  R S   M W FS 
