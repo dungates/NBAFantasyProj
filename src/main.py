@@ -40,7 +40,7 @@ def add_fantasy_account():
         key = input("Enter consumer key: ")
         secret = input("Enter consumer secret: ")
         command = (
-            f"python {os.getenv('VIRTUAL_ENV')}/env/Scripts/yfa_init_oauth_env"
+            f"python {os.getenv('VIRTUAL_ENV')}/Scripts/yfa_init_oauth_env"
             if platform == "win32"
             else "yfa_init_oauth_env"
         )
