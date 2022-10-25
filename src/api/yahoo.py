@@ -24,7 +24,7 @@ class YahooClient:
         all_league_ids = self.get_all_league_ids()
         if not all_league_ids:
             return None
-        league_id = all_league_ids[len(all_league_ids) - 1]
+        league_id = all_league_ids[len(all_league_ids) - 2]
         current_league = league.League(self.oauth, league_id)
         return current_league
 
