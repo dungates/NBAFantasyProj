@@ -2,6 +2,7 @@ import os
 from sys import platform
 from pydash.collections import order_by
 from api.database import get_schedule_by_team
+from api.sleeper import SleeperClient
 from api.yahoo import YahooClient
 from utils.constants import LEAGUE_TYPES, YAHOO_STAT_COEFFS
 from utils.helpers import (
@@ -50,7 +51,11 @@ def add_fantasy_account():
         espn_s2 = input("Enter espn_s2 variable: ")
         swid = input("Enter swid variable: ")
         json_object = {"espn_s2": espn_s2, "swid": swid}
-        write_json(json_object, f"{config_file_dir}/{name}.json")
+        write_json(json_object, f"{config_file_dir}/{name}")
+    elif selected_key == "sleeper":
+        username = input("Enter sleeper username: ")
+        json_object = {"username": username}
+        write_json(json_object, f"{config_file_dir}/{name}")
 
     main()
 
@@ -63,6 +68,10 @@ def load_fantasy_account():
         lambda file_data: f"[{file_data[0]['name']}] {file_data[1].name}",
     )
     selected_key = league_info[1][0]["key"]
+
+    if selected_key == "sleeper":
+        sleeper_client = SleeperClient(league_info[1][1].path)
+        sleeper_client.get_current_league()
 
     if selected_key == "yahoo":
         yahoo_client = YahooClient(league_info[1][1].path)

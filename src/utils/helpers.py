@@ -66,7 +66,7 @@ def option_selector(
 
 
 def write_json(data: str, filename: str):
-    with open(f"Data/{filename}.json", "w") as json_file:
+    with open(f"{filename}.json", "w") as json_file:
         json.dump(data, json_file, indent=2)
 
 

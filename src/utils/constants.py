@@ -1,6 +1,7 @@
 LEAGUE_TYPES = {
     "yahoo": {"key": "yahoo", "name": "Yahoo"},
     "espn": {"key": "espn", "name": "ESPN"},
+    "sleeper": {"key": "sleeper", "name": "Sleeper"},
 }
 
 YAHOO_STAT_COEFFS = {
