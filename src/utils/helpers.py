@@ -143,6 +143,34 @@ def calc_fantasy_points(
     return total
 
 
+def get_all_player_projections(
+    player_projections: Dict[str, Dict[str, Any]],
+    schedule_by_team: Dict[str, List[sqlite3.Row]],
+):
+    all_player_projections = []
+    for player_projection in player_projections.values():
+        team_id = player_projection["TEAM_ID"]
+        games = schedule_by_team[team_id] if team_id in schedule_by_team.keys() else []
+        all_player_projections.append(
+            {
+                "name": player_projection["PLAYER_NAME"],
+                "age": player_projection["AGE"],
+                "positions": "",
+                "selected_position": "",
+                "status": "",
+                "fp_projection_preseason": player_projection["FP_PROJECTION_PRESEASON"],
+                "fp_projection_current": player_projection["FP_PROJECTION_CURRENT"],
+                "fp": player_projection["FP"],
+                "fp_per_game": player_projection["FP"] / player_projection["GP"],
+                "games_played": player_projection["GP"],
+                "min": player_projection["MIN"],
+                "min_per_game": player_projection["MIN"] / player_projection["GP"],
+                "games": games,
+            }
+        )
+    return all_player_projections
+
+
 def get_fantasy_player_projections(
     fantasy_players: List[FantasyPlayer],
     player_projections: Dict[str, Dict[str, Any]],
